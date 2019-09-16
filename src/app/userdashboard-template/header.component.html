@@ -87,12 +87,12 @@
            <div class="col-md-2 col-sm-4 col-xs-6" style="text-align: right">
        <!--<a class="btn btn-nav btn-inline btn-danger-outline icon-search-main" href="#search" style="width: 70%; margin-top: 10px"> Search <span class="font-icon-search"></span></a>-->
        <a  class="font-additional color-main text-uppercase hover-focus-color" data-target=".example-modal-lg" data-toggle="modal" href="#search" id="icon-type-to-search">
-         <button  class="btn btn-primary top-search-btn" id="serbtn" style="float: right">Search
-           <i  class=" fa fa-search"></i>
-         </button>
+         <!-- <button  class="btn btn-primary top-search-btn" id="serbtn" style="float: right">Search -->
+           <!-- <i  class=" fa fa-search"></i>
+         </button> -->
        </a>
      </div>
-           <div class="col-md-2  right-drpdwn">
+           <div class="col-md-2  right-drpdwn" *ngIf="showlink">
 
                 <div class="row">
 
@@ -104,7 +104,9 @@
                                 <a [routerLink]="['/my-profile']"> <i class="fa fa-pencil"></i> My Profile</a>
                                 <a [routerLink]="['/subscription-history']"> <i class="fa fa-history"></i> Subscription</a>
                                 <a [routerLink]="['/update-password']"> <i class="fa fa-key"></i> Change Password</a>
-                                <a [routerLink]="['/login']"> <i class="fa fa-sign-out"></i>Logout</a>
+                                <a [routerLink]="['/login']" (click)="logout()"> <i class="fa fa-sign-out"></i>Logout</a>
+                                <!-- <a routerLink="/login" (click)="logout()"> <i class="fa fa-sign-out-alt"></i>Logout </a> -->
+
                             </div>
                         </div>
 
