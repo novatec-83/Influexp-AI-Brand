@@ -32,6 +32,8 @@ import {
 import {ConfirmPasswordComponent} from './confirm-password/confirm-password.component';
 import {AuthGuard} from './_guards';
 import {PushNotificationsService} from 'angular2-notifications/dist';
+import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import {PushNotificationsService} from 'angular2-notifications/dist';
     RegisterComponent,
     ConfirmPasswordComponent,
     AlertComponent,
-    DashboardLayoutComponent
+    DashboardLayoutComponent,
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

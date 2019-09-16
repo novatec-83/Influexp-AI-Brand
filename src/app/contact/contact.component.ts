@@ -1,0 +1,120 @@
+import { Component, OnInit } from '@angular/core';
+import {HttpService} from '../services/http-service';
+import {AuthenticationService} from '../_services';
+import swal from 'sweetalert2'
+import {Router} from '@angular/router';
+
+@Component({
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css'],
+  providers:[AuthenticationService]
+
+})
+export class ContactComponent implements OnInit {
+  resolved(captchaResponse: string) {
+    console.log(`Resolved captcha with response ${captchaResponse}:`);
+  }
+
+  constructor(private obj: AuthenticationService, private preloadersvc: HttpService) { }
+
+  ngOnInit() {
+  }
+
+  model: any= {};
+
+
+  onSubmit(){
+          this.obj.contact_Us(this.model.name, this.model.email, this.model.phone, this.model.message)
+              .subscribe(data =>{console.log('Sent')});
+          this.show();
+          this.clear();
+
+
+
+  }
+  show(){
+    swal.fire({
+        type: 'success',
+        title: 'Your Message has been sent'
+    })
+  }
+  clear(){
+    this.model.name= '',
+        this.model.email='',
+          this.model.phone='',
+            this.model.message=''
+  }
+}
+
+@Component({
+  selector: 'whatisinfluexpai',
+  templateUrl: 'what-is-influexpai.html',
+})
+export class WhatIsInfluexpaiComponent {
+
+  constructor() { }
+  ngOnInit() {
+  }
+}
+
+@Component({
+  selector: 'HowItWorks',
+  templateUrl: 'How-It-Works.html',
+})
+export class HowItWorksComponent {
+
+  constructor() { }
+  ngOnInit() {
+  }
+}
+
+@Component({
+  selector: 'Terms-and-conditions',
+  templateUrl: 'Terms-and-conditions.html',
+})
+export class TermsAndConditionsComponent {
+
+  constructor() { }
+  ngOnInit() {
+  }
+}
+
+@Component({
+  selector: 'privacy-and-policy',
+  templateUrl: 'privacy-and-policy.html',
+})
+export class PrivacyAndPolicyComponent {
+
+  constructor() { }
+  ngOnInit() {
+  }
+}
+
+@Component({
+  selector: 'blog',
+  templateUrl: 'blog.html',
+    providers: [AuthenticationService]
+})
+export class BlogComponent {
+
+    getBlogs:any;
+    // @Input() id: ;
+  constructor(private obj:AuthenticationService, private router: Router) { }
+  ngOnInit() {
+  this.getAllBlogs();
+  }
+
+        getAllBlogs(){
+                this.obj.get_All_Blog().subscribe(data=>{
+                    this.getBlogs= data
+                console.log(this.getBlogs);
+                })
+        }
+    getcurrentBlog(page){
+        this.router.navigate(['blog1'], { queryParams: {Profile: JSON.stringify(page)}});
+
+    }
+}
+
+
