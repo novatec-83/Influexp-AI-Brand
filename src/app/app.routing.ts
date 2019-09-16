@@ -4,9 +4,11 @@ import {AuthGuard} from './_guards';
 import {RegisterComponent} from './register/register.component';
 import {GetpaymentComponent} from './get-payment/getpayment.component';
 import {ConfirmPasswordComponent} from './confirm-password/confirm-password.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 
 export const AppRoutes: Routes = [
+
     // { path: '', component: HomepageComponent },
     { path: '', component: DashboardLayoutComponent,  children: [
         // { path: 'twitter/categories',  loadChildren: './home/twittercategories.module#TwittercategoriesModule' },
@@ -46,6 +48,7 @@ export const AppRoutes: Routes = [
     //     { path: 'messenger', loadChildren: './messenger/messenger.module#MessengerModule' },
     //     { path: 'settings', loadChildren: './settings/settings.module#SettingsModule'},
         {path:  'my-profile',loadChildren:'./profile/profile.module#ProfileModule'},
+
         {path:  'update-password',loadChildren:'./update-pass/update-pass.module#UpdatePassModule'}
         //
     ], canActivate: [AuthGuard] },
@@ -53,6 +56,8 @@ export const AppRoutes: Routes = [
     { path: 'login', loadChildren: './login/login.module#LoginModule' },
     { path: 'register', component: RegisterComponent },
     { path: 'payment', component: GetpaymentComponent },
+    // <li><a href="https://www.influexpai.com/pricing"><i class="fa fa-chevron-right"></i> Pricing</a> </li>
+    // { path: 'pricing', component: PricingComponent },
 
     { path: 'reset-password',  loadChildren: './reset-password/reset-password.module#ResetPasswordModule' },
     { path: 'page-not-found', loadChildren: './error400/error400.module#Error400Module' },

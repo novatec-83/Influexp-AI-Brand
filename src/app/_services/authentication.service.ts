@@ -53,6 +53,23 @@ login(username: string, password: string) {
         }))
     }
 
+    contact_Us(name, email, phone, message) {
+        return this.http.post('https://apis.influexpai.com/contact-us',
+            {
+                'name':name,
+                'email' :email,
+                'mobile_no': phone,
+                'message' :message
+
+            }).map((response: Response) => {
+                console.log(response)
+            });
+    }
+
+    get_All_Blog(){
+        return this.http.get(Config.api + '/getallblog/').map((response: Response) => response.json());
+
+    }
     get_Payment(cardholder,email,packge,amount, cardexpiration,cardcode, cardnumber, category ){
         return this.http.post(Config.api+ '/payment/', {
             cardholder: cardholder,
