@@ -57,7 +57,7 @@ export const AppRoutes: Routes = [
     { path: 'reset-password',  loadChildren: './reset-password/reset-password.module#ResetPasswordModule' },
     { path: 'page-not-found', loadChildren: './error400/error400.module#Error400Module' },
     { path: 'new-password/:token', loadChildren: './reset-password/change-password.module#ChangePasswordModule' },
-    { path: 'confirm-password', component:ConfirmPasswordComponent },
+    { path: 'confirm-password/:code', component:ConfirmPasswordComponent },
     { path: '**', loadChildren: './login/login.module#LoginModule' },
 
 

@@ -24,7 +24,9 @@
 
           <div class="profile-group label-overlay">
             <mat-form-field class="loginfrom md-size">
-              <input matInput type="password" placeholder="Enter Current Password" [(ngModel)]="currentPass"  tabindex=2  name="currentpass" required>
+              <input matInput [type]="hide1 ? 'password' : 'text'" placeholder="Enter Current Password" [(ngModel)]="currentPass"  tabindex=2  name="currentpass" required>
+              <mat-icon class="pointer" data-toggle="tooltip" title="{{hide1? 'Show' : 'Hide1'}}Password" matSuffix (click)="hide1=!hide1">{{hide1 ? 'visibility_off' : 'visibility'}}</mat-icon>
+
               <!--<span class="pointer" *ngIf="model.username"  mdSuffix md-list-icon aria-label="Clear" (click)="model.username=''">-->
               <!--<i class="fa fa-close" style="font-size: 23px"></i>-->
               <!--</span>-->
@@ -39,7 +41,9 @@
 
           <div class="profile-group label-overlay">
             <mat-form-field class="loginfrom md-size">
-              <input matInput type="password" placeholder="Enter New Password" [(ngModel)]="newPass"  tabindex=3  name="newpass" required>
+              <input matInput [type]="hide2 ? 'password' : 'text'" placeholder="Enter New Password" [(ngModel)]="newPass"  tabindex=3  name="newpass" required>
+              <mat-icon class="pointer" data-toggle="tooltip" title="{{hide2? 'Show' : 'Hide2'}}Password" matSuffix (click)="hide2=!hide2">{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+
               <!--<span class="pointer" *ngIf="model.username"  mdSuffix md-list-icon aria-label="Clear" (click)="model.username=''">-->
               <!--<i class="fa fa-close" style="font-size: 23px"></i>-->
               <!--</span>-->
@@ -53,7 +57,9 @@
           </div>
           <div class="profile-group label-overlay">
             <mat-form-field class="loginfrom md-size">
-              <input matInput type="password" placeholder="Confirm Password"  [(ngModel)]="confirmPass"  tabindex=4 name="confirmpass" required>
+              <input matInput [type]="hide3 ? 'password' : 'text'" placeholder="Confirm Password"  [(ngModel)]="confirmPass"  tabindex=4 name="confirmpass" required>
+              <mat-icon class="pointer" data-toggle="tooltip" title="{{hide3? 'Show' : 'Hide3'}}Password" matSuffix (click)="hide3=!hide3">{{hide3 ? 'visibility_off' : 'visibility'}}</mat-icon>
+
               <!--<span class="pointer" *ngIf="model.username"  mdSuffix md-list-icon aria-label="Clear" (click)="model.username=''">-->
               <!--<i class="fa fa-close" style="font-size: 23px"></i>-->
               <!--</span>-->

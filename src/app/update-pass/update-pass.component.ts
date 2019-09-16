@@ -17,6 +17,9 @@ export class UpdatePassComponent implements OnInit {
   model:any={};
   currentPass;
   newPass;
+  hide1 = true;
+  hide2 = true;
+  hide3 = true;
   confirmPass;
   ngOnInit() {
   this.currentUser= JSON.parse(localStorage.getItem('currentUser'));

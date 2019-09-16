@@ -14,6 +14,7 @@ import {RecapchaService} from '../recapcha/recapcha.service';
 export class RegisterComponent implements OnInit {
     model: any = {};
     recaptcha= true;
+    password;
     isSubmit: boolean= false;
     loading: boolean= false;
     password2;
@@ -21,6 +22,9 @@ export class RegisterComponent implements OnInit {
         Validators.required
     ]);
     passwordFormControl = new FormControl('', [
+        // Validators.pattern(this.password),
+        Validators.minLength(8),
+        Validators.maxLength(30),
         Validators.required]);
     emailFormControl = new FormControl('', [
         Validators.required
@@ -51,6 +55,7 @@ export class RegisterComponent implements OnInit {
                     Swal.fire('Account Not Register', 'Some Server Side Error', 'error');
                     this.loading = false;
                 });
+                this.recptha.resetImg();
         }
     }
 
@@ -70,6 +75,7 @@ export class RegisterComponent implements OnInit {
                     Swal.fire('Account Not Register', 'Some Server Side Error', 'error');
                     this.loading = false;
                 });
+                this.recptha.resetImg();
         }
     }
 

@@ -17,6 +17,8 @@ import {PreloaderModule} from "./components/preloader.module";
 import {GetpaymentComponent} from './get-payment/getpayment.component';
 import {RegisterComponent} from './register/register.component';
 import {RecapchaModule} from './recapcha/recapcha.module';
+import {MatIconModule} from '@angular/material/icon';
+
 import {
   MatCardModule,
   MatFormFieldModule,
@@ -24,6 +26,7 @@ import {
   MatOptionModule,
   MatRippleModule,
   MatSelectModule,
+
   MatTableModule
 } from '@angular/material';
 import {ConfirmPasswordComponent} from './confirm-password/confirm-password.component';
@@ -49,6 +52,7 @@ import {PushNotificationsService} from 'angular2-notifications/dist';
     ReactiveFormsModule,
     HttpModule,
     FormsModule,
+    MatIconModule,
     RecapchaModule,
     TextMaskModule,
     MatCardModule, MatSelectModule, MatOptionModule, MatFormFieldModule, MatInputModule, MatRippleModule, MatTableModule,

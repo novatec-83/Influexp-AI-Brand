@@ -33,6 +33,7 @@ login(username: string, password: string) {
     }
 
 
+
     brand_Signup(username,firstname,lastname,email, password ){
         return this.http.post(Config.api+ '/brand_signup/', {
             username: username,
@@ -112,4 +113,28 @@ login(username: string, password: string) {
             }
         ))
     }
+    forgot(code, password1,password2){
+        return this.http.post(Config.api+ '/reset_password/' + code, {
+            pass1: password1,
+            pass2: password2,
+            
+
+        }).pipe(tap((response: Response) => {
+                let data= response.json();
+            }
+        ))
+    }
+
+    // forgot(code, password1,password2) {
+    //     const headers = new Headers({
+    //       'Accept': 'application/json',
+    //       'Content-Type': 'application/json',
+    //     });
+    //     return this.http.post(Config.api + '/reset_password/' + code, JSON.stringify(
+    //       {
+    //         "pass1": password1,
+    //         "pass2": password2
+    //       }), { headers: headers }).map
+    //       ((res: Response) => res.json());
+    //   }
 }

@@ -3,6 +3,9 @@ import {Config} from "../../config";
 // import {HttpService} from '../serv/http-service';
 import {HttpService} from '../services/http-service';
 import Swal from 'sweetalert2';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription } from 'rxjs/Subscription';
+
 import {Headers, Response, Http} from '@angular/http';
 
 @Component({
@@ -12,11 +15,17 @@ import {Headers, Response, Http} from '@angular/http';
 })
 export class ResetPasswordComponent implements OnInit {
   email;
-  constructor(private http: HttpService) { }
+  code;
+  public sub: Subscription;
+  constructor(private http: HttpService, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    // this.sub = this.route.params.subscribe(params => {
+    //     this.code = params['code'];
+    //   });
   }
     reset_password(){
+        // alert('code')
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
 

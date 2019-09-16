@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthenticationService} from '../_services';
+import swal from "sweetalert2";
+
 
 @Component({
   selector: 'app-profile',
@@ -31,6 +33,16 @@ export class ProfileComponent implements OnInit {
         this.obj.onUpload(this.image).subscribe((response) => {
                 // console.log('set any success actions...');
                 this.loadprofilepic();
+                swal.fire({
+                    type: 'success',
+                    title: 'Profile PIcture Updated.\n' +
+                    '\n',
+                    // text: 'Please check your username or password',
+                    showConfirmButton: false,
+                    width: '512px',
+                    timer: 2000
+              
+                  }); 
 
             },
 

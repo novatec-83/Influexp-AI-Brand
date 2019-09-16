@@ -30,7 +30,9 @@
 
                     <mat-form-field class="loginfrom md-size" style="margin-top: -20px;">
                         <input [type]="hide ? 'password' : 'text'"  matInput placeholder="Password" tabindex=2 [formControl]="passwordFormControl" [(ngModel)]="model.password" required>
-                        <!--<span class="pointer" data-toggle="tooltip" title=" {{hide? 'Show' : 'Hide'}} Password" mdSuffix (click)="hide = !hide">{{ hide ? 'fa fa-eye' : 'fa fa-eye-splash' }}</span>-->
+                        <mat-icon class="pointer" data-toggle="tooltip" title="{{hide? 'Show' : 'Hide'}}Password" matSuffix (click)="hide=!hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+
+                        <!-- <span class="pointer" data-toggle="tooltip" title=" {{hide? 'Show' : 'Hide'}} Password" mdSuffix (click)="hide = !hide">{{ hide ? 'fa fa-eye' : 'fa fa-eye-splash' }}</span> -->
                         <mat-error *ngIf="passwordFormControl.hasError('required')">
                             Password is <strong>required</strong>
                         </mat-error>
