@@ -62,6 +62,20 @@ export class LoginComponent implements OnInit {
                     data => {
 
                         // this.getuser();
+                //   if(data.'Response')
+                // if(data['Response'] === 'Account is not activated'){
+                //     swal.fire({
+                //         type: 'error',
+                //         title: 'Account is not activated"',
+                //         text: 'please varify',
+                //         showConfirmButton: false,
+                //         width: '512px',
+                //         timer: 2000
+                  
+                //       });
+                // }
+                // else{
+                    // if(data['Response'] !== 'Account is not activated'){
                         this.router.navigate([this.returnUrl]);
                         localStorage.setItem('currentPassword', this.model.password);
                         swal.fire({
@@ -73,10 +87,24 @@ export class LoginComponent implements OnInit {
                             width: '512px',
                             timer: 2000
                       
-                          });
+                        });
+                    // }
                     },
                     error => {
+                        if(error.status== 403){
+                            swal.fire({
+                                type: 'error',
+                                title: 'Account is not activated"',
+                                text: '',
+                                showConfirmButton: false,
+                                width: '512px',
+                                timer: 2000
+                          
+                              });
+                              this.recptha.resetImg();
+                        }
                         // swal('Invalid username or password', 'error');
+                        if(error.status== 400){
                         swal.fire({
                             type: 'error',
                             title: 'Wrong Credantials',
@@ -87,6 +115,7 @@ export class LoginComponent implements OnInit {
                       
                           });
                           this.recptha.resetImg();
+                        }
                     //    this.recptha.capchaText = "";
                     // error => {
                     //     this.alertService.error('Invalid username or password.');

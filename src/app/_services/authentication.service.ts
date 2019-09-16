@@ -12,7 +12,12 @@ import { Config } from '../../config';
     image: File;
      username: any;
     constructor(private http: Http) { }
+// verification(username:string ){
+//     return this.http.post(Config.api + '/check_brand_varification/',
+//     JSON.stringify
 
+
+// }
 login(username: string, password: string) {
   const headers = new Headers();
       headers.append('Content-Type', 'application/json');
