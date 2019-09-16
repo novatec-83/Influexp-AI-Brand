@@ -16,6 +16,8 @@ import {DataService} from "../_services/data.service";
 export class SideMenuComponent implements OnInit, AfterViewInit {
     img;
     currentUser;
+    showlink :boolean = false;
+
     currentUserLoaded: boolean = false;
     rate: '';
     username: string;
@@ -29,6 +31,22 @@ export class SideMenuComponent implements OnInit, AfterViewInit {
     myUploader(event) {
         //event.files == files to upload
     }
+
+    logout() {
+        localStorage.removeItem('currentUser');
+        localStorage.removeItem('currentPassword');
+        this.logoutsweetalert();
+      };
+      logoutsweetalert() {
+    
+        Swal.fire({
+          title: "influexpai<br> Thanks for visiting us",
+          type: "success",
+          showConfirmButton: false,
+          timer: 2000,
+        })
+    
+      }
 
     ngOnInit() {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));

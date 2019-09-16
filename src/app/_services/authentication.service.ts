@@ -124,6 +124,9 @@ login(username: string, password: string) {
             }
         ))
     }
+    // logout() {
+    //     this.afAuth.auth.signOut();
+    //   }
 
     // forgot(code, password1,password2) {
     //     const headers = new Headers({
