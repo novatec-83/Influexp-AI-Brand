@@ -4,11 +4,60 @@ import {AuthGuard} from './_guards';
 import {RegisterComponent} from './register/register.component';
 import {GetpaymentComponent} from './get-payment/getpayment.component';
 import {ConfirmPasswordComponent} from './confirm-password/confirm-password.component';
-import { PricingComponent } from './pricing/pricing.component';
+import {
+    BlogComponent,
+    ContactComponent,
+    HowItWorksComponent,
+    PrivacyAndPolicyComponent,
+    TermsAndConditionsComponent,
+    WhatIsInfluexpaiComponent
+} from './contact/contact.component';
+import {BrandComponent} from './brand/brand.component';
+import {InfluencersComponent} from './influencers/influencers.component';
+import {AgenciesComponent} from './Agencies/Agencies.component';
+import {PricingComponent} from './pricing/pricing.component';
+import {PricingstepsComponent} from './pricingsteps/pricingsteps.component';
+
 
 
 export const AppRoutes: Routes = [
 
+    {
+        path : 'agencies', component: AgenciesComponent
+    },
+    {
+        path: 'contact',
+        component: ContactComponent
+    },
+    {
+        path: 'what-is-InfluExpAI',
+        component: WhatIsInfluexpaiComponent
+    },
+    {
+        path: 'How-It-Works',
+        component: HowItWorksComponent
+    },
+    {
+        path: 'Terms-and-Conditions',
+        component: TermsAndConditionsComponent
+    },
+    {
+        path: 'privacy_policy',
+        component: PrivacyAndPolicyComponent
+    },
+
+    {
+        path: 'brand',
+        component: BrandComponent
+    },
+    {
+        path: 'influencers',
+        component: InfluencersComponent
+    },
+    {
+        path: 'blog',
+        component: BlogComponent
+    },
     // { path: '', component: HomepageComponent },
     { path: '', component: DashboardLayoutComponent,  children: [
         // { path: 'twitter/categories',  loadChildren: './home/twittercategories.module#TwittercategoriesModule' },
@@ -48,6 +97,8 @@ export const AppRoutes: Routes = [
     //     { path: 'messenger', loadChildren: './messenger/messenger.module#MessengerModule' },
     //     { path: 'settings', loadChildren: './settings/settings.module#SettingsModule'},
         {path:  'my-profile',loadChildren:'./profile/profile.module#ProfileModule'},
+        // { path: 'pricing',  component:PricingComponent },
+    { path: 'pricing/steps', component: PricingstepsComponent, canActivate: [AuthGuard]},
 
         {path:  'update-password',loadChildren:'./update-pass/update-pass.module#UpdatePassModule'}
         //
@@ -57,7 +108,7 @@ export const AppRoutes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'payment', component: GetpaymentComponent },
     // <li><a href="https://www.influexpai.com/pricing"><i class="fa fa-chevron-right"></i> Pricing</a> </li>
-    // { path: 'pricing', component: PricingComponent },
+    { path: 'pricing', component: PricingComponent },
 
     { path: 'reset-password',  loadChildren: './reset-password/reset-password.module#ResetPasswordModule' },
     { path: 'page-not-found', loadChildren: './error400/error400.module#Error400Module' },
