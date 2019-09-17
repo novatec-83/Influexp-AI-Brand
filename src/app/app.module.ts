@@ -18,7 +18,9 @@ import {GetpaymentComponent} from './get-payment/getpayment.component';
 import {RegisterComponent} from './register/register.component';
 import {RecapchaModule} from './recapcha/recapcha.module';
 import {MatIconModule} from '@angular/material/icon';
-
+import { SocialLoginModule, AuthService } from 'angular5-social-login';
+import { AuthServiceConfig, GoogleLoginProvider, FacebookLoginProvider } from 'angular5-social-login';
+import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
 import {
   MatCardModule,
   MatFormFieldModule,
@@ -34,7 +36,22 @@ import {AuthGuard} from './_guards';
 import {PushNotificationsService} from 'angular2-notifications/dist';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+export function provideConfig() {
+  
+  
+  const config = new AuthServiceConfig([
+    {
+      id: GoogleLoginProvider.PROVIDER_ID,
+      provider: new GoogleLoginProvider('85788264424-1uh3das3mgoalettt2v54nk55ogb26o3.apps.googleusercontent.com ')
+    },
+    {
+      id: FacebookLoginProvider.PROVIDER_ID,
+      provider: new FacebookLoginProvider('1123089954556968')
+    }
 
+  ]);
+  return config;
+}
 
 @NgModule({
   declarations: [
@@ -55,6 +72,7 @@ import { ContactComponent } from './contact/contact.component';
     PreloaderModule,
     ReactiveFormsModule,
     HttpModule,
+    SocialLoginModule,
     FormsModule,
     MatIconModule,
     RecapchaModule,
@@ -62,9 +80,15 @@ import { ContactComponent } from './contact/contact.component';
     MatCardModule, MatSelectModule, MatOptionModule, MatFormFieldModule, MatInputModule, MatRippleModule, MatTableModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(AppRoutes),
-    HttpClientModule
+    HttpClientModule,JwSocialButtonsModule
   ],
-  providers: [AuthGuard, PushNotificationsService],
+  providers: [
+    {
+    provide: AuthServiceConfig,
+    useFactory: provideConfig
+  },
+    AuthGuard, PushNotificationsService,AuthService
+   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
