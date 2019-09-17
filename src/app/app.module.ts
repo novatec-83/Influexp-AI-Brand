@@ -15,9 +15,25 @@ import { AppComponent } from './app.component';
 import { TextMaskModule } from 'angular2-text-mask';
 import {PreloaderModule} from "./components/preloader.module";
 import {GetpaymentComponent} from './get-payment/getpayment.component';
+import {BlackgeeksRecaptchaModule} from 'recaptcha-blackgeeks';
+
 import {RegisterComponent} from './register/register.component';
 import {RecapchaModule} from './recapcha/recapcha.module';
 import {MatIconModule} from '@angular/material/icon';
+import { BrandComponent } from './brand/brand.component';
+import {PricingstepsComponent} from './pricingsteps/pricingsteps.component';
+import {PricingComponent} from './pricing/pricing.component';
+import { InfluencersComponent } from './influencers/influencers.component';
+import {AgenciesComponent} from './Agencies/Agencies.component';
+
+import {
+  BlogComponent,
+  ContactComponent,
+  HowItWorksComponent,
+  PrivacyAndPolicyComponent,
+  TermsAndConditionsComponent,
+  WhatIsInfluexpaiComponent
+} from './contact/contact.component';
 
 import {
   MatCardModule,
@@ -26,6 +42,7 @@ import {
   MatOptionModule,
   MatRippleModule,
   MatSelectModule,
+  MatSlideToggleModule,
 
   MatTableModule
 } from '@angular/material';
@@ -33,24 +50,36 @@ import {ConfirmPasswordComponent} from './confirm-password/confirm-password.comp
 import {AuthGuard} from './_guards';
 import {PushNotificationsService} from 'angular2-notifications/dist';
 import { FooterComponent } from './footer/footer.component';
-import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    
     HeaderComponent,
+    PricingComponent,
+    PricingstepsComponent,
     SideMenuComponent,
+    AgenciesComponent,
+    BrandComponent,
+    ContactComponent,
     GetpaymentComponent,
     RegisterComponent,
     ConfirmPasswordComponent,
     AlertComponent,
     DashboardLayoutComponent,
     FooterComponent,
-    ContactComponent
+    BlogComponent,
+    InfluencersComponent,
+    HowItWorksComponent,
+    PrivacyAndPolicyComponent,
+    TermsAndConditionsComponent,
+    WhatIsInfluexpaiComponent
   ],
   imports: [
     BrowserModule,
+    MatSlideToggleModule,
+    BlackgeeksRecaptchaModule,
     SlimLoadingBarModule,
     PreloaderModule,
     ReactiveFormsModule,
