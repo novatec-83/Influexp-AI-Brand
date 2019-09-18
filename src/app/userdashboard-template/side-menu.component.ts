@@ -31,10 +31,12 @@ export class SideMenuComponent implements OnInit, AfterViewInit {
     myUploader(event) {
         //event.files == files to upload
     }
-
+//     listss(){
+//     alert()
+// }
     logout() {
         localStorage.removeItem('currentUser');
-        localStorage.removeItem('currentPassword');
+        localStorage.removeItem('currentPassword'); 
         this.logoutsweetalert();
       };
       logoutsweetalert() {
