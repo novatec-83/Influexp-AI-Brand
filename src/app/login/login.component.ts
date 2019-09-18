@@ -8,6 +8,11 @@ import  {UserService} from '../_services';
 import {FormControl, NgForm, Validators} from '@angular/forms';
 import {RecapchaService} from '../recapcha/recapcha.service';
 import swal from "sweetalert2";
+import { HttpClient } from '@angular/common/http';
+import { AuthService } from 'angular5-social-login';
+import {  Headers, RequestOptions,  } from '@angular/http';
+import { FacebookLoginProvider, GoogleLoginProvider } from 'angular5-social-login';
+import { JwtHelper } from 'angular2-jwt';
 @Component({
     moduleId: module.id.toString(),
     templateUrl: 'login.component.html',
@@ -17,7 +22,11 @@ import swal from "sweetalert2";
 
 export class LoginComponent implements OnInit {
     model: any = {};
+    user: any = {};
+    username;
+    pic;
     returnUrl: string;
+    jwtHelper: JwtHelper = new JwtHelper();
     influencers;
     class1= 'fa fa-eye';
     class2= 'fa fa-eye-splash';
@@ -33,7 +42,7 @@ export class LoginComponent implements OnInit {
         private router: Router,
         private authenticationService: AuthenticationService,
         private alertService: AlertService,
-        private http: HttpService, private usersvc: UserService, private recptha: RecapchaService) { }
+        private http: HttpService, private https: HttpClient, private usersvc: UserService, private recptha: RecapchaService, private authService: AuthService) { }
 
     ngOnInit() {
         // reset login status
@@ -53,6 +62,62 @@ export class LoginComponent implements OnInit {
 
         });
     }
+
+    JWT;
+    socialCallBack = (user) => {
+      this.user = user;
+      console.log(this.user);
+      const headers = { 'Content-Type': 'application/json' };
+      if (user) {
+        const createUser = this.https.post(Config.api + '/sociallogin/', JSON.stringify(
+          {
+            user
+          }), { headers: headers });
+  
+        createUser.subscribe(data => {
+            let user = { 
+             user_id: this.jwtHelper.decodeToken(data['token']).user_id,
+             username: this.jwtHelper.decodeToken(data['token']).username, 
+             token: data['token'] };
+            if (user && user.token) {
+              localStorage.setItem('loged_in', '1');
+              localStorage.setItem('currentUser', JSON.stringify(user));
+              localStorage.setItem('profilePhoto' , this.pic);
+              this.router.navigate(['/userprofile/'+ this.username]);
+              this.showSuccess();
+            }
+          }
+        );
+      }
+    }
+
+
+    showSuccess() {
+        swal.fire({
+          type: 'success',
+          title: 'You have successfully logged in to influexpert.\n' +
+          '\n',
+          showConfirmButton: false,
+          width: '512px',
+          timer: 4000
+        });
+      }
+    
+
+
+
+
+
+
+
+
+    facebooklogin(): void {
+        this.authService.signIn(FacebookLoginProvider.PROVIDER_ID).then(this.socialCallBack).catch(user => console.log(user));
+    
+      }
+      googlelogin() {
+        this.authService.signIn(GoogleLoginProvider.PROVIDER_ID).then(this.socialCallBack).catch(message => console.log(message));
+      }
     login() {
         this.recaptcha= this.recptha.check();
         // alert('Recaptcha Status is ' + this.recapcha);
