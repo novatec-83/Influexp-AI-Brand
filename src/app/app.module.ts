@@ -16,7 +16,7 @@ import { TextMaskModule } from 'angular2-text-mask';
 import {PreloaderModule} from "./components/preloader.module";
 import {GetpaymentComponent} from './get-payment/getpayment.component';
 import {BlackgeeksRecaptchaModule} from 'recaptcha-blackgeeks';
-
+import {ContactusComponent} from './contactus/contactus.component';
 import {RegisterComponent} from './register/register.component';
 import {RecapchaModule} from './recapcha/recapcha.module';
 import {MatIconModule} from '@angular/material/icon';
@@ -32,7 +32,9 @@ import {
   HowItWorksComponent,
   PrivacyAndPolicyComponent,
   TermsAndConditionsComponent,
-  WhatIsInfluexpaiComponent
+  TermsComponent,
+  WhatIsInfluexpaiComponent,
+  PrivacyComponent
 } from './contact/contact.component';
 
 import {
@@ -70,10 +72,13 @@ import { FooterComponent } from './footer/footer.component';
     DashboardLayoutComponent,
     FooterComponent,
     BlogComponent,
+    ContactusComponent,
     InfluencersComponent,
     HowItWorksComponent,
     PrivacyAndPolicyComponent,
+    PrivacyComponent,
     TermsAndConditionsComponent,
+    TermsComponent,
     WhatIsInfluexpaiComponent
   ],
   imports: [
@@ -97,3 +102,5 @@ import { FooterComponent } from './footer/footer.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export class MaterialModule { }
+

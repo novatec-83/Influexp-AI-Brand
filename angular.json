@@ -25,7 +25,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/top.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -74,7 +76,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": ["src/assets/js/top.js"],
             "assets": [
               "src/favicon.ico",
               "src/assets"
