@@ -91,7 +91,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     }
     ngOnInit() {
         if(localStorage.getItem('currentUser') != null){
-            alert(this.currentUser.username)
+            // alert(this.currentUser.username)
             this.loadprofilepic();
            
             this.showlink = true;
