@@ -14,4 +14,9 @@ export class AppComponent {
             window.scroll(0, 0);
         }
     }
+    ngOnInit() {
+      window.onbeforeunload = function () {
+        $(this).scrollTop(0);
+      };
+    }
 }

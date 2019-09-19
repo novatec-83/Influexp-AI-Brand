@@ -45,10 +45,10 @@
      background-color: #ffffff;
  }
  .login-page{
-     padding: 150px 50px!important;
+     padding: 150px 50px 30px!important;
  }
  input.mat-input-element {
-     margin-top: -0.45em!important;
+     margin-top: 2px !important;
  }
 
  mat-form-field{
@@ -62,4 +62,10 @@
     right: 0;
     cursor: pointer;
   }
- 
+.signup-from{
+    max-width: 703px;
+    box-shadow: 0 0 15px #ccc !important;
+} 
+.card [data-background-color]{
+    margin: -29px 15px 0;
+}
