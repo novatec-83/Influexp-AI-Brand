@@ -19,7 +19,6 @@ import {InfluencersComponent} from './influencers/influencers.component';
 import {AgenciesComponent} from './Agencies/Agencies.component';
 import {PricingComponent} from './pricing/pricing.component';
 import {PricingstepsComponent} from './pricingsteps/pricingsteps.component';
-import {ContactusComponent} from './contactus/contactus.component';
 
 
 export const AppRoutes: Routes = [

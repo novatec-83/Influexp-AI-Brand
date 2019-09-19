@@ -161,6 +161,8 @@ export class ContactComponent implements OnInit {
   constructor(private obj: AuthenticationService, private preloadersvc: HttpService) { }
 
   ngOnInit() {
+    window.scroll(0,0);
+
   }
 
 model: any= {};
@@ -198,6 +200,8 @@ export class WhatIsInfluexpaiComponent {
 
   constructor() { }
   ngOnInit() {
+    window.scroll(0,0);
+
   }
 }
 
@@ -209,6 +213,8 @@ export class TermsComponent {
 
   constructor() { }
   ngOnInit() {
+    window.scroll(0,0);
+
   }
 }
 
@@ -220,6 +226,8 @@ export class PrivacyComponent {
 
   constructor() { }
   ngOnInit() {
+    window.scroll(0,0);
+
   }
 }
 @Component({
@@ -230,6 +238,8 @@ export class HowItWorksComponent {
 
   constructor() { }
   ngOnInit() {
+    window.scroll(0,0);
+
   }
 }
 
@@ -241,6 +251,8 @@ export class TermsAndConditionsComponent {
 
   constructor() { }
   ngOnInit() {
+    window.scroll(0,0);
+
   }
 }
 
@@ -252,6 +264,8 @@ export class PrivacyAndPolicyComponent {
 
   constructor() { }
   ngOnInit() {
+    window.scroll(0,0);
+
   }
 }
 

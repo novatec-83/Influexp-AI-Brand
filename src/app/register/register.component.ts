@@ -38,6 +38,8 @@ export class RegisterComponent implements OnInit {
   constructor(private authService: AuthenticationService, private  router: Router,private recptha: RecapchaService, private  alertService: AlertService) { }
 
   ngOnInit() {
+    window.scroll(0,0);
+
   }
 
     freeSignup() {
