@@ -10092,17 +10092,6 @@ ul.tab-nav li a i {
   list-style-type: none;
 }
 
-.sidenav li a {
-  display: block;
-  position: relative;
-  margin: 0 0 -1px;
-  padding: 11px 20px 11px 14px;
-  font-size: 14px;
-  border: 1px solid #E5E5E5;
-  border-right-width: 2px;
-  color: #666;
-}
-
 .sidenav > li:first-child > a {
   border-radius: 4px 4px 0 0;
 }
@@ -25583,105 +25572,6 @@ ul.tab-nav li a i {
   border-top: 1px solid #DDD;
 }
 
-.sidenav {
-  width: 100%;
-  padding: 0;
-  background-color: #FFF;
-  border-radius: 4px;
-}
-
-.sidenav li {
-  list-style-type: none;
-}
-
-.sidenav li a {
-  display: block;
-  position: relative;
-  margin: 0 0 -1px;
-  padding: 11px 20px 11px 14px;
-  font-size: 14px;
-  border: 1px solid #E5E5E5;
-  border-right-width: 2px;
-  color: #666;
-}
-
-.sidenav > li:first-child > a {
-  border-radius: 4px 4px 0 0;
-}
-
-.sidenav > li:last-child > a {
-  border-radius: 0 0 4px 4px;
-  border-bottom-width: 2px;
-}
-
-.sidenav > .ui-tabs-active > a,
-.sidenav > .ui-tabs-active > a:hover {
-  position: relative;
-  z-index: 2;
-  border-color: rgba(0, 0, 0, 0.1) !important;
-  color: #FFF !important;
-  font-weight: 600;
-  background-color: #c00 !important;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-.sidenav li ul {
-  display: none;
-}
-
-.sidenav li.ui-tabs-active ul {
-  display: block;
-}
-
-.sidenav li li a {
-  padding: 6px 20px 6px 35px;
-  font-size: 14px;
-  border-top: none;
-  border-bottom: none;
-}
-
-.sidenav li li:first-child a {
-  padding-top: 20px;
-}
-
-.sidenav li li:last-child a {
-  padding-bottom: 20px;
-}
-
-.sidenav li i {
-  position: relative;
-  top: 1px;
-  margin-right: 6px;
-  font-size: 14px;
-  width: 16px;
-}
-
-.sidenav .icon-chevron-right {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  top: 50%;
-  left: auto;
-  right: 6px;
-  margin-top: -8px;
-  margin-right: 0;
-  opacity: .4;
-  font-size: 12px !important;
-}
-
-.sidenav > li > a:hover {
-  background-color: #F5F5F5;
-  color: #222;
-}
-
-.sidenav a:hover .icon-chevron-right {
-  opacity: .5;
-}
-
-.sidenav .ui-tabs-active .icon-chevron-right,
-.sidenav .ui-tabs-active a:hover .icon-chevron-right {
-  opacity: 1;
-}
 
 .faqlist li {
   margin-bottom: 5px;

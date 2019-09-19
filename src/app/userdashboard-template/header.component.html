@@ -1,8 +1,7 @@
 
-
+<!-- 
 <header class="site-header">
   <preloader-full></preloader-full>
-
   <div class="container-fluid">
    <div class="row ">
           <div class="col-md-2 col-sm-4 col-xs-6  h-logo">
@@ -39,10 +38,7 @@
                                 <img alt="" src="../../assets/header-images/Blog@1x-.png">
                                 <span >  Blogosphere</span>
                               </a>
-                                  <!-- <a  [routerLink]="['/linkedin/search']"  >
-                                    <img alt="" src="../../assets/header-images/LinkedIn@1x-.png">
-                                    <span >  LinkedIn</span>
-                                  </a> -->
+                                 
                                   <a  [routerLink]="['/pinterest/search']"  >
                                     <img alt="" src="../../assets/header-images/Pin@1x-.png">
                                     <span >  Pinterest</span>
@@ -74,10 +70,7 @@
                           <img alt="" src="../../assets/header-images/Blog@1x-.png">
                           <!-- <span >Blogosphere</span> -->
                       </a>
-                      <!-- <a  [routerLink]="['/linkedin/search']"  routerlinkactive="active">
-                          <img alt="" src="../../assets/header-images/LinkedIn@1x-.png">
-                          <span >LinkedIn</span>
-                      </a> -->
+                     
                       <a  [routerLink]="['/pinterest/search']" routerlinkactive="active" >
                           <img alt="" src="../../assets/header-images/Pin@1x-.png">
                           <!-- <span >Pinterest</span> -->
@@ -85,11 +78,8 @@
                   </div>
           </div>
            <div class="col-md-2 col-sm-4 col-xs-6" style="text-align: right">
-       <!-- <a class="btn btn-nav btn-inline btn-danger-outline icon-search-main" href="#search" style="width: 70%; margin-top: 10px"> Search <span class="font-icon-search"></span></a> -->
-       <a  class="font-additional color-main text-uppercase hover-focus-color" data-target=".example-modal-lg" data-toggle="modal" href="#search" id="icon-type-to-search">
-         <!-- <button  class="btn btn-primary top-search-btn" id="serbtn" style="float: right">Search -->
-           <!-- <i  class=" fa fa-search"></i>
-         </button> -->
+        <a  class="font-additional color-main text-uppercase hover-focus-color" data-target=".example-modal-lg" data-toggle="modal" href="#search" id="icon-type-to-search">
+        
        </a>
      </div>
            <div class="col-md-2  right-drpdwn" *ngIf="showlink">
@@ -105,8 +95,7 @@
                                 <a [routerLink]="['/subscription-history']"> <i class="fa fa-history"></i> Subscription</a>
                                 <a [routerLink]="['/update-password']"> <i class="fa fa-key"></i> Change Password</a>
                                 <a [routerLink]="['/login']" (click)="logout()"> <i class="fa fa-sign-out"></i>Logout</a>
-                                <!-- <a routerLink="/login" (click)="logout()"> <i class="fa fa-sign-out-alt"></i>Logout </a> -->
-
+                              
                             </div>
                         </div>
 
@@ -124,8 +113,73 @@
           </div>
   </div>
 
-
-      <!--.container-fluid-->
-</header><!--.site-header-->
+</header> -->
 
 
+
+<!-- Navigation -->
+<header class="site-header">
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+            <img src="https://www.influexpai.com/assets/Artboard%2014.svg" alt="">
+          </a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+              <a  [routerLink]="['/facebook/search']" routerlinkactive="active"  class="active">
+                <img  alt="" src="../../assets/header-images/Fb@1x-.png">
+                <span >  Facebook</span>
+            </a>
+          </li>
+          <li class="nav-item">
+              <a [routerLink]="['/youtube/search']" routerlinkactive="active" >
+                <img  src="../../assets/header-images/YouTube@1x-.png">
+                <span >  Youtube</span>
+            </a>
+          </li>
+          <li class="nav-item">
+              <a [routerLink]="['/instagram/search']" >
+                <img  alt="" src="../../assets/header-images/Insta@1x-.png">
+                <span>  Instagram</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a  [routerLink]="['/twitter/search']"  >
+                <img  alt="" src="../../assets/header-images/Twitter@1x-.png">
+                <span >  Twitter</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a  [routerLink]="['/blogosphere/search']"  >
+                <img alt="" src="../../assets/header-images/Blog@1x-.png">
+                <span >  Blogosphere</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a  [routerLink]="['/pinterest/search']"  >
+                <img alt="" src="../../assets/header-images/Pin@1x-.png">
+                <span >  Pinterest</span>
+              </a>
+          </li>
+
+          <ul *ngIf="showlink">
+            <li>
+                <div class="dropdown">
+                    <button class=""> <i class="fa fa-user-circle"></i> My InfluExpAI <span class="fa fa-angle-down"></span></button>
+
+                    <div class="dropdown-content">
+                        <a [routerLink]="['/my-profile']"> <i class="fa fa-user-circle"></i> My Profile</a>
+                        <a [routerLink]="['/subscription-history']"> <i class="fa fa-history"></i> Subscription</a>
+                        <a [routerLink]="['/update-password']"> <i class="fa fa-key"></i> Change Password</a>
+                        <a [routerLink]="['/login']" (click)="logout()"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+                      
+                    </div>
+                </div>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+</nav>
+</header>

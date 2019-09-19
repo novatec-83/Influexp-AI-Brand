@@ -9,17 +9,15 @@ mat-form-field{
   font-family: inherit;
 }
 .btn-login{
-
   background-color: #000;
-  border-radius: 5px;
+  border-radius: 50px;
   padding: 10px 0;
   color: #fff;
   width: 100%;
-  font-size: 25px;
-  font-weight: 700;
-  -webkit-box-shadow: 0 14px 26px -12px rgba(133,133,133,.42), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(101,101,101,.2);
-  box-shadow: 0 14px 26px -12px rgba(133,133,133,.42), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(101,101,101,.2);
-
+  font-size: 20px;
+  font-weight: 400;
+  box-shadow: 0 0 12px #ccc;
+  border: none;
 }
 a{
   color:#007dff;
@@ -44,8 +42,18 @@ cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+      margin: 0;
 }
 .form-1-sl li{
-  padding: 10px 15px;
+  padding: 0px 15px;
+}
+.forgot-pass{
+  color: #0a97d2;
+  font-size: 14px !important;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card{
+  padding-bottom: 10px;
 }
 // .form-1-sl>li>a>i{font-size:30px;color:#fff}.form-1-sl{padding:0;margin:0}.form-1-sl>li{list-style:none;margin:5px 25px;display:inline-block}.form-1-sl>li>a{color:#fff;text-decoration:none;-webkit-transition:.5s;-o-transition:.5s;transition:.5s}.form-1-sl>li>a>i:hover{-webkit-animation-name:tada;animation-name:tada;-webkit-animation-duration:2s;animation-duration:2s}.form-1-img{background:url(assets/img/Modify.gif) center no-repeat;background-size:100%;padding:55px 0;overflow-x:hidden}.form-1{-webkit-box-shadow:0 0 10px #ccc;box-shadow:0 0 10px #ccc;background:#fff;padding:20px;border-radius:5px;margin:0 auto;float:none}.form-1-forgot{color:#007dff!important;font-weight:600;font-size:16px;-webkit-transition:none;-o-transition:none;transition:none}.form-1-forgot:hover{cursor:pointer;text-decoration:underline!important}.form-1-forgot{font-size:16px;text-align:center}.form-width{width:421px}.have-account{font-weight:600;margin-top:10px}.have-account a{color:#0275d8}.have-account a:hover,.terms-cond a:hover{color:#c00;text-decoration:underline}.terms-cond a{color:#0275d8;font-weight:400;font-size:13px;margin-left:15px}.login-comp .mat-form-field-label{top:1.8em}.form-1-body{padding-top:20px}input{font-size: 24px}

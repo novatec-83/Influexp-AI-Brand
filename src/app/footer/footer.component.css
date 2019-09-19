@@ -88,15 +88,17 @@ form input[type=text] {
     width: 100%;
     display: block;
     height: auto;
+    margin-top: 12px;
 }
 
 .footer-copyright a {
-    color: #ccc;
+    color: #ccc;   
+    padding: 0 5px;
 }
 #footerwrap{
     width: 100%;
     display: block;
-    min-height: 413px;
+    min-height: 403px;
 }
 p.copyright-text {
     margin: 0;
@@ -239,5 +241,4 @@ button#btn-chat {
 .footer-stores-img img {
     width: 25%;
     margin-left: 90px;
-    height: 100%;
 }
