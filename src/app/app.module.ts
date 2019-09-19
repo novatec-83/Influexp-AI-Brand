@@ -25,10 +25,12 @@ import {PricingstepsComponent} from './pricingsteps/pricingsteps.component';
 import {PricingComponent} from './pricing/pricing.component';
 import { InfluencersComponent } from './influencers/influencers.component';
 import {AgenciesComponent} from './Agencies/Agencies.component';
-
+import { AuthServiceConfig, GoogleLoginProvider, FacebookLoginProvider } from 'angular5-social-login';
+import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
+import { SocialLoginModule, AuthService } from 'angular5-social-login';
 import {
   BlogComponent,
-  ContactComponent,
+  // ContactComponent,
   HowItWorksComponent,
   PrivacyAndPolicyComponent,
   TermsAndConditionsComponent,
@@ -50,7 +52,23 @@ import {ConfirmPasswordComponent} from './confirm-password/confirm-password.comp
 import {AuthGuard} from './_guards';
 import {PushNotificationsService} from 'angular2-notifications/dist';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
+export function provideConfig() {
+  
+  
+  const config = new AuthServiceConfig([
+    {
+      id: GoogleLoginProvider.PROVIDER_ID,
+      provider: new GoogleLoginProvider('85788264424-1uh3das3mgoalettt2v54nk55ogb26o3.apps.googleusercontent.com ')
+    },
+    {
+      id: FacebookLoginProvider.PROVIDER_ID,
+      provider: new FacebookLoginProvider('1123089954556968')
+    }
 
+  ]);
+  return config;
+}
 
 @NgModule({
   declarations: [
@@ -84,6 +102,7 @@ import { FooterComponent } from './footer/footer.component';
     PreloaderModule,
     ReactiveFormsModule,
     HttpModule,
+    SocialLoginModule,
     FormsModule,
     MatIconModule,
     RecapchaModule,
@@ -91,9 +110,15 @@ import { FooterComponent } from './footer/footer.component';
     MatCardModule, MatSelectModule, MatOptionModule, MatFormFieldModule, MatInputModule, MatRippleModule, MatTableModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(AppRoutes),
-    HttpClientModule
+    HttpClientModule,JwSocialButtonsModule
   ],
-  providers: [AuthGuard, PushNotificationsService],
+  providers: [
+    {
+    provide: AuthServiceConfig,
+    useFactory: provideConfig
+  },
+    AuthGuard, PushNotificationsService,AuthService
+   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

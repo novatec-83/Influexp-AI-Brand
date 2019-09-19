@@ -1,3 +1,142 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.pull-right{
+    float: right;
+}
+/* Start form */
+.login-wrap .mat-form-field-label{
+    font-size: 17px !important;
+    top: 31px !important;
+    font-weight: 700;
+}
+.login-wrap .mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper{
+    margin-top: 19px;
+}
+.login-wrap .mat-error{
+    font-size: 12px !important;
+}
+.login-wrap .mat-form-field-appearance-legacy .mat-form-field-underline {
+    bottom: 10px;
+}
+.login-wrap .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 10px;
+}
+.login-wrap .mat-icon{
+    font-size: 20px !important;
+}
+.checkpad label{
+    min-height: 20px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 0;
+}
+.checkpad .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb{
+    background-color: #a91f73;
+}
+/* End form */
+.mt10px{
+    margin-top: 10px;
+}
+.have-account {
+    font-weight: 500;
+    font-size:14px;
+    text-align:center;
+    color: #000;
+}
+/* Start Dashboard layout */
+.dashboard-layout{
+    display: flex;
+    margin-top: 60px;
+    background: #fafafa;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 0px;
+}
+
+.sidenav a {
+    padding: 10px 14px 14px 5px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav li a {
+    display: block;
+    position: relative;
+    padding: 11px 20px 11px 14px;
+    font-size: 14px;
+    border:none;
+    color: #666;
+  }
+  .sidenav li a img{
+    width: 21px;
+
+  }
+  .side-menu-list .lbl {
+    font-weight: 600;
+    padding: 10px;
+    color: #818181;
+    font-size: 14px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+.sidenav a:hover {
+    color: #818181!important;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -22px;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 9999;
+    display: none;
+}
+.openbtn{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+}
+
+.side-menu-list a:hover .lbl{
+    color: #818181; 
+}
+.content-area{
+    width: 81%;
+    float: right;
+    padding: 10px;
+}
+.active-link {
+    background-color: #f5f5f5!important;
+    color: #555!important;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+}
+/* End Dashboard Layout */
+
+
+
 @charset "UTF-8";
 .breadcrumb,
 .label {
@@ -14377,17 +14516,8 @@ html {
     margin: 0 0 25px
 }
 
-.side-menu-list .lbl {
-    font-weight: 600;
-  padding: 10px;
-    color: #000000;
-    font-size: 1rem;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
-}
 
-.side-menu-list a:hover .lbl,
+
 .side-menu-list li.opened>span .lbl,
 .side-menu-list li>span:hover .lbl {
     color: #fff;
@@ -16309,12 +16439,13 @@ body.sidebar-hidden .page-content {
     /*margin-left: 0!important;*/
 /*}*/
 .custom-width{
-    width: 450px;
+    max-width: 400px;
+    box-shadow:0 0 15px #ccc !important;
 }
 .login-page{
     background:url(../../assets/header-images/Final.gif) no-repeat center;
     background-size:cover;
-    padding:160px 50px;
+    padding:150px 50px 30px;
     width:100%;
     margin-left: 0px;
 }
@@ -16340,9 +16471,10 @@ body.sidebar-hidden .page-content {
     padding: 0px;
 }
 .card-title .signin-heading{
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
+        font-size: 22px;
+        font-weight: 500;
+        color: #fff;
+        margin: 0;
 }
 .card .card-header{
     margin-top: -40px;
@@ -16350,11 +16482,11 @@ body.sidebar-hidden .page-content {
     background: #c31010;
 }
 .card [data-background-color] {
-    margin:-25px 15px 0;
-    border-radius:8px;
-    padding:20px;
-    background-color:#999;
-    position:relative}
+    margin: -43px 15px 0;
+    border-radius: 8px;
+    padding: 10px 10px 15px;
+    position: relative;
+}
 .card [data-background-color=rose]{
     background:#000;
     -webkit-box-shadow:1px 1px 7px 1px #b9b8b8;
@@ -16388,14 +16520,9 @@ body.sidebar-hidden .page-content {
     font-weight: bold !important;
     font-size: 17px !important;
 }
-.loginfrom .mat-error{
-    font-size: 15px !important;
-}
+
 .font2{
-    font-size: 14px !important;
-    font-weight: 700;
-    color: blue !important;
-    cursor: pointer;
+    
 }
 .form-group {
     padding-bottom: 10px;
@@ -16411,14 +16538,9 @@ body.sidebar-hidden .page-content {
     padding: 10px 20px;
     overflow: hidden;
 }
-.have-account {
-    font-weight: 600;
-    margin-top: 10px;
-    font-size:17px;
-    text-align:center;
-}
+
 .btn-fill {
-    border: 1px solid #000;
+    border: none;
     color: #fff!important;
     border-radius: 50px;
     box-sizing: border-box;
@@ -16431,13 +16553,13 @@ body.sidebar-hidden .page-content {
     font-size: 25px;
     padding: 5px 0;
     -webkit-box-shadow: 0 0 20px -2px #000;
-    box-shadow: 0 0 20px -2px #000;
+    box-shadow: 0 0 12px #ccc;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
-/*.btn-fill:hover{*/
-    /*background: #cc0000;*/
-/*}*/
+.btn-fill:hover{
+    background: #cc0000;
+}
 /*End sign in page*/
 
 
@@ -16552,51 +16674,7 @@ body.sidebar-hidden .page-content {
 
 
 /*Start sidebar pages*/
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    margin-top: 62px;
-    padding: 0px;
-}
 
-.sidenav a {
-    padding: 10px 14px 14px 5px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #000!important;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: -22px;
-    right: 10px;
-    font-size: 36px;
-    margin-left: 50px;
-    z-index: 9999;
-    display: none;
-}
-.openbtn{
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 999;
-    position: absolute;
-    top: 10px;
-    left: 3px;
-}
 @media screen and (max-height: 450px) {
     .sidenav a {font-size: 18px;}
 }
