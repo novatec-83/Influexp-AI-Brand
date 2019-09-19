@@ -10,6 +10,8 @@ import {
     HowItWorksComponent,
     PrivacyAndPolicyComponent,
     TermsAndConditionsComponent,
+    TermsComponent,
+    PrivacyComponent,
     WhatIsInfluexpaiComponent
 } from './contact/contact.component';
 import {BrandComponent} from './brand/brand.component';
@@ -17,7 +19,6 @@ import {InfluencersComponent} from './influencers/influencers.component';
 import {AgenciesComponent} from './Agencies/Agencies.component';
 import {PricingComponent} from './pricing/pricing.component';
 import {PricingstepsComponent} from './pricingsteps/pricingsteps.component';
-
 
 
 export const AppRoutes: Routes = [
@@ -42,8 +43,16 @@ export const AppRoutes: Routes = [
         component: TermsAndConditionsComponent
     },
     {
+        path: 'terms',
+        component: TermsComponent
+    },
+    {
         path: 'privacy_policy',
         component: PrivacyAndPolicyComponent
+    },
+    {
+        path: 'privacy',
+        component: PrivacyComponent
     },
 
     {
@@ -106,6 +115,7 @@ export const AppRoutes: Routes = [
 
     { path: 'login', loadChildren: './login/login.module#LoginModule' },
     { path: 'register', component: RegisterComponent },
+    {path: 'contactus', component: ContactComponent},
     { path: 'payment', component: GetpaymentComponent },
     // <li><a href="https://www.influexpai.com/pricing"><i class="fa fa-chevron-right"></i> Pricing</a> </li>
     { path: 'pricing', component: PricingComponent },

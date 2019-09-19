@@ -53,18 +53,18 @@ login(username: string, password: string) {
         }))
     }
 
-    contact_Us(name, email, phone, message) {
-        return this.http.post('https://apis.influexpai.com/contact-us',
-            {
-                'name':name,
-                'email' :email,
-                'mobile_no': phone,
-                'message' :message
+    // contact_Us(name, email, phone, message) {
+    //     return this.http.post('https://apis.influexpai.com/contact-us',
+    //         {
+    //             'name':name,
+    //             'email' :email,
+    //             'mobile_no': phone,
+    //             'message' :message
 
-            }).map((response: Response) => {
-                console.log(response)
-            });
-    }
+    //         }).map((response: Response) => {
+    //             console.log(response)
+    //         });
+    // }
 
     get_All_Blog(){
         return this.http.get(Config.api + '/getallblog/').map((response: Response) => response.json());
@@ -89,10 +89,13 @@ login(username: string, password: string) {
     }
     get_profile_pic(){
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        if ( this.currentUser != null ){
         let username =  this.currentUser.username;
+
         return this.http.get(Config.api+ '/getbrandimage/' + username).map((response: Response) => {
             return response.json();
         });
+    }
     }
 
 
@@ -121,7 +124,19 @@ login(username: string, password: string) {
             }))
     }
 
+    contact_Us(name, email, phone, message) {
+        return this.http.post('http://192.168.29.166:8000/contact-us/',
+        // http://192.168.29.166:8000/contact-us/
+            {
+                'name':name,
+                'email' :email,
+                'mobile_no': phone,
+                'message' :message
 
+            }).map((response: Response) => {
+                console.log(response)
+            });
+    }
 
     changepassword(username, currentpass, newpass, confirmpass ){
         return this.http.post(Config.api+ '/change_password/', {

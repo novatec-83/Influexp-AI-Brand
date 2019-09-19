@@ -17,8 +17,9 @@ import swal from 'sweetalert2';
 export class FooterComponent implements OnInit {
 
   constructor(private obj: AuthenticationService) { }
-
   ngOnInit() {
+    // window.scroll(0,0);
+
   }
   scrollTop() {
     window.scrollTo(0, 0);
