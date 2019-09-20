@@ -76,7 +76,6 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": ["src/assets/js/top.js"],
             "assets": [
               "src/favicon.ico",
               "src/assets"
