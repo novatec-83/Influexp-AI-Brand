@@ -17,6 +17,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
     img;
     showlink :boolean = false;
+    logi :boolean=true;
+
     notificationpage;
     public options = {
         position: ["top", "left"],
@@ -39,6 +41,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         localStorage.removeItem('currentUser');
         localStorage.removeItem('currentPassword');
         this.logoutsweetalert();
+        this.logi=false
       };
       logoutsweetalert() {
     
@@ -91,7 +94,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     }
     ngOnInit() {
         if(localStorage.getItem('currentUser') != null){
-            alert(this.currentUser.username)
+            // alert(this.currentUser.username)
             this.loadprofilepic();
            
             this.showlink = true;
