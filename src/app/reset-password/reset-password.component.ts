@@ -23,6 +23,8 @@ export class ResetPasswordComponent implements OnInit {
     // this.sub = this.route.params.subscribe(params => {
     //     this.code = params['code'];
     //   });
+    window.scroll(0,0);
+
   }
     reset_password(){
         // alert('code')

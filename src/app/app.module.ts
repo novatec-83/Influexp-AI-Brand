@@ -29,7 +29,6 @@ import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
 import { SocialLoginModule, AuthService } from 'angular5-social-login';
 import {
   BlogComponent,
-  // ContactComponent,
   HowItWorksComponent,
   PrivacyAndPolicyComponent,
   TermsAndConditionsComponent,

@@ -219,7 +219,7 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist/', JSON.stringify({
-                                    name: result.value,
+                                    name: result,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -232,7 +232,7 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                                 });
                         }
-                    }, 2)
+                    }, )
                 }
 
 
