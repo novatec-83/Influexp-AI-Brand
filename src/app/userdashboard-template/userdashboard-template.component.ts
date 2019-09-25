@@ -152,12 +152,14 @@ export class UserdashboardTemplateComponent implements OnInit {
         headers.append('Content-Type', 'application/json');
         let myhttp = this.http;
         Swal.fire({
-            title: 'Are you sure?',
-            text: 'You will not be able to recover this list!',
-            type: 'warning',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, keep it'
+            // title: 'Are you sure?',
+            title: 'Deleted',
+            // text: 'You will not be able to recover this list!',
+            text: 'List has been deleted successfully',
+            // type: 'warning',
+            // showCancelButton: true,
+            // confirmButtonText: 'Yes, delete it!',
+            // cancelButtonText: 'No, keep it'
         }).then(() => {
 
             myhttp.delete(Config.api + '/delete_ilist/' + id,
@@ -165,18 +167,18 @@ export class UserdashboardTemplateComponent implements OnInit {
                 data => {
                     this.get_lists(this.selected_choice);
 
-                    Swal.fire(
-                        'List Deleted!',
-                        '',
-                        'success'
-                    )
+                    // Swal.fire(
+                    //     'List Deleted!',
+                    //     '',
+                    //     'success'
+                    // )
 
                 },
                 error => {
                     // alert('error')
                     Swal.fire(
                         'Try again after some time!',
-                        error.toString(),
+                        // error.toString(),
                         'error'
                     )
                 });
@@ -261,13 +263,14 @@ export class UserdashboardTemplateComponent implements OnInit {
                         'success'
                     )
                 },
-                error => {
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                });
+                // error => {
+                //     Swal.fire(
+                //         'Try again after some time!',
+                //         error.toString(),
+                //         'error'
+                //     )
+                // }
+                );
 
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -351,13 +354,14 @@ export class UserdashboardTemplateComponent implements OnInit {
                         'success'
                     )
                 },
-                error => {
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                });
+                // error => {
+                //     Swal.fire(
+                //         'Try again after some time!',
+                //         error.toString(),
+                //         'error'
+                //     )
+                // }
+                );
 
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -429,12 +433,15 @@ export class UserdashboardTemplateComponent implements OnInit {
         headers.append('Content-Type', 'application/json');
         let myhttp = this.http;
         Swal.fire({
-            title: 'Are you sure?',
-            text: 'You will not be able to recover this list!',
-            type: 'warning',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, keep it'
+
+            title: 'Deleted',
+            text: 'List has been deleted successfully',
+            // title: 'Are you sure?',
+            // text: 'You will not be able to recover this list!',
+            // type: 'warning',
+            // showCancelButton: true,
+            // confirmButtonText: 'Yes, delete it!',
+            // cancelButtonText: 'No, keep it'
         }).then(() => {
 
             myhttp.delete(Config.api + '/ml/delete_ilist_twitter/' + id,
@@ -442,11 +449,11 @@ export class UserdashboardTemplateComponent implements OnInit {
                 data => {
                     this.loadTwitterLists(this.selected_choice_twitter);
 
-                    Swal.fire(
-                        'List Deleted!',
-                        '',
-                        'success'
-                    )
+                    // Swal.fire(
+                    //     'List Deleted!',
+                    //     '',
+                    //     'success'
+                    // )
 
                 },
                 error => {
@@ -485,12 +492,14 @@ export class UserdashboardTemplateComponent implements OnInit {
         headers.append('Content-Type', 'application/json');
         let myhttp = this.http;
         Swal.fire({
-            title: 'Are you sure?',
-            text: 'You will not be able to recover this list!',
-            type: 'warning',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, keep it'
+            title: 'Deleted',
+            text: 'List has been deleted successfully',
+            // title: 'Are you sure?',
+            // text: 'You will not be able to recover this list!',
+            // type: 'warning',
+            // showCancelButton: true,
+            // confirmButtonText: 'Yes, delete it!',
+            // cancelButtonText: 'No, keep it'
         }).then(() => {
 
             myhttp.delete(Config.api + '/delete_ilist_yt/' + id,
@@ -498,11 +507,11 @@ export class UserdashboardTemplateComponent implements OnInit {
                 data => {
                     this.get_lists_yt(this.selected_choice.replace('blog_influencer', 'youtube_influencer'));
 
-                    Swal.fire(
-                        'List Deleted!',
-                        '',
-                        'success'
-                    )
+                    // Swal.fire(
+                    //     'List Deleted!',
+                    //     '',
+                    //     'success'
+                    // )
 
                 },
                 error => {
@@ -588,13 +597,14 @@ export class UserdashboardTemplateComponent implements OnInit {
                         'success'
                     )
                 },
-                error => {
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                });
+                // error => {
+                //     Swal.fire(
+                //         'Try again after some time!',
+                //         error.toString(),
+                //         'error'
+                //     )
+                // }
+                );
 
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -694,13 +704,14 @@ export class UserdashboardTemplateComponent implements OnInit {
                         'success'
                     )
                 },
-                error => {
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                });
+                // error => {
+                //     Swal.fire(
+                //         'Try again after some time!',
+                //         error.toString(),
+                //         'error'
+                //     )
+                // }
+                );
 
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -745,12 +756,14 @@ export class UserdashboardTemplateComponent implements OnInit {
         headers.append('Content-Type', 'application/json');
         let myhttp = this.http;
         Swal.fire({
-            title: 'Are you sure?',
-            text: 'You will not be able to recover this list!',
-            type: 'warning',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, keep it'
+            title: 'Deleted',
+            text: 'List has been deleted successfully',
+            // title: 'Are you sure?',
+            // text: 'You will not be able to recover this list!',
+            // type: 'warning',
+            // showCancelButton: true,
+            // confirmButtonText: 'Yes, delete it!',
+            // cancelButtonText: 'No, keep it'
         }).then(() => {
 
             myhttp.delete(Config.api + '/delete_ilist_in/' + id,
@@ -758,11 +771,11 @@ export class UserdashboardTemplateComponent implements OnInit {
                 data => {
                     this.get_lists_in(this.selected_choice.replace('blog_influencer', 'instagram_influencer'));
 
-                    Swal.fire(
-                        'List Deleted!',
-                        '',
-                        'success'
-                    )
+                    // Swal.fire(
+                    //     'List Deleted!',
+                    //     '',
+                    //     'success'
+                    // )
 
                 },
                 error => {
@@ -862,13 +875,14 @@ export class UserdashboardTemplateComponent implements OnInit {
                         'success'
                     )
                 },
-                error => {
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                });
+                // error => {
+                //     Swal.fire(
+                //         'Try again after some time!',
+                //         error.toString(),
+                //         'error'
+                //     )
+                // }
+                );
 
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -882,14 +896,18 @@ export class UserdashboardTemplateComponent implements OnInit {
         })
     }
     delete_list_fb(id: number) {
+
+
         let headers = new Headers({'Authorization': 'JWT' + this.currentUser['token']}) ;
         headers.append('Content-Type', 'application/json');
         Swal.fire({
-            title: 'Are you Sure?',
-            text: 'You will not be able to recover this list!',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, keep it'
+            title: 'Deleted',
+            text: 'List has been deleted successfully',
+            // title: 'Are you Sure?',
+            // text: 'You will not be able to recover this list!',
+            // showCancelButton: true,
+            // confirmButtonText: 'Yes, delete it!',
+            // cancelButtonText: 'No, keep it'
 
         }).then(() => {
             headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
@@ -898,11 +916,11 @@ export class UserdashboardTemplateComponent implements OnInit {
                 {headers: headers}).map((responce: Response) => responce.json()).subscribe(
                 data => {
                     this.get_list_fb(this.selected_choice);
-                    Swal.fire(
-                        'List Deleted!',
-                        '',
-                        'success'
-                    )
+                    // Swal.fire(
+                    //     'List Deleted!',
+                    //     '',
+                    //     'success'
+                    // )
                 },
                 error => {
                     // alert('error')
@@ -927,6 +945,8 @@ export class UserdashboardTemplateComponent implements OnInit {
         })
 
 
+
+        
     }
     go_to_list_fb(e: number, name: string) {
 
@@ -1017,13 +1037,14 @@ export class UserdashboardTemplateComponent implements OnInit {
                         'success'
                     )
                 },
-                error => {
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                });
+                // error => {
+                //     Swal.fire(
+                //         'Try again after some time!',
+                //         error.toString(),
+                //         'error'
+                //     )
+                // }
+                );
 
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -1047,11 +1068,13 @@ export class UserdashboardTemplateComponent implements OnInit {
         let headers = new Headers({'Authorization': 'JWT' + this.currentUser['token']}) ;
         headers.append('Content-Type', 'application/json');
         Swal.fire({
-            title: 'Are you Sure?',
-            text: 'You will not be able to recover this list!',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, keep it'
+            title: 'Deleted',
+            text: 'List has been deleted successfully',
+            // title: 'Are you Sure?',
+            // text: 'You will not be able to recover this list!',
+            // showCancelButton: true,
+            // confirmButtonText: 'Yes, delete it!',
+            // cancelButtonText: 'No, keep it'
 
         }).then(() => {
             headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
@@ -1060,11 +1083,11 @@ export class UserdashboardTemplateComponent implements OnInit {
                 {headers: headers}).map((responce: Response) => responce.json()).subscribe(
                 data => {
                     this.get_list_lnkd(this.selected_choice);
-                    Swal.fire(
-                        'List Deleted!',
-                        '',
-                        'success'
-                    )
+                    // Swal.fire(
+                    //     'List Deleted!',
+                    //     '',
+                    //     'success'
+                    // )
                 },
                 error => {
                     // alert('error')
@@ -1156,13 +1179,14 @@ export class UserdashboardTemplateComponent implements OnInit {
                         'success'
                     )
                 },
-                error => {
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                });
+                // error => {
+                //     Swal.fire(
+                //         'Try again after some time!',
+                //         error.toString(),
+                //         'error'
+                //     )
+                // }
+                );
 
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -1205,12 +1229,14 @@ export class UserdashboardTemplateComponent implements OnInit {
         headers.append('Content-Type', 'application/json');
         let myhttp = this.http;
         Swal.fire({
-            title: 'Are you sure?',
-            text: 'You will not be able to recover this list!',
-            type: 'warning',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, keep it'
+            title: 'Deleted',
+            text: 'List has been deleted successfully',
+            // title: 'Are you sure?',
+            // text: 'You will not be able to recover this list!',
+            // type: 'warning',
+            // showCancelButton: true,
+            // confirmButtonText: 'Yes, delete it!',
+            // cancelButtonText: 'No, keep it'
         }).then(() => {
 
             myhttp.delete(Config.api + '/delete_ilist_dd/' + id,
@@ -1218,11 +1244,11 @@ export class UserdashboardTemplateComponent implements OnInit {
                 data => {
                     this.get_lists_dd(this.selected_choice);
 
-                    Swal.fire(
-                        'List Deleted!',
-                        '',
-                        'success'
-                    )
+                    // Swal.fire(
+                    //     'List Deleted!',
+                    //     '',
+                    //     'success'
+                    // )
 
                 },
                 error => {
@@ -1268,11 +1294,13 @@ export class UserdashboardTemplateComponent implements OnInit {
         let headers = new Headers({'Authorization': 'JWT' + this.currentUser['token']}) ;
         headers.append('Content-Type', 'application/json');
         Swal.fire({
-            title: 'Are you Sure?',
-            text: 'You will not be able to recover this list!',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, keep it'
+            title: 'Deleted',
+            text: 'List has been deleted successfully',
+            // title: 'Are you Sure?',
+            // text: 'You will not be able to recover this list!',
+            // showCancelButton: true,
+            // confirmButtonText: 'Yes, delete it!',
+            // cancelButtonText: 'No, keep it'
 
         }).then(() => {
             headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
@@ -1281,11 +1309,11 @@ export class UserdashboardTemplateComponent implements OnInit {
                 {headers: headers}).map((responce: Response) => responce.json()).subscribe(
                 data => {
                     this.get_list_pinterest(this.selected_choice);
-                    Swal.fire(
-                        'List Deleted!',
-                        '',
-                        'success'
-                    )
+                    // Swal.fire(
+                    //     'List Deleted!',
+                    //     '',
+                    //     'success'
+                    // )
                 },
                 error => {
                     // alert('error')
@@ -1317,11 +1345,13 @@ export class UserdashboardTemplateComponent implements OnInit {
         let headers = new Headers({'Authorization': 'JWT' + this.currentUser['token']}) ;
         headers.append('Content-Type', 'application/json');
         Swal.fire({
-            title: 'Are you Sure?',
-            text: 'You will not be able to recover this list!',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, keep it'
+            title: 'Deleted',
+            text: 'List has been deleted successfully',
+            // title: 'Are you Sure?',
+            // text: 'You will not be able to recover this list!',
+            // showCancelButton: true,
+            // confirmButtonText: 'Yes, delete it!',
+            // cancelButtonText: 'No, keep it'
 
         }).then(() => {
             headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
@@ -1330,11 +1360,11 @@ export class UserdashboardTemplateComponent implements OnInit {
                 {headers: headers}).map((responce: Response) => responce.json()).subscribe(
                 data => {
                     this.get_list_peri(this.selected_choice);
-                    Swal.fire(
-                        'List Deleted!',
-                        '',
-                        'success'
-                    )
+                    // Swal.fire(
+                    //     'List Deleted!',
+                    //     '',
+                    //     'success'
+                    // )
                 },
                 error => {
                     // alert('error')
@@ -1364,11 +1394,13 @@ export class UserdashboardTemplateComponent implements OnInit {
         let headers = new Headers({'Authorization': 'JWT' + this.currentUser['token']}) ;
         headers.append('Content-Type', 'application/json');
         Swal.fire({
-            title: 'Are you Sure?',
-            text: 'You will not be able to recover this list!',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, keep it'
+            title: 'Deleted',
+            text: 'List has been deleted successfully',
+            // title: 'Are you Sure?',
+            // text: 'You will not be able to recover this list!',
+            // showCancelButton: true,
+            // confirmButtonText: 'Yes, delete it!',
+            // cancelButtonText: 'No, keep it'
 
         }).then(() => {
             headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
@@ -1377,11 +1409,11 @@ export class UserdashboardTemplateComponent implements OnInit {
                 {headers: headers}).map((responce: Response) => responce.json()).subscribe(
                 data => {
                     this.get_list_med(this.selected_choice);
-                    Swal.fire(
-                        'List Deleted!',
-                        '',
-                        'success'
-                    )
+                    // Swal.fire(
+                    //     'List Deleted!',
+                    //     '',
+                    //     'success'
+                    // )
                 },
                 error => {
                     // alert('error')
@@ -1494,13 +1526,14 @@ export class UserdashboardTemplateComponent implements OnInit {
                         'success'
                     )
                 },
-                error => {
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                });
+                // error => {
+                //     Swal.fire(
+                //         'Try again after some time!',
+                //         error.toString(),
+                //         'error'
+                //     )
+                // }
+                );
 
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -1538,11 +1571,13 @@ export class UserdashboardTemplateComponent implements OnInit {
         let headers = new Headers({'Authorization': 'JWT' + this.currentUser['token']});
         headers.append('Content-Type', 'application/json');
         Swal.fire({
-            title: 'Are you Sure?',
-            text: 'You will not be able to recover this list!',
-            showCancelButton: true,
-            confirmButtonText: 'Yes, delete it!',
-            cancelButtonText: 'No, keep it'
+            title: 'Deleted',
+            text: 'List has been deleted successfully',
+            // title: 'Are you Sure?',
+            // text: 'You will not be able to recover this list!',
+            // showCancelButton: true,
+            // confirmButtonText: 'Yes, delete it!',
+            // cancelButtonText: 'No, keep it'
 
         }).then(() => {
             headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
@@ -1551,11 +1586,11 @@ export class UserdashboardTemplateComponent implements OnInit {
                 {headers: headers}).map((responce: Response) => responce.json()).subscribe(
                 data => {
                     this.get_list_flkr(this.selected_choice);
-                    Swal.fire(
-                        'List Deleted!',
-                        '',
-                        'success'
-                    )
+                    // Swal.fire(
+                    //     'List Deleted!',
+                    //     '',
+                    //     'success'
+                    // )
                 },
                 error => {
                     // alert('error')
@@ -1732,13 +1767,14 @@ export class UserdashboardTemplateComponent implements OnInit {
                     );
                   console.log('Result is..................', result.value);
                 },
-                error => {
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                });
+                // error => {
+                //     Swal.fire(
+                //         'Try again after some time!',
+                //         error.toString(),
+                //         'error'
+                //     )
+                // }
+                );
 
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -1810,13 +1846,14 @@ export class UserdashboardTemplateComponent implements OnInit {
                         'success'
                     )
                 },
-                error => {
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                });
+                // error => {
+                //     Swal.fire(
+                //         'Try again after some time!',
+                //         error.toString(),
+                //         'error'
+                //     )
+                // }
+                );
 
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -1888,13 +1925,14 @@ export class UserdashboardTemplateComponent implements OnInit {
                         'success'
                     )
                 },
-                error => {
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                });
+                // error => {
+                //     Swal.fire(
+                //         'Try again after some time!',
+                //         error.toString(),
+                //         'error'
+                //     )
+                // }
+                );
 
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
