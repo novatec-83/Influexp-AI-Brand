@@ -4,7 +4,7 @@
     <h1 class="heading-1 mt-3">Get in Touch with us</h1>
     <p>If you feel any kind of queries Please feel free to contact with Us. Just leave a Message, Our customer support person will contact you</p>
   </div>
-  <div class="contact-section">
+  <div class="form-section">
     <div class="container">
       <form class="row" name="form" role="form"  #f="ngForm" novalidate (ngSubmit)=" f.form.valid && onSubmit()">
 
@@ -36,15 +36,23 @@
           <mat-form-field class="w-100">
               <textarea class="textarea" matInput placeholder="Message"></textarea>
             </mat-form-field>
-              <div>
-                <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send Message</button>
-              </div>
-      </div>
+                        <div>
+                          <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send Message</button>
+                        </div>
+                      </div>
       </form>
     </div>
-  </div>
-</section>
+    <!-- <div class="col-md-6">
+        <mat-form-field class="example-full-width textarea-input">
+            <textarea class="textarea" matInput placeholder="Message"></textarea>
+          </mat-form-field>
+            <div>
+              <button type="submit" class="btn btn-primary pull-right"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send Message</button>
+            </div>
+    </div> -->
 
+    </div>
+</section>
 <section id="contact-map">
   <div class="container-fluid">
     <div class="row">
@@ -67,6 +75,7 @@
       </div>
     </div>
   </div>
+
   <!-- <p>{{f.value}}</p> -->
 </section>
 <!-- <app-footer></app-footer> -->
