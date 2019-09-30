@@ -156,9 +156,9 @@ this.get_default_FB_data(1);
             return;
         }
         // this.http.post(Config.api+'ml/get_facebook_pages/accountant'  + '/?page=' + page,{})
-        // let headers = new Headers({'Authorization': 'JWT ' + this.currentUser.token});
+        let headers = new Headers({'Authorization': 'JWT ' + this.currentUser.token});
 
-        this.http.get(Config.api+'/ml/get_facebook_influencers_list/')
+        this.http.post(Config.api+'/ml/get_facebook_pages/' + 'accountant' + '/?page=' + page + '', {},{headers: headers})
             .subscribe(res => {
                 // this.main_checkbox = false;
                 this.influencers_by_default_FB = res.json();
@@ -167,25 +167,7 @@ this.get_default_FB_data(1);
                         this.locationArray= obj['category']['location'];
                     }
 
-                    // this.http.get(Config.api+'/ml/get_flickr_influencers_list')
-                    // .subscribe(res => {
-                    //     // this.main_checkbox = false;
-                    //     this.influencers_by_default_FB = res.json();
-                    //     this.pdfArray= this.influencers_by_default_FB['results'];
-                    //     for(let obj of this.pdfArray){
-                    //         this.locationArray= obj['category']['location'];
-                    //         console.log('Array after loop',this.locationArray);
-                    //     }
-               
-               
-               
-               
-               
-               
-               
-               
-               
-                    this.pager = this.pagerService.getPager(this.influencers_by_default_FB['totalItems'], page,10);
+                this.pager = this.pagerService.getPager(this.influencers_by_default_FB['totalItems'], page,10);
 
             });
     }

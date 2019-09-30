@@ -93,8 +93,7 @@ export class PeriscopeSearchComponent implements OnInit {
         if (page < 1 || page > this.pager.totalPages) {
             return;
         }
-        // this.http.get(Config.api+'/ml/get_periscope_influencers_list/' + '/?page=' + page )
-        this.http.get(Config.api+'/ml/get_periscope_influencers_list/'  )
+        this.http.get(Config.api+'/ml/get_periscope_influencers_list/' + '/?page=' + page )
             .subscribe(res => {
                 this.main_checkbox = false;
                 this.default_influencers = res.json();

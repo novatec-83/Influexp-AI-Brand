@@ -97,8 +97,7 @@ export class PinterestSearchComponent implements OnInit , AfterViewInit, OnDestr
             return;
         }
 
-        // this.http.get(Config.api+'/ml/get_pinterest_influencers_list/' +  '/?page=' + page )
-        this.http.get(Config.api+'/ml/get_pinterest_influencers_list/')
+        this.http.get(Config.api+'/ml/get_pinterest_influencers_list/' +  '/?page=' + page )
             .subscribe(res => {
                 this.influencers_by_default = res.json();
                 this.pdfArray= this.influencers_by_default['results'];
@@ -128,11 +127,7 @@ export class PinterestSearchComponent implements OnInit , AfterViewInit, OnDestr
             }, (dismiss) => {
                 // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
                 if (dismiss === 'cancel') {
-                    // localStorage.removeItem('selected_list_twitter')
-
-
-
-        
+                    // localStorage.removeItem('selected_list_twitter');
 
                     Swal.fire(
                         'Cancelled',
