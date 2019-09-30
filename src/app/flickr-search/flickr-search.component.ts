@@ -181,7 +181,7 @@ export class FlickrSearchComponent implements OnInit {
         if (page < 1 || page > this.pager.totalPages) {
             return;
         }
-        this.http.get(Config.api+'/ml/get_flickr_influencers_list'  + '/?page=' + page)
+        this.http.get(Config.api+'/ml/get_flickr_influencers_list')
             .subscribe(res => {
                 // this.main_checkbox = false;
                 this.influencers_by_default_FB = res.json();

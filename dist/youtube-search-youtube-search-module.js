@@ -124,10 +124,10 @@ var YoutubeSearchComponent = /** @class */ (function () {
         if (page < 1 || page > this.pager.totalPages) {
             return;
         }
-        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_2__["Headers"]({ 'Authorization': 'JWT ' + this.currentUser.token });
-        this.loaded = false;
-        headers.append('Content-Type', 'application/json');
-        this.http.post(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/ml/get_youtube_channels/' + 'Agriculture' + '/?page=' + page + '', {}, { headers: headers })
+        // let headers = new Headers({'Authorization': 'JWT ' + this.currentUser.token});
+        // this.loaded = false;
+        // headers.append('Content-Type', 'application/json');
+        this.http.get(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/ml/get_youtube_influencers_list/')
             .subscribe(function (res) {
             // this.main_checkbox = false;
             _this.influencers_by_default = res.json();

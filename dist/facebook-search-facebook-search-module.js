@@ -161,8 +161,8 @@ var FacebookSearchComponent = /** @class */ (function () {
             return;
         }
         // this.http.post(Config.api+'ml/get_facebook_pages/accountant'  + '/?page=' + page,{})
-        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_7__["Headers"]({ 'Authorization': 'JWT ' + this.currentUser.token });
-        this.http.post(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/ml/get_facebook_pages/' + 'accountant' + '/?page=' + page + '', {}, { headers: headers })
+        // let headers = new Headers({'Authorization': 'JWT ' + this.currentUser.token});
+        this.http.get(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/ml/get_facebook_influencers_list/')
             .subscribe(function (res) {
             // this.main_checkbox = false;
             _this.influencers_by_default_FB = res.json();
@@ -171,6 +171,15 @@ var FacebookSearchComponent = /** @class */ (function () {
                 var obj = _a[_i];
                 _this.locationArray = obj['category']['location'];
             }
+            // this.http.get(Config.api+'/ml/get_flickr_influencers_list')
+            // .subscribe(res => {
+            //     // this.main_checkbox = false;
+            //     this.influencers_by_default_FB = res.json();
+            //     this.pdfArray= this.influencers_by_default_FB['results'];
+            //     for(let obj of this.pdfArray){
+            //         this.locationArray= obj['category']['location'];
+            //         console.log('Array after loop',this.locationArray);
+            //     }
             _this.pager = _this.pagerService.getPager(_this.influencers_by_default_FB['totalItems'], page, 10);
         });
     };

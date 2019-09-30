@@ -119,7 +119,8 @@ var MediumSearchComponent = /** @class */ (function () {
         if (page < 1 || page > this.pager.totalPages) {
             return;
         }
-        this.http.get(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/ml/get_medium_influencers_list/' + '/?page=' + page)
+        // this.http.get(Config.api+'/ml/get_medium_influencers_list/' + '/?page=' + page )
+        this.http.get(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/ml/get_medium_influencers_list/')
             .subscribe(function (res) {
             _this.main_checkbox = false;
             _this.default_influencers = res.json();

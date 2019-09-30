@@ -473,7 +473,7 @@ var LoginComponent = /** @class */ (function () {
                         localStorage.setItem('loged_in', '1');
                         localStorage.setItem('currentUser', JSON.stringify(user));
                         localStorage.setItem('profilePhoto', _this.pic);
-                        _this.router.navigate(['/userprofile/' + _this.username]);
+                        _this.router.navigate(['/dashboard']);
                         _this.showSuccess();
                     }
                 });
