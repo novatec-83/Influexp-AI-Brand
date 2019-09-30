@@ -66,6 +66,20 @@ export class TwitterSearchComponent implements OnInit {
     openNav() {
         document.getElementById("mySidenav").style.width = "250px";
     }
+    sb1() {
+        document.getElementById("select-all-button2").style.display = "inline";
+        document.getElementById("select-all-button1").style.display = "none";
+        document.getElementById("checkbox-click2").style.display = "block";
+        document.getElementById("checkbox-click1").style.display = "none";
+        document.getElementById("hover-div").style.right = "0";
+    }
+    sb2() {
+        document.getElementById("select-all-button1").style.display = "inline";
+        document.getElementById("select-all-button2").style.display = "none";
+        document.getElementById("checkbox-click1").style.display = "block";
+        document.getElementById("checkbox-click2").style.display = "none";
+        document.getElementById("hover-div").style.right = "-50%";
+    }
     ngOnInit() {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
         this.currentlist= JSON.parse(localStorage.getItem('selected_list_twitter'));

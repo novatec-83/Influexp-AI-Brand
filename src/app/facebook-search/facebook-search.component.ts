@@ -10,6 +10,7 @@ import {Headers, Response, Http} from '@angular/http';
 import Swal from 'sweetalert2';
 import {ActivatedRoute} from '@angular/router';
 import {PagerService} from '../_services/paginator.service';
+
 import 'jspdf-autotable';
 @Component({
   selector: 'app-facebook-search',

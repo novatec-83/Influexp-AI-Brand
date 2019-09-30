@@ -1,7 +1,7 @@
 @import "~node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
 /* You can add global styles to this file, and also import other style files */
 body{
-font-family: "Open Sans"!important;
+  font-family: 'Roboto', sans-serif;
 }
 @media screen and (min-width: 1140px) and (max-width: 1520px) {
   .padding-zero-i{
@@ -120,9 +120,65 @@ display: none!important;
 .holder {
   min-height: 23pc;
 }
+.mat-slide-toggle-content {
+  color: #fff;
+  font-size: 13px;
+}
+mat-tab-group{
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
+  border-radius: 8px;
+  padding: 8px;
+  color: #000;
+}
+.influencer-hading {
+  padding: 30px 20px 2px 20px;
+  font-size: 18px;
+  text-align: center;
+}
+.add-to-list{
+  background:#c00;
+  color:#fff;
+  float: right;
+  margin-right: 10px
+}
+#ck-button{
+  background: #566cad;
+  display: inline-block;
+  border-radius: 7px;
+  padding: 2px 19px;
+}
+#ck-button label{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin:0
+}
+.checkbox{
+  position: relative;
+  top: 4px;
+  right: 3px;
+}
+.add-to-list:hover{
+  color:#fff
+}
+.checkbox-div{
+  display: flex;
+  position: relative;
+  display: inline-block;
+}
+
+.influencer-hading {
+  padding: 30px 20px 2px 20px;
+  font-size: 15px;
+  text-align: center;
+}
 
 .txt-holder p {
   font-size: initial;
+}
+.submit-button{
+  background:#000
 }
 
 .pw-solutions ul li .img-holder {
@@ -8422,6 +8478,14 @@ body:not(.device-touch) .button.button-full strong {
   right: 0;
   margin: 0 -26px 0 0;
 }
+.mat-focused, .mat-focused .mat-form-field-label {
+  color: #000!important;
+ }
+ .mat-form-field-appearance-legacy .mat-form-field-label{
+   top:22px;
+   overflow:unset;
+   margin:0
+ }
 
 .process-steps li:first-child:before,
 .process-steps li:last-child:after {
@@ -9911,6 +9975,127 @@ ul.tab-nav.tab-nav2 li:first-child {
   margin-left: 0;
   border-left: 0;
 }
+
+
+
+
+
+
+
+
+
+.influcener-div{
+  box-shadow: 0 0 12px #ccc;
+    margin: 14px;
+    padding: 0;
+    border-radius: 15px;
+}
+.item-loc{
+  color: #919fa9;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin:0!important
+}
+.followers-profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 168px;
+}
+.progress-url{
+  margin: 0;
+  list-style: none;
+  padding: 20px;
+}
+.progress-url li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.progress{
+  height: 4px;
+  min-width: 72%;
+  margin-bottom: 0;
+}
+.followers-percen{
+  margin-right: 10px;
+  text-align: right;
+  min-width: 64px;
+    font-size:11px
+
+}
+.followers-percen1{
+  margin-left: 10px;
+  text-align: right;
+  font-size:11px
+}
+.male-follwers{
+  padding: 18px;
+}
+.fa-venus{
+  color:#d83838;
+  margin: 3px;
+}
+.real-heading{
+  margin: 0;
+    color: #C42A72;
+    font-size: 28px;
+}
+.item-content{
+ 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: #4e5f6b;
+  font-size: 12px;
+  font-weight: 500!important;
+  margin: 0;
+}
+.fa-venus{
+  color:#d83838;
+  margin: 3px;
+}
+.profile-url{ 
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+#select-all-button1{
+width: 16%;
+    background: #6248b1;
+    padding: 11px 25px 9px 31px;
+    color: #fff;
+    border-radius: 3px;
+}
+.marker-icon{
+  font-size: 16px;
+  color: #6248b1;
+  margin: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ul.tab-nav.tab-nav2 li a {
   background-color: #F5F5F5;
@@ -30470,9 +30655,7 @@ body:not(.no-transition) #wrapper {
   border-radius: 5px;
 }
 
-.item-content {
-  padding: 0 0 10px;
-}
+
 
 .item-content i {
   color: #c00;

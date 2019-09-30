@@ -27,6 +27,7 @@ import {AgenciesComponent} from './Agencies/Agencies.component';
 import { AuthServiceConfig, GoogleLoginProvider, FacebookLoginProvider } from 'angular5-social-login';
 import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
 import { SocialLoginModule, AuthService } from 'angular5-social-login';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {
   BlogComponent,
   // ContactComponent,
@@ -45,7 +46,6 @@ import {
   MatOptionModule,
   MatRippleModule,
   MatSelectModule,
-  MatSlideToggleModule,
 
   MatTableModule
 } from '@angular/material';
@@ -109,6 +109,7 @@ export function provideConfig() {
     FormsModule,
     MatIconModule,
     RecapchaModule,
+    MatSlideToggleModule,
     TextMaskModule,
     MatCardModule, MatSelectModule, MatOptionModule, MatFormFieldModule, MatInputModule, MatRippleModule, MatTableModule,
     BrowserAnimationsModule,

@@ -12,6 +12,7 @@ import {RoundpipeModule} from "../home/roundpipe.module";
 import {MatFormFieldModule,MatAutocompleteModule, MatCardModule, MatPaginatorModule, MatSortModule, MatTableModule,
     MatInputModule, MatRippleModule, MatSelectModule,MatTabsModule} from '@angular/material';
 import {PreloaderModule} from "../components/preloader.module";
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
     imports: [
@@ -24,6 +25,7 @@ import {PreloaderModule} from "../components/preloader.module";
       ReactiveFormsModule,
       OverlayPanelModule,
       DialogModule,
+      MatSlideToggleModule,
         FormsModule,
         RoundpipeModule,
         MatCardModule,
