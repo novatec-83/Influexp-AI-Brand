@@ -21,19 +21,27 @@
                             <div class="col-sm-12">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <span class="tasks-grid-col-title align-left" style="padding-top: 16px">Total Lists: <strong>{{user_lists.totalItems}}</strong>
+                                        <span class="tasks-grid-col-title align-left">Total Lists: <strong>{{user_lists.totalItems}}</strong>
                                         </span>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="row">
                                             <div class="col-md-8 col-sm-8 pull-right">
-                                                <mat-select (change)="sort_lists()" name="selected_choice" [(ngModel)]="selected_choice"
+                                                <!-- <mat-select (change)="sort_lists()" name="selected_choice" [(ngModel)]="selected_choice"
                                                            placeholder="Sort By" style="width: 60%; float: right">
                                                     <mat-option *ngFor="let choice of blog_choices" [value]="choice.code">{{ choice.name }}</mat-option>
-                                                </mat-select>
+                                                </mat-select> -->
+                                                <mat-form-field class="w-100">
+                                                    <mat-label>Sort By</mat-label>
+                                                    <mat-select  (change)="sort_lists()" name="selected_choice" [(ngModel)]="selected_choice">
+                                                      <mat-option *ngFor="let choice of blog_choices" [value]="choice.code">
+                                                        {{ choice.name }}
+                                                      </mat-option>
+                                                    </mat-select>
+                                                  </mat-form-field>
                                             </div>
                                             <div class="col-md-4 col-sm-4 pull-right">
-                                                <button type="button" class="btn btn-rounded" (click)="create_empty_list()">
+                                                <button type="button" class="btn btn-priamry crete-list-button" (click)="create_empty_list()">
                                                     Create List
                                                 </button>
                                             </div>
@@ -118,7 +126,7 @@
                         <!--</div>-->
                         <!--</div>-->
                             <div class="task-card-title-label text-center">
-                                <h6 style="font-weight: bolder">{{li.name}}</h6>
+                                <h5 style="font-weight: bolder">{{li.name}}</h5>
                             </div>
                         <div class="task-card-title text-center">
                         <!--<div class="button__holder">-->
@@ -126,7 +134,7 @@
                         <!--(click)="select_add_influencers(li.id,li.name)"></button>-->
                         <!--</div>-->
                             <h6>  Total Influencers: <b>{{li.influencers_count}}</b></h6>
-                            <button style="margin-bottom: 5%" type="button" class="btn btn-rounded" (click)="select_add_influencers(li.id, li.name) ">
+                            <button style="margin-bottom: 5%" type="button" class="btn btn-primary" (click)="select_add_influencers(li.id, li.name) ">
                                 Add Influencers
                             </button>
                         </div>
@@ -190,7 +198,7 @@
                                                 </mat-select>
                                             </div>
                                             <div class="col-md-4 col-sm-6 pull-right">
-                                                <button type="button" class="btn btn-rounded" (click)="create_empty_list_twitter()">
+                                                <button type="button" class="btn btn-primary" (click)="create_empty_list_twitter()">
                                                     Create List
                                                 </button>
                                             </div>
@@ -276,7 +284,7 @@
                                         <!--</div>-->
                                         <!--</div>-->
                                         <div class="task-card-title-label text-center">
-                                            <h6 style="font-weight: bolder">{{li.name}}</h6>
+                                            <h5 style="font-weight: bolder">{{li.name}}</h5>
                                         </div>
                                         <div class="task-card-title text-center">
                                             <!--<div class="button__holder">-->
@@ -284,7 +292,7 @@
                                             <!--(click)="select_add_influencers(li.id,li.name)"></button>-->
                                             <!--</div>-->
                                             <h6>  Total Influencers: <b>{{li.influencers_count}}</b></h6>
-                                            <button style="margin-bottom: 5%" type="button" class="btn btn-rounded" (click)="select_add_influencers_twitter(li.id, li.name) ">
+                                            <button style="margin-bottom: 5%" type="button" class="btn btn-primary" (click)="select_add_influencers_twitter(li.id, li.name) ">
                                                 Add Influencers
                                             </button>
                                         </div>
@@ -401,7 +409,7 @@
                                                 </mat-select>
                                             </div>
                                             <div class="col-md-4 col-sm-6 pull-right">
-                                                <button type="button" class="btn btn-rounded" (click)="create_empty_list_dd()">
+                                                <button type="button" class="btn btn-primary" (click)="create_empty_list_dd()">
                                                     Create List
                                                 </button>
                                             </div>
@@ -439,7 +447,7 @@
                                         <!--</div>-->
                                         <!--</div>-->
                                         <div class="task-card-title-label text-center">
-                                            <h6 style="font-weight: bolder">{{li.name}}</h6>
+                                            <h5 style="font-weight: bolder">{{li.name}}</h5>
                                         </div>
                                         <div class="task-card-title text-center">
                                             <!--<div class="button__holder">-->
@@ -447,7 +455,7 @@
                                             <!--(click)="select_add_influencers(li.id,li.name)"></button>-->
                                             <!--</div>-->
                                             <h6>  Total Influencers: <b>{{li.influencers_count}}</b></h6>
-                                            <button style="margin-bottom: 5%" type="button" class="btn btn-rounded" (click)="select_add_influencers_dd(li.id, li.name) ">
+                                            <button style="margin-bottom: 5%" type="button" class="btn btn-primary" (click)="select_add_influencers_dd(li.id, li.name) ">
                                                 Add Influencers
                                             </button>
                                         </div>
@@ -556,7 +564,7 @@
                                                 </mat-select>
                                             </div>
                                             <div class="col-md-4 col-sm-6 pull-right">
-                                                <button type="button" class="btn btn-rounded" (click)="create_empty_list_yt()">
+                                                <button type="button" class="btn btn-primary" (click)="create_empty_list_yt()">
                                                     Create List
                                                 </button>
                                             </div>
@@ -577,7 +585,7 @@
                                     <div class="task-card-in">
 
                                         <div class="task-card-title-label text-center">
-                                            <h6 style="font-weight: bolder">{{li.name}}</h6>
+                                            <h5 style="font-weight: bolder">{{li.name}}</h5>
                                         </div>
                                         <div class="task-card-title text-center">
                                             <!--<div class="button__holder">-->
@@ -585,7 +593,7 @@
                                             <!--(click)="select_add_influencers(li.id,li.name)"></button>-->
                                             <!--</div>-->
                                             <h6>  Total Influencers: <b>{{li.influencers_count}}</b></h6>
-                                            <button style="margin-bottom: 5%" type="button" class="btn btn-rounded" (click)="select_add_influencers_yt(li.id, li.name) ">
+                                            <button style="margin-bottom: 5%" type="button" class="btn btn-primary" (click)="select_add_influencers_yt(li.id, li.name) ">
                                                 Add Influencers
                                             </button>
                                         </div>
@@ -692,7 +700,7 @@
                                             </div>
 
                                             <div class="col-md-4 col-sm-6 pull-right">
-                                                <button type="button" class="btn btn-rounded" (click)="create_empty_list_in()">
+                                                <button type="button" class="btn btn-primary" (click)="create_empty_list_in()">
                                                     Create List
                                                 </button>
                                             </div>
@@ -712,7 +720,7 @@
                                     <div class="task-card-in">
 
                                         <div class="task-card-title-label text-center">
-                                            <h6 style="font-weight: bolder">{{li.name}}</h6>
+                                            <h5 style="font-weight: bolder">{{li.name}}</h5>
                                         </div>
                                         <div class="task-card-title text-center">
                                             <!--<div class="button__holder">-->
@@ -720,7 +728,7 @@
                                             <!--(click)="select_add_influencers(li.id,li.name)"></button>-->
                                             <!--</div>-->
                                             <h6>  Total Influencers: <b>{{li.influencers_count}}</b></h6>
-                                            <button style="margin-bottom: 5%" type="button" class="btn btn-rounded" (click)="select_add_influencers_in(li.id, li.name) ">
+                                            <button style="margin-bottom: 5%" type="button" class="btn btn-priamry" (click)="select_add_influencers_in(li.id, li.name) ">
                                                 Add Influencers
                                             </button>
                                         </div>
@@ -783,7 +791,7 @@
                                                 </mat-select>
                                             </div>
                                             <div class="col-md-4 col-sm-6 pull-right">
-                                                <button type="button" class="btn btn-rounded" (click)="create_empty_list_fb()">
+                                                <button type="button" class="btn btn-primary" (click)="create_empty_list_fb()">
                                                     Create List
                                                 </button>
                                             </div>
@@ -804,7 +812,7 @@
                                     <div class="task-card-in">
 
                                         <div class="task-card-title-label text-center">
-                                            <h6 style="font-weight: bolder">{{li.name}}</h6>
+                                            <h5 style="font-weight: bolder">{{li.name}}</h5>
                                         </div>
                                         <div class="task-card-title text-center">
                                             <!--<div class="button__holder">-->
@@ -812,7 +820,7 @@
                                             <!--(click)="select_add_influencers(li.id,li.name)"></button>-->
                                             <!--</div>-->
                                             <h6>  Total Influencers: <b>{{li.influencers_count}}</b></h6>
-                                            <button style="margin-bottom: 5%" type="button" class="btn btn-rounded" (click)="select_add_influencers_fb(li.id, li.name) ">
+                                            <button style="margin-bottom: 5%" type="button" class="btn btn-priamry" (click)="select_add_influencers_fb(li.id, li.name) ">
                                                 Add Influencers
                                             </button>
                                         </div>
@@ -872,7 +880,7 @@
                                                 </mat-select>
                                             </div>
                                             <div class="col-md-4 col-sm-6 pull-right">
-                                                <button type="button" class="btn btn-rounded" (click)="create_empty_list_lnkd()">
+                                                <button type="button" class="btn btn-primary" (click)="create_empty_list_lnkd()">
                                                     Create List
                                                 </button>
                                             </div>
@@ -904,7 +912,7 @@
                                             </div>
 
                                             <h6>  Total Influencers: <b>{{li.influencers_count}}</b></h6>
-                                            <button style="margin-bottom: 5%" type="button" class="btn btn-rounded" (click)="select_add_influencers_lnkd(li.id, li.name) ">
+                                            <button style="margin-bottom: 5%" type="button" class="btn btn-primary" (click)="select_add_influencers_lnkd(li.id, li.name) ">
                                                 Add Influencers
                                             </button>
                                         </div>
@@ -971,7 +979,7 @@
                                                 </mat-select>
                                             </div>
                                             <div class="col-md-4 col-sm-6 pull-right">
-                                                <button type="button" class="btn btn-rounded" (click)="create_empty_list_pt()">
+                                                <button type="button" class="btn btn-primary" (click)="create_empty_list_pt()">
                                                     Create List
                                                 </button>
                                             </div>
@@ -993,7 +1001,7 @@
                                     <div class="task-card-in">
 
                                         <div class="task-card-title-label text-center">
-                                            <h6 style="font-weight: bolder">{{li.name}}</h6>
+                                            <h5 style="font-weight: bolder">{{li.name}}</h5>
                                         </div>
                                         <div class="task-card-title text-center">
                                             <!--<div class="button__holder">-->
@@ -1001,7 +1009,7 @@
                                             <!--(click)="select_add_influencers(li.id,li.name)"></button>-->
                                             <!--</div>-->
                                             <h6>  Total Influencers: <b>{{li.influencers_count}}</b></h6>
-                                            <button style="margin-bottom: 5%" type="button" class="btn btn-rounded" (click)="select_add_influencers_pt(li.id, li.name) ">
+                                            <button style="margin-bottom: 5%" type="button" class="btn btn-priamry" (click)="select_add_influencers_pt(li.id, li.name) ">
                                                 Add Influencers
                                             </button>
                                         </div>
@@ -1058,7 +1066,7 @@
                                             </mat-select>
                                         </div>
                                         <div class="col-md-4 col-sm-6 pull-right">
-                                            <button type="button" class="btn btn-rounded" (click)="create_empty_list_peri()">
+                                            <button type="button" class="btn btn-primary" (click)="create_empty_list_peri()">
                                                 Create List
                                             </button>
                                         </div>
@@ -1080,7 +1088,7 @@
                                 <div class="task-card-in">
 
                                     <div class="task-card-title-label text-center">
-                                        <h6 style="font-weight: bolder">{{li.name}}</h6>
+                                        <h5 style="font-weight: bolder">{{li.name}}</h5>
                                     </div>
                                     <div class="task-card-title text-center">
                                         <!--<div class="button__holder">-->
@@ -1088,7 +1096,7 @@
                                         <!--(click)="select_add_influencers(li.id,li.name)"></button>-->
                                         <!--</div>-->
                                         <h6>  Total Influencers: <b>{{li.influencers_count}}</b></h6>
-                                        <button style="margin-bottom: 5%" type="button" class="btn btn-rounded" (click)="select_add_influencers_peri(li.id, li.name) ">
+                                        <button style="margin-bottom: 5%" type="button" class="btn btn-priamry" (click)="select_add_influencers_peri(li.id, li.name) ">
                                             Add Influencers
                                         </button>
                                     </div>
@@ -1145,7 +1153,7 @@
                                             </mat-select>
                                         </div>
                                         <div class="col-md-4 col-sm-6 pull-right">
-                                            <button type="button" class="btn btn-rounded" (click)="create_empty_list_med()">
+                                            <button type="button" class="btn btn-primary" (click)="create_empty_list_med()">
                                                 Create List
                                             </button>
                                         </div>
@@ -1166,7 +1174,7 @@
                                 <div class="task-card-in">
 
                                     <div class="task-card-title-label text-center">
-                                        <h6 style="font-weight: bolder">{{li.name}}</h6>
+                                        <h5 style="font-weight: bolder">{{li.name}}</h5>
                                     </div>
                                     <div class="task-card-title text-center">
                                         <!--<div class="button__holder">-->
@@ -1174,7 +1182,7 @@
                                         <!--(click)="select_add_influencers(li.id,li.name)"></button>-->
                                         <!--</div>-->
                                         <h6>  Total Influencers: <b>{{li.influencers_count}}</b></h6>
-                                        <button style="margin-bottom: 5%" type="button" class="btn btn-rounded" (click)="select_add_influencers_med(li.id, li.name) ">
+                                        <button style="margin-bottom: 5%" type="button" class="btn btn-primary" (click)="select_add_influencers_med(li.id, li.name) ">
                                             Add Influencers
                                         </button>
                                     </div>
@@ -1230,7 +1238,7 @@
                                             </mat-select>
                                         </div>
                                         <div class="col-md-4 col-sm-6 pull-right">
-                                            <button type="button" class="btn btn-rounded" (click)="create_empty_list_flkr()">
+                                            <button type="button" class="btn btn-primary" (click)="create_empty_list_flkr()">
                                                 Create List
                                             </button>
                                         </div>
@@ -1253,7 +1261,7 @@
                                 <div class="task-card-in">
 
                                     <div class="task-card-title-label text-center">
-                                        <h6 style="font-weight: bolder">{{li.name}}</h6>
+                                        <h5 style="font-weight: bolder">{{li.name}}</h5>
                                     </div>
                                     <div class="task-card-title text-center">
                                         <!--<div class="button__holder">-->
@@ -1261,7 +1269,7 @@
                                         <!--(click)="select_add_influencers(li.id,li.name)"></button>-->
                                         <!--</div>-->
                                         <h6>  Total Influencers: <b>{{li.influencers_count}}</b></h6>
-                                        <button style="margin-bottom: 5%" type="button" class="btn btn-rounded" (click)="select_add_influencers_flkr(li.id, li.name) ">
+                                        <button style="margin-bottom: 5%" type="button" class="btn btn-primary" (click)="select_add_influencers_flkr(li.id, li.name) ">
                                             Add Influencers
                                         </button>
                                     </div>

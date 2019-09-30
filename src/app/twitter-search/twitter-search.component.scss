@@ -1,9 +1,39 @@
-.example-full-width input{
-  width:102%!important;margin-top: -5%;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 0.5px;
+// .example-full-width input{
+//   width:102%!important;margin-top: -5%;
+//   -webkit-border-radius: 1px;
+//   -moz-border-radius: 1px;
+//   border-radius: 0.5px;
 
+// }
+#checkbox-click1,
+#checkbox-click2 {
+  position: absolute;
+  left: 4px;
+  top: 3px;
+}
+#checkbox-click2{
+  display: none;
+}
+.twitter-image{
+  max-height: 100%;
+  max-width: 100%;
+}
+#hover-div{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: #cdcde694;
+  top: 0;
+  right: -50%;
+  transition: all .4s ease-in-out;
+}
+.input-check{
+  top: 70px;
+    position: absolute;
+    right: 23px;
+}
+.over{
+  overflow: hidden
 }
 .btn-rounded{
   background: #000;
@@ -146,10 +176,7 @@ mat-placeholder{
   color: #0A0A0A!important;
 
 }
-mat-tab-group{
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
-  box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
-}
+
 section{
   -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
   box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
@@ -159,7 +186,6 @@ section{
 }
 mat-form-field{
   width: 75%;
-  line-height: 0.95;
 }
 .col-md-6{
   margin-top: 0!important;
@@ -222,29 +248,100 @@ input[type=checkbox]{
 }
 .tbl-cell{
   font-weight: 600;
-  font-size: 19px;
+  font-size: 14px;
+  padding-top: 12px;
+
 }
 i{
-  color: white;
+  color: #000;
 }
+
 .item-content{
+ 
+  color: #4e5f6b;
+  font-size: 12px;
+  font-weight: 500!important;
+  margin: 0;
+}
+.profile-url{ 
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+}
 
-  color: #919fa9;
-  font-size: 14px;
-
+.influcener-div{
+  box-shadow: 0 0 12px #ccc;
+    margin: 14px;
+    padding: 0;
+    border-radius: 15px;
 }
 .item-loc{
   color: #919fa9;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin:0!important
+}
+.followers-profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 168px;
+}
+.progress-url{
+  margin: 0;
+  list-style: none;
+  padding: 20px;
+}
+.progress-url li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.progress{
+  height: 4px;
+  min-width: 72%;
+  margin-bottom: 0;
+}
+.followers-percen{
+  margin-right: 10px;
+  text-align: right;
+  min-width: 64px;
+    font-size:11px
+
+}
+.followers-percen1{
+  margin-left: 10px;
+  text-align: right;
+  font-size:11px
+}
+.male-follwers{
+  padding: 18px;
+}
+.fa-venus{
+  color:#d83838;
+  margin: 3px;
+}
+.real-heading{
+  margin: 0;
+    color: #C42A72;
+    font-size: 28px;
+}
+
+.marker-icon{
+  font-size: 16px;
+  color: #6248b1;
+  margin: 9px;
 }
 hr{
   margin: 0!important;
 }
 .list-item1{
-  margin-right: 20px;
-  color: #000;
+  color: #382222;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 11px;
 }
 .right-item{
   color: #919fa9;
