@@ -17,6 +17,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
     img;
     showlink :boolean = false;
+    logi :boolean=true;
+
     notificationpage;
     public options = {
         position: ["top", "left"],
@@ -40,6 +42,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         localStorage.removeItem('currentUser');
         localStorage.removeItem('currentPassword');
         this.logoutsweetalert();
+        this.logi=false
       };
       logoutsweetalert() {
     

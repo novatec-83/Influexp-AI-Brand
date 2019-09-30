@@ -50,7 +50,7 @@
                 <div class="">
                     <div class="checkpad text-left">
                         <mat-slide-toggle name="stay"
-                                        [(ngModel)]="model">Stay signed in</mat-slide-toggle>
+                                        [(ngModel)]="model">Stay signed in</mat-slide-toggle><br>
                         <a class="forgot-pass" [routerLink]="['/reset-password']">Forgot Password? </a>
                     </div>
                     <div class="text-center recaptcha-box" [ngClass]="{ 'has-error':!recaptcha}">
