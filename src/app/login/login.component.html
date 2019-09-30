@@ -1,20 +1,20 @@
 ﻿<!-- <app-loader></app-loader> -->
   <div class="flexy signin-signup">
-      <form class="form-content" (ngSubmit)="!userFormControl.hasError('required') && !userFormControl.hasError('pattern') && !passwordFormControl.hasError('required')
-      && login(f)" #f="ngForm" novalidate>
+      <form class="form-content"(ngSubmit)="!userFormControl.hasError('required') && !userFormControl.hasError('pattern') && !passwordFormControl.hasError('required')
+      && login()" #f="ngForm" novalidate>
           <div class="text-center">
-              <img class="w-50" src="../../../assets/images/logos/Logo.png" alt="image">
+              <img class="w-50" src="../../assets/img/Logo.png" alt="image">
           </div>
           <ul>
             <li class="mr-2">
-                <a (click)=" facebooklogin()"> <img src="../../assets/images/facebook.png"> </a>
+            <br> <a (click)=" facebooklogin()"> <img src="../../assets/img/icon-facebook.png"> </a>
             </li>
             <li class="ml-2">
-                <a (click)="googlelogin()"> <img src="../../assets/images/icon-Google.png"> </a>
+               <br> <a (click)="googlelogin()"> <img src="../../assets/img/icon-Google.png"> </a>
             </li>
           </ul>
             <mat-form-field class="w-100 mb-3">
-              <input matInput type="text" placeholder="Username"  tabindex=1 [formControl]="userFormControl"  [(ngModel)]="model.username" required>
+              <input matInput type="text" placeholder="Username"  tabindex=1 [formControl]="userFormControl" [(ngModel)]="model.username" required>
               <span class="pointer" *ngIf="model.username"  matSuffix md-list-icon aria-label="Clear" (click)="model.username=''">
                               <i class="fa fa-close"></i>
                 </span>
@@ -37,21 +37,22 @@
             <div class="row ">
               <div class="col-md-6">
                   <div class="text-left">
-                      <mat-slide-toggle [(checked)]="model">
-                        Stay Signed In</mat-slide-toggle>
-                        <a class="forgot" [routerLink]="['/authentication/forgot']">Forgot your password? </a>
+                    <mat-slide-toggle name="stay"
+                    [(ngModel)]="model">Stay signed in</mat-slide-toggle><br>
+    <a class="forgot-pass" [routerLink]="['/reset-password']">Forgot Password? </a>
                     </div>
               </div>
               <div class="col-md-6 text-right">
                   <div [ngClass]="{ 'has-error':!recaptcha}">
                       <app-recapcha></app-recapcha>
-                                <div *ngIf="!recaptcha" >Please confirm you are not a robot!</div>
+                      <div  style="font-size: 16px;font-weight: bold;color: red; margin: 3%;"  *ngIf="!recaptcha" >Recaptcha is require</div>
+
                               </div>
               </div>
               <div class="col-md-12 text-center mt-3">
                   <button type="submit" class="btn btn-primary">Sign In</button>
                   <label class="signup-label"> Don’t have an account?
-                    <a class="sign-up" [routerLink]="['/authentication/signup']"> Sign Up </a></label>
+                    <a  routerlink="/register" href="/register"><b>Sign Up</b></a></label>
                     <div class="text-center privacy">
                       <a href="https://www.influexpai.com/Terms-and-Conditions" target="_blank">
                         Terms of Use           &nbsp;&nbsp;&nbsp;
