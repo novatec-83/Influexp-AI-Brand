@@ -7,7 +7,11 @@
   margin: 1%!important;
   font-size: 23px!important;
 }
-
+.influencer-hading{
+  padding: 30px 20px 2px 20px;
+  font-size: 18px;
+  text-align: center;
+}
 .popup-close-button{
   width: 50px;
   height: 50px;
@@ -55,6 +59,9 @@
 mat-tab-group{
   -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
   box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
+  border-radius: 8px;
+  padding: 8px;
+  color: #000;
 }
 section{
   -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
@@ -65,10 +72,10 @@ section{
 }
 mat-form-field{
   width: 75%;
-  line-height: 0.95;
 }
-.col-md-6{
-  margin-top: 0!important;
+
+.select category{
+  padding: 4px
 }
 .btn-rounded {
   background: #000;
@@ -138,13 +145,22 @@ input[type=checkbox]{
   font-size: 16px;
 }
 i{
-  color: white;
+  color:#000;
 }
 .item-content{
 
   color: #919fa9;
   font-size: 14px;
 
+}
+
+.add-to-list:hover{
+  color:#fff
+}
+.select-all{
+  background: #1da5de!important;
+  border: none;
+  box-shadow: none;
 }
 .item-loc{
   color: #919fa9;
@@ -154,7 +170,7 @@ hr{
   margin: 0!important;
 }
 .list-item1{
-  margin-right: 20px;
+  margin-left: 8px;
   color: #0a6aa1;
   font-weight: 700;
   font-size: 15px;
@@ -177,7 +193,7 @@ hr{
   color: white;
 }
 .mat-tab-header{
-  background-color: black!important;
+
 }
 
 .close{
