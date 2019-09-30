@@ -126,7 +126,8 @@ var PinterestSearchComponent = /** @class */ (function () {
         if (page < 1 || page > this.pager.totalPages) {
             return;
         }
-        this.http.get(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/ml/get_pinterest_influencers_list/' + '/?page=' + page)
+        // this.http.get(Config.api+'/ml/get_pinterest_influencers_list/' +  '/?page=' + page )
+        this.http.get(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/ml/get_pinterest_influencers_list/')
             .subscribe(function (res) {
             _this.influencers_by_default = res.json();
             _this.pdfArray = _this.influencers_by_default['results'];
@@ -147,7 +148,7 @@ var PinterestSearchComponent = /** @class */ (function () {
         }, function (dismiss) {
             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
             if (dismiss === 'cancel') {
-                // localStorage.removeItem('selected_list_twitter');
+                // localStorage.removeItem('selected_list_twitter')
                 sweetalert2__WEBPACK_IMPORTED_MODULE_7___default.a.fire('Cancelled', '', 'success');
             }
         });

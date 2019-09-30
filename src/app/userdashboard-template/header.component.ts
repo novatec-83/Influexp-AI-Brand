@@ -38,6 +38,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     }
 
     logout() {
+        localStorage.clear();
         localStorage.removeItem('currentUser');
         localStorage.removeItem('currentPassword');
         this.logoutsweetalert();

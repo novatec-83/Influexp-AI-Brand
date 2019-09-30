@@ -30,7 +30,6 @@ import { SocialLoginModule, AuthService } from 'angular5-social-login';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {
   BlogComponent,
-  // ContactComponent,
   HowItWorksComponent,
   PrivacyAndPolicyComponent,
   TermsAndConditionsComponent,

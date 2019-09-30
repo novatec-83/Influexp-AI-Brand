@@ -149,7 +149,7 @@ export class LoginComponent implements OnInit {
                         localStorage.setItem('currentPassword', this.model.password);
                         swal.fire({
                             type: 'success',
-                            title: 'You have successfully logges in to influexpai.\n' +
+                            title: 'You have successfully logged in to influexpai.\n' +
                             '\n',
                             // text: 'Please check your username or password',
                             showConfirmButton: false,

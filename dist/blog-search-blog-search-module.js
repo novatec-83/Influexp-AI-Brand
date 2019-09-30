@@ -373,7 +373,8 @@ var BlogosphereSearchComponent = /** @class */ (function () {
         var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_2__["Headers"]({ 'Authorization': 'JWT ' + this.currentUser.token });
         this.loaded = false;
         headers.append('Content-Type', 'application/json');
-        this.http.get(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/blog/get_blogsphere_pages_list' + '/?page=' + page)
+        // this.http.get(Config.api+'/blog/get_blogsphere_pages_list' + '/?page=' + page)
+        this.http.get(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/blog/get_blogsphere_pages_list')
             .subscribe(function (res) {
             _this.main_checkbox = false;
             var responce = res.json();

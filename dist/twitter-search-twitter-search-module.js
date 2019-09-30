@@ -118,7 +118,8 @@ var TwitterSearchComponent = /** @class */ (function () {
             // alert('called')
             return;
         }
-        this.http.get(_config__WEBPACK_IMPORTED_MODULE_3__["Config"].api + '/ml/get_twitter_influencers_list/' + '?page=' + page)
+        // this.http.get(Config.api + '/ml/get_twitter_influencers_list/' +  '?page=' + page )
+        this.http.get(_config__WEBPACK_IMPORTED_MODULE_3__["Config"].api + '/ml/get_twitter_influencers_list/')
             .subscribe(function (res) {
             _this.main_checkbox = false;
             _this.influencers_by_defalut = res.json();

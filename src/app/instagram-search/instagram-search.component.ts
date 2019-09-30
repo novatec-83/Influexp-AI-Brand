@@ -366,7 +366,8 @@ export class InstagramSearchComponent implements OnInit, AfterViewInit{
                     headers.append('Content-Type', 'application/json');
 
                     mysvc.post(Config.api + '/create_add_ilist_in/', JSON.stringify({
-                            name: result.value,
+                            // name: result.value,
+                            name: result,
                             list: list,
                             username: currentUser.username
                         }),

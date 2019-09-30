@@ -179,7 +179,7 @@ var FlickrSearchComponent = /** @class */ (function () {
         if (page < 1 || page > this.pager.totalPages) {
             return;
         }
-        this.http.get(_config__WEBPACK_IMPORTED_MODULE_2__["Config"].api + '/ml/get_flickr_influencers_list' + '/?page=' + page)
+        this.http.get(_config__WEBPACK_IMPORTED_MODULE_2__["Config"].api + '/ml/get_flickr_influencers_list')
             .subscribe(function (res) {
             // this.main_checkbox = false;
             _this.influencers_by_default_FB = res.json();

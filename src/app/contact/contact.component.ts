@@ -173,6 +173,7 @@ model: any= {};
                 .subscribe(data =>{console.log('Sent')});
             this.show();
             this.clear();
+            alert(this.model.name);alert(this.model.email);alert(this.model.phone);alert(this.model.message);
 
 
 
