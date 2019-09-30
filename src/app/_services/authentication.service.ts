@@ -125,7 +125,9 @@ login(username: string, password: string) {
     }
 
     contact_Us(name, email, phone, message) {
-        return this.http.post('http://192.168.29.166:8000/contact-us/',
+        // return this.http.post('http://192.168.29.166:8000/contact-us/',
+        return this.http.post('https://apis.influexpai.com/contact-us/',
+
         // http://192.168.29.166:8000/contact-us/
             {
                 'name':name,

@@ -85,7 +85,9 @@ export class LoginComponent implements OnInit {
               localStorage.setItem('loged_in', '1');
               localStorage.setItem('currentUser', JSON.stringify(user));
               localStorage.setItem('profilePhoto' , this.pic);
-              this.router.navigate(['/dashboard'+ this.username]);
+              // this.router.navigate(['/dashboard'+ this.username]);
+              this.router.navigate(['/dashboard']);
+
 
               this.showSuccess();
             

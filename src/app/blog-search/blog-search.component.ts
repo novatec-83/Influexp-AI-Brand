@@ -464,7 +464,8 @@ export class BlogosphereSearchComponent implements OnInit, AfterViewInit {
         let headers = new Headers({'Authorization': 'JWT ' + this.currentUser.token});
         this.loaded = false;
         headers.append('Content-Type', 'application/json');
-        this.http.get(Config.api+'/blog/get_blogsphere_pages_list' + '/?page=' + page)
+        // this.http.get(Config.api+'/blog/get_blogsphere_pages_list' + '/?page=' + page)
+        this.http.get(Config.api+'/blog/get_blogsphere_pages_list' )
             .subscribe(res => {
                 this.main_checkbox = false;
                 let responce = res.json();

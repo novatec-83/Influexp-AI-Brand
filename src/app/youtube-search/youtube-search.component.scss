@@ -85,18 +85,14 @@ input[type=checkbox]{
   font-size: 19px;
 }
 i{
-  color: #000;
+  color: white;
 }
-.add-to-list{
-  background:#c00!important;
-  color:#fff!important;
-  float: right!important;
-  margin-right: 10px
-}
-.add-to-list:hover{
-  color:#fff
-}
+.item-content{
 
+  color: #919fa9;
+  font-size: 14px;
+
+}
 .item-loc{
   color: #919fa9;
   font-size: 14px;

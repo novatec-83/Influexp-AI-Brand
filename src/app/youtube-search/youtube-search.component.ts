@@ -103,10 +103,10 @@ export class YoutubeSearchComponent implements OnInit {
             if (page < 1 || page > this.pager.totalPages) {
                 return;
             }
-        let headers = new Headers({'Authorization': 'JWT ' + this.currentUser.token});
-        this.loaded = false;
-        headers.append('Content-Type', 'application/json');
-        this.http.post(Config.api+'/ml/get_youtube_channels/' + 'Agriculture' + '/?page=' + page + '',{}, {headers: headers})
+        // let headers = new Headers({'Authorization': 'JWT ' + this.currentUser.token});
+        // this.loaded = false;
+        // headers.append('Content-Type', 'application/json');
+        this.http.get(Config.api+'/ml/get_youtube_influencers_list/' )
 
             .subscribe(res => {
                     // this.main_checkbox = false;
