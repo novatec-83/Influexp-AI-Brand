@@ -1,6 +1,83 @@
-﻿<!--<preloader-full></preloader-full>-->
+﻿<!-- <app-loader></app-loader> -->
+  <div class="flexy signin-signup">
+      <form class="form-content" (ngSubmit)="!userFormControl.hasError('required') && !userFormControl.hasError('pattern') && !passwordFormControl.hasError('required')
+      && login(f)" #f="ngForm" novalidate>
+          <div class="text-center">
+              <img class="w-50" src="../../../assets/images/logos/Logo.png" alt="image">
+          </div>
+          <ul>
+            <li class="mr-2">
+                <a (click)=" facebooklogin()"> <img src="../../assets/images/facebook.png"> </a>
+            </li>
+            <li class="ml-2">
+                <a (click)="googlelogin()"> <img src="../../assets/images/icon-Google.png"> </a>
+            </li>
+          </ul>
+            <mat-form-field class="w-100 mb-3">
+              <input matInput type="text" placeholder="Username"  tabindex=1 [formControl]="userFormControl"  [(ngModel)]="model.username" required>
+              <span class="pointer" *ngIf="model.username"  matSuffix md-list-icon aria-label="Clear" (click)="model.username=''">
+                              <i class="fa fa-close"></i>
+                </span>
+              <mat-error *ngIf="userFormControl.hasError('pattern')">
+                Please enter a valid username
+              </mat-error>
+              <mat-error *ngIf="userFormControl.hasError('required')">
+                Username is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <input [type]="hide ? 'password' : 'text'"  matInput placeholder="Password" tabindex=2 [formControl]="passwordFormControl" [(ngModel)]="model.password" required>
+              <i *ngIf= "hide" class="fa fa-eye eye-icon" title="Show Password" (click)="hide = !hide"></i>
+              <i *ngIf= "!hide" class="fa fa-eye-slash eye-icon" title="Hide Password" (click)="hide = !hide"></i>
+  
+              <mat-error *ngIf="passwordFormControl.hasError('required')">
+                Password is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+            <div class="row ">
+              <div class="col-md-6">
+                  <div class="text-left">
+                      <mat-slide-toggle [(checked)]="model">
+                        Stay Signed In</mat-slide-toggle>
+                        <a class="forgot" [routerLink]="['/authentication/forgot']">Forgot your password? </a>
+                    </div>
+              </div>
+              <div class="col-md-6 text-right">
+                  <div [ngClass]="{ 'has-error':!recaptcha}">
+                      <app-recapcha></app-recapcha>
+                                <div *ngIf="!recaptcha" >Please confirm you are not a robot!</div>
+                              </div>
+              </div>
+              <div class="col-md-12 text-center mt-3">
+                  <button type="submit" class="btn btn-primary">Sign In</button>
+                  <label class="signup-label"> Don’t have an account?
+                    <a class="sign-up" [routerLink]="['/authentication/signup']"> Sign Up </a></label>
+                    <div class="text-center privacy">
+                      <a href="https://www.influexpai.com/Terms-and-Conditions" target="_blank">
+                        Terms of Use           &nbsp;&nbsp;&nbsp;
+                      </a><a href="https://www.influexpai.com/privacy_policy" target="_blank"> Privacy Policy</a>
+                    </div>
+              </div>
+          </div>
+        </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<preloader-full></preloader-full>-->
 <!--<app-loader></app-loader>-->
-<div class="">
+<!-- <div class="">
     <div class="">
 <div class="login-page">
     <div class="col-lg-4 col-md-8 col-sm-10 col-xs-10 login-wrap">
@@ -37,9 +114,9 @@
 
                     <mat-form-field class="loginfrom md-size" >
                         <input [type]="hide ? 'password' : 'text'"  matInput placeholder="Password" tabindex=2 [formControl]="passwordFormControl" [(ngModel)]="model.password" required>
-                        <mat-icon class="pointer" data-toggle="tooltip" title="{{hide? 'Show' : 'Hide'}}Password" matSuffix (click)="hide=!hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        <mat-icon class="pointer" data-toggle="tooltip" title="{{hide? 'Show' : 'Hide'}}Password" matSuffix (click)="hide=!hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> -->
 
-                        <!-- <span class="pointer" data-toggle="tooltip" title=" {{hide? 'Show' : 'Hide'}} Password" mdSuffix (click)="hide = !hide">{{ hide ? 'fa fa-eye' : 'fa fa-eye-splash' }}</span> -->
+<!--                         
                         <mat-error *ngIf="passwordFormControl.hasError('required')">
                             Password is <strong>required</strong>
                         </mat-error>
@@ -60,17 +137,13 @@
                 </div>
 
                 <div class="footer text-center">
-                    <button type="submit" class="btn-login" tabindex=3> Sign in</button>
-                    <!--<label class="font1" style="float: left;"> Don't have an account?-->
-                        <!--<a style="font-size: 20px; font-weight: 700;" [routerLink]="['/register']"> Sign Up </a>-->
-                    <!--</label>-->
+                    <button type="submit" class="btn-login" tabindex=3> Sign in</button> -->
+                   
+<!--                    
                 </div>
-                <div  class="have-account">No Account Yet? <a  routerlink="/register" href="/register"><b>Sign Up</b></a></div>
-                <!--<div class="row" style="display: flex; flex-direction: row; justify-content: space-evenly; font-size: 20px; margin: 0px 0px 0px 25px">-->
-                    <!--<a href="https://www.influexpai.com/Terms-and-Conditions" target="_blank" style="color: #286ffe;">Terms of use</a>-->
-                    <!--<a href="https://www.influexpai.com/privacy_policy" target="_blank" style="color: #286ffe">Privacy Policy</a>-->
-                <!--</div>-->
-                <div  class="have-account" ><a  href="https://www.influexpai.com/Terms-and-Conditions" target="blank">
+                <div  class="have-account">No Account Yet? <a  routerlink="/register" href="/register"><b>Sign Up</b></a></div> -->
+                
+                <!-- <div  class="have-account" ><a  href="https://www.influexpai.com/Terms-and-Conditions" target="blank">
                     Terms of use </a>&nbsp;&nbsp;&nbsp;<a  href="https://www.influexpai.com/privacy_policy" target="blank"> Privacy Policy</a></div>
             </div>
         </form>
@@ -78,4 +151,4 @@
     <div class="col-lg-4 col-md-3"></div> 
 </div>
     </div>
-</div>
+</div> -->

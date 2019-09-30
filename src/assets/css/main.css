@@ -8269,7 +8269,7 @@ hr.margin-4 {
     border-color: #bec6cc
 }
 
-.btn.btn-primary {
+/* .btn.btn-primary {
     background-color: #000000;
     border-color: #000000;
     transition: 0.5s;
@@ -8278,7 +8278,7 @@ hr.margin-4 {
 .btn.btn-primary:hover {
     background-color: #000000 !important;
     border-color: #000000
-}
+} */
 .btn.btn-primary1 {
     background-color: #000000;
     border-color: #000000;
