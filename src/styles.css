@@ -131,6 +131,14 @@ display: none!important;
   background: #000;
   cursor: pointer;
 }
+.signupwa .mat-slide-toggle-label {
+  padding: 36px 0;
+}
+.signupwa .mat-slide-toggle-content,
+.signupwa .mat-slide-toggle {
+  white-space: unset;
+  line-height: 18px;
+}
 mat-tab-group{
   -webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
   box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
