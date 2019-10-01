@@ -74,7 +74,10 @@ export class RegisterComponent implements OnInit {
 
                 },
                 error => {
-                    Swal.fire('Account Not Register', 'Some Server Side Error', 'error');
+                    // if(error.status===400){
+                    //     Swal.fire('Email Already Exist','error');
+                    // }
+                    Swal.fire('Already Exist', 'Email Already Exist', 'error');
                     this.loading = false;
                 });
                 this.recptha.resetImg();

@@ -430,7 +430,8 @@ this.get_default_FB_data(1);
                                     headers.append('Content-Type', 'application/json');
 
                                     mysvc.post(Config.api + '/check_ilist_fb/', JSON.stringify({
-                                            name: result.value,
+                                            // name: result.value,
+                                            name: result,
                                             username: currentUser.username
                                         }),
                                         {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -439,7 +440,10 @@ this.get_default_FB_data(1);
 
                                         },
                                         error => {
-                                            reject('List named "' + result + '" already exists')
+                                            if(error.status===406){
+                                                Swal.fire('List Already Exist','error');
+                                            }
+                                            // reject('List named "' + result + '" already exists')
 
                                         });
                                 }

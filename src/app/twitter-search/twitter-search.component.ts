@@ -574,7 +574,8 @@ export class TwitterSearchComponent implements OnInit {
                                     headers.append('Content-Type', 'application/json');
 
                                     mysvc.post(Config.api + '/ml' + '/check_ilist_twitter/', JSON.stringify({
-                                            name: result.value,
+                                            // name: result.value,
+                                            name: result,
                                             username: currentUser.username
                                         }),
                                         {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -583,7 +584,10 @@ export class TwitterSearchComponent implements OnInit {
 
                                         },
                                         error => {
-                                            reject('List named "' + result + '" already exists')
+                                            if(error.satus===406){
+                                                Swal.fire('List Already Exist')
+                                            }
+                                            // reject('List named "' + result + '" already exists')
 
                                         });
                                 }

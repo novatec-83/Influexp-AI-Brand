@@ -341,7 +341,8 @@ export class InstagramSearchComponent implements OnInit, AfterViewInit{
                                     headers.append('Content-Type', 'application/json');
 
                                     mysvc.post(Config.api + '/check_ilist_in/', JSON.stringify({
-                                            name: result.value,
+                                            // name: result.value,
+                                            name: result,
                                             username: currentUser.username
                                         }),
                                         {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -350,7 +351,10 @@ export class InstagramSearchComponent implements OnInit, AfterViewInit{
 
                                         },
                                         error => {
-                                            reject('List named "' + result + '" already exists')
+                                            if(error.status===406){
+                                                Swal.fire('List already exist')
+                                            }
+                                            // reject('List named "' + result + '" already exists')
 
                                         });
                                 }

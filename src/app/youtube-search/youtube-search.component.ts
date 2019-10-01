@@ -322,7 +322,8 @@ export class YoutubeSearchComponent implements OnInit {
                                     headers.append('Content-Type', 'application/json');
 
                                     mysvc.post(Config.api + '/check_ilist_yt/', JSON.stringify({
-                                            name: result.value,
+                                            name: result,
+                                            // name: result.value,
                                             username: currentUser.username
                                         }),
                                         {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -348,7 +349,8 @@ export class YoutubeSearchComponent implements OnInit {
                     headers.append('Content-Type', 'application/json');
 
                     mysvc.post(Config.api + '/create_add_ilist_yt/', JSON.stringify({
-                            name: result.value,
+                            // name: result.value,
+                            name: result,
                             list: list,
                             username: currentUser.username
                         }),
