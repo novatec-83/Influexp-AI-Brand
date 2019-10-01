@@ -359,7 +359,8 @@ export class PinterestSearchComponent implements OnInit , AfterViewInit, OnDestr
                                     headers.append('Content-Type', 'application/json');
 
                                     mysvc.post(Config.api + '/check_ilist_pt/', JSON.stringify({
-                                            name: result.value,
+                                            // name: result.value,
+                                            name: result,
                                             username: currentUser.username
                                         }),
                                         {headers: headers}).map((response: Response) => response.json()).subscribe(

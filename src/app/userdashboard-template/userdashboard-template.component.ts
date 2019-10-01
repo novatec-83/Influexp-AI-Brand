@@ -315,7 +315,8 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/ml/check_ilist_twitter/', JSON.stringify({
-                                    name: result.value,
+                                    // name: result.value,
+                                    name: result,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -324,7 +325,10 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                                 },
                                 error => {
-                                    reject('List named "' + result + '" already exists')
+                                    if(error.status===406){
+                                    Swal.fire('List Already Exist')
+                                    }
+                                    // reject('List named "' + result + '" already exists')
 
                                 });
                         }
@@ -558,7 +562,8 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_yt/', JSON.stringify({
-                                    name: result.value,
+                                    // name: result.value,
+                                    name: result,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -567,7 +572,10 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                                 },
                                 error => {
-                                    reject('List named "' + result + '" already exists')
+                                    if(error.status===406){
+                                        Swal.fire('List Already Exist','error');
+                                    }
+                                    // reject('List named "' + result + '" already exists')
 
                                 });
                         }
@@ -584,7 +592,8 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist_yt/', JSON.stringify({
-                    name: result.value,
+                    name: result,
+                    // name: result.value,
                     list: {},
                     username: this.currentUser.username
                 }),
@@ -665,7 +674,8 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_in/', JSON.stringify({
-                                    name: result.value,
+                                    // name: result.value,
+                                    name: result,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -674,7 +684,10 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                                 },
                                 error => {
-                                    reject('List named "' + result + '" already exists')
+                                    if(error.status===406){
+                                        Swal.fire('List already exist')
+                                    }
+                                    // reject('List named "' + result + '" already exists')
 
                                 });
                         }
@@ -836,7 +849,8 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_fb/', JSON.stringify({
-                                    name: result.value,
+                                    name: result,
+                                    // name: result.value,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -845,7 +859,10 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                                 },
                                 error => {
-                                    reject('List named "' + result + '" already exists')
+                                    if(error.status===406){
+                                            Swal.fire('List Already Exist','error');
+                                        }
+                                    // reject('List named "' + result + '" already exists')
 
                                 });
                         }
@@ -1140,7 +1157,8 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_dd/', JSON.stringify({
-                                    name: result.value,
+                                    name: result,
+                                    // name: result.value,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -1487,7 +1505,8 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_pt/', JSON.stringify({
-                                    name: result.value,
+                                    // name: result.value,
+                                    name: result,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -1727,7 +1746,8 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_periscope/', JSON.stringify({
-                                    name: result.value,
+                                    name: result,
+                                    // name: result.value,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -1807,7 +1827,8 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_md/', JSON.stringify({
-                                    name: result.value,
+                                    // name: result.value,
+                                    name: result,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
