@@ -79,7 +79,7 @@ export const AppRoutes: Routes = [
         { path: 'medium/search', loadChildren: './medium-search/medium-search.module#MediumSearchModule'},
         { path: 'twitter/search', loadChildren: './twitter-search/twitter-search.module#TwitterSearchModule' },
         { path: 'flickr/search', loadChildren: './flickr-search/flickr-search.module#FlickrSearchModule' },
-    //     { path: 'search/results/:query', loadChildren: './generic-search/generic-search.module#GenericSearchModule' },
+        { path: 'search/results/:query', loadChildren: './generic-search/generic-search.module#GenericSearchModule' },
         { path: 'blogosphere/list/:query', loadChildren: './blog-search/blogosphere-list-inf.module#BlogosphereListInfModule'},
         { path: 'blogosphere/search',  loadChildren: './blog-search/blog-search.module#BlogosphereSearchModule'},
     //     { path: 'blogs/search/v2/:query', loadChildren: './blogsearch/blogsearch.module#BlogsearchModule'},
