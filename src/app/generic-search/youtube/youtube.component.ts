@@ -66,7 +66,7 @@ export class YoutubeComponent implements OnInit , AfterViewInit{
             // html: true,
             confirmButtonColor: '#2ecc71',
             showCancelButton: true,
-
+ 
         }).then(() => {
 
             window.open(url);
