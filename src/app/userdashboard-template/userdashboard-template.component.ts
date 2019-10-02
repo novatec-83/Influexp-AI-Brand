@@ -594,7 +594,7 @@ export class UserdashboardTemplateComponent implements OnInit {
             this.http.post(Config.api + '/create_add_ilist_yt/', JSON.stringify({
                     name: result,
                     // name: result.value,
-                    list: {},
+                    // list: {},
                     username: this.currentUser.username
                 }),
                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -1167,7 +1167,10 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                                 },
                                 error => {
-                                    reject('List named "' + result + '" already exists')
+                                    if(error.status===406){
+                                        Swal.fire('List Already Exist')
+                                    }
+                                    // reject('List named "' + result + '" already exists')
 
                                 });
                         }
@@ -1184,6 +1187,7 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist_dd/', JSON.stringify({
+                    // name: result.value,
                     name: result.value,
                     list: {},
                     username: this.currentUser.username

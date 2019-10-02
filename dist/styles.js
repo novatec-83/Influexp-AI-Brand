@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Mahad\Documents\GitHub\Influexp-AI-Brand\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\Muhammad Usman Khan\Documents\GitHub\Influexp-AI-Brand\src\styles.css */"./src/styles.css");
 
 
 /***/ })

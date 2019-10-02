@@ -542,7 +542,9 @@ var TwitterSearchComponent = /** @class */ (function () {
                         _this.main_checkbox = false;
                         sweetalert2__WEBPACK_IMPORTED_MODULE_6___default.a.fire('List created and influencers added!', result.value(), 'success');
                     }, function (error) {
-                        sweetalert2__WEBPACK_IMPORTED_MODULE_6___default.a.fire('Try again after some time!', error.toString(), 'error');
+                        sweetalert2__WEBPACK_IMPORTED_MODULE_6___default.a.fire('Try again after some time!', 
+                        // error.toString(),
+                        'error');
                     });
                 }, function (dismiss) {
                     // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -577,7 +579,9 @@ var TwitterSearchComponent = /** @class */ (function () {
                                 sweetalert2__WEBPACK_IMPORTED_MODULE_6___default.a.fire('List updated!', '', 'success');
                             }, function (error) {
                                 // alert('error')
-                                sweetalert2__WEBPACK_IMPORTED_MODULE_6___default.a.fire('Try again after some time!', error.toString(), 'error');
+                                sweetalert2__WEBPACK_IMPORTED_MODULE_6___default.a.fire('Try again after some time!', 
+                                // error.toString(),
+                                'error');
                             });
                         }, function (dismiss) {
                             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
