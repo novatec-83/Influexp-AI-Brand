@@ -6076,6 +6076,7 @@ var.result-container {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  background: #F7FBFD;
 }
 .dark-theme .page-content {
   padding-top: 77px;
