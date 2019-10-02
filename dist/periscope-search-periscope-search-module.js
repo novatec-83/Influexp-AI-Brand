@@ -307,7 +307,8 @@ var PeriscopeSearchComponent = /** @class */ (function () {
                                     var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]({ 'Authorization': 'JWT ' + currentUser.token });
                                     headers.append('Content-Type', 'application/json');
                                     mysvc.post(_config__WEBPACK_IMPORTED_MODULE_2__["Config"].api + '/check_ilist_periscope/', JSON.stringify({
-                                        name: result.value,
+                                        name: result,
+                                        // name: result.value,
                                         username: currentUser.username
                                     }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                         resolve();

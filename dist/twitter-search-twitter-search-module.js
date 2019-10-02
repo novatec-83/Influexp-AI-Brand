@@ -509,12 +509,16 @@ var TwitterSearchComponent = /** @class */ (function () {
                                     var headers_1 = new _angular_http__WEBPACK_IMPORTED_MODULE_5__["Headers"]({ 'Authorization': 'JWT ' + currentUser.token });
                                     headers_1.append('Content-Type', 'application/json');
                                     mysvc.post(_config__WEBPACK_IMPORTED_MODULE_3__["Config"].api + '/ml' + '/check_ilist_twitter/', JSON.stringify({
-                                        name: result.value,
+                                        // name: result.value,
+                                        name: result,
                                         username: currentUser.username
                                     }), { headers: headers_1 }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                         resolve();
                                     }, function (error) {
-                                        reject('List named "' + result + '" already exists');
+                                        if (error.satus === 406) {
+                                            sweetalert2__WEBPACK_IMPORTED_MODULE_6___default.a.fire('List Already Exist');
+                                        }
+                                        // reject('List named "' + result + '" already exists')
                                     });
                                 }
                             }, 2);

@@ -290,12 +290,16 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
                             var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_3__["Headers"]({ 'Authorization': 'JWT ' + _this.currentUser['token'] });
                             headers.append('Content-Type', 'application/json');
                             _this.http.post(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/ml/check_ilist_twitter/', JSON.stringify({
-                                name: result.value,
+                                // name: result.value,
+                                name: result,
                                 username: _this.currentUser.username
                             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                 resolve();
                             }, function (error) {
-                                reject('List named "' + result + '" already exists');
+                                if (error.status === 406) {
+                                    sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire('List Already Exist');
+                                }
+                                // reject('List named "' + result + '" already exists')
                             });
                         }
                     }, 2);
@@ -434,12 +438,16 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
                             var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_3__["Headers"]({ 'Authorization': 'JWT ' + _this.currentUser['token'] });
                             headers.append('Content-Type', 'application/json');
                             _this.http.post(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/check_ilist_yt/', JSON.stringify({
-                                name: result.value,
+                                // name: result.value,
+                                name: result,
                                 username: _this.currentUser.username
                             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                 resolve();
                             }, function (error) {
-                                reject('List named "' + result + '" already exists');
+                                if (error.status === 406) {
+                                    sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire('List Already Exist', 'error');
+                                }
+                                // reject('List named "' + result + '" already exists')
                             });
                         }
                     }, 2);
@@ -452,7 +460,8 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
             var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_3__["Headers"]({ 'Authorization': 'JWT ' + _this.currentUser['token'] });
             headers.append('Content-Type', 'application/json');
             _this.http.post(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/create_add_ilist_yt/', JSON.stringify({
-                name: result.value,
+                name: result,
+                // name: result.value,
                 list: {},
                 username: _this.currentUser.username
             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
@@ -507,12 +516,16 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
                             var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_3__["Headers"]({ 'Authorization': 'JWT ' + _this.currentUser['token'] });
                             headers.append('Content-Type', 'application/json');
                             _this.http.post(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/check_ilist_in/', JSON.stringify({
-                                name: result.value,
+                                // name: result.value,
+                                name: result,
                                 username: _this.currentUser.username
                             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                 resolve();
                             }, function (error) {
-                                reject('List named "' + result + '" already exists');
+                                if (error.status === 406) {
+                                    sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire('List already exist');
+                                }
+                                // reject('List named "' + result + '" already exists')
                             });
                         }
                     }, 1);
@@ -624,12 +637,16 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
                             var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_3__["Headers"]({ 'Authorization': 'JWT ' + _this.currentUser['token'] });
                             headers.append('Content-Type', 'application/json');
                             _this.http.post(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/check_ilist_fb/', JSON.stringify({
-                                name: result.value,
+                                name: result,
+                                // name: result.value,
                                 username: _this.currentUser.username
                             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                 resolve();
                             }, function (error) {
-                                reject('List named "' + result + '" already exists');
+                                if (error.status === 406) {
+                                    sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire('List Already Exist', 'error');
+                                }
+                                // reject('List named "' + result + '" already exists')
                             });
                         }
                     }, 2);
@@ -821,7 +838,8 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
                             var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_3__["Headers"]({ 'Authorization': 'JWT ' + _this.currentUser['token'] });
                             headers.append('Content-Type', 'application/json');
                             _this.http.post(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/check_ilist_dd/', JSON.stringify({
-                                name: result.value,
+                                name: result,
+                                // name: result.value,
                                 username: _this.currentUser.username
                             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                 resolve();
@@ -1040,7 +1058,8 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
                             var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_3__["Headers"]({ 'Authorization': 'JWT ' + _this.currentUser['token'] });
                             headers.append('Content-Type', 'application/json');
                             _this.http.post(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/check_ilist_pt/', JSON.stringify({
-                                name: result.value,
+                                // name: result.value,
+                                name: result,
                                 username: _this.currentUser.username
                             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                 resolve();
@@ -1219,7 +1238,8 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
                             var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_3__["Headers"]({ 'Authorization': 'JWT ' + _this.currentUser['token'] });
                             headers.append('Content-Type', 'application/json');
                             _this.http.post(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/check_ilist_periscope/', JSON.stringify({
-                                name: result.value,
+                                name: result,
+                                // name: result.value,
                                 username: _this.currentUser.username
                             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                 resolve();
@@ -1272,7 +1292,8 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
                             var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_3__["Headers"]({ 'Authorization': 'JWT ' + _this.currentUser['token'] });
                             headers.append('Content-Type', 'application/json');
                             _this.http.post(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/check_ilist_md/', JSON.stringify({
-                                name: result.value,
+                                // name: result.value,
+                                name: result,
                                 username: _this.currentUser.username
                             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                 resolve();
