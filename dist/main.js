@@ -3426,7 +3426,10 @@ var RegisterComponent = /** @class */ (function () {
                 _this.router.navigate(['/payment']);
                 localStorage.setItem('newUSerEmail', _this.model.email);
             }, function (error) {
-                sweetalert2__WEBPACK_IMPORTED_MODULE_4___default.a.fire('Account Not Register', 'Some Server Side Error', 'error');
+                // if(error.status===400){
+                //     Swal.fire('Email Already Exist','error');
+                // }
+                sweetalert2__WEBPACK_IMPORTED_MODULE_4___default.a.fire('Already Exist', 'Email Already Exist', 'error');
                 _this.loading = false;
             });
             this.recptha.resetImg();
@@ -4382,7 +4385,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Mahad\Documents\GitHub\Influexp-AI-Brand\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Muhammad Usman Khan\Documents\GitHub\Influexp-AI-Brand\src\main.ts */"./src/main.ts");
 
 
 /***/ })

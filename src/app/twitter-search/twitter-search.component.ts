@@ -626,7 +626,7 @@ export class TwitterSearchComponent implements OnInit {
                         error => {
                             Swal.fire(
                                 'Try again after some time!',
-                                error.toString(),
+                                // error.toString(),
                                 'error'
                             )
                         });
@@ -682,7 +682,7 @@ export class TwitterSearchComponent implements OnInit {
                                     // alert('error')
                                     Swal.fire(
                                         'Try again after some time!',
-                                        error.toString(),
+                                        // error.toString(),
                                         'error'
                                     )
                                 });

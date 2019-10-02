@@ -297,7 +297,8 @@ var FlickrSearchComponent = /** @class */ (function () {
                                     var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]({ 'Authorization': 'JWT ' + currentUser.token });
                                     headers.append('Content-Type', 'application/json');
                                     mysvc.post(_config__WEBPACK_IMPORTED_MODULE_2__["Config"].api + '/check_ilist_fl/', JSON.stringify({
-                                        name: result.value,
+                                        name: result,
+                                        // name: result.value,
                                         username: currentUser.username
                                     }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                         resolve();
@@ -316,6 +317,7 @@ var FlickrSearchComponent = /** @class */ (function () {
                     headers.append('Content-Type', 'application/json');
                     mysvc.post(_config__WEBPACK_IMPORTED_MODULE_2__["Config"].api + '/create_add_ilist_fl/', JSON.stringify({
                         name: result.value,
+                        // name: result,
                         list: list,
                         username: currentUser.username
                     }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {

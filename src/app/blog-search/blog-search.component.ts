@@ -316,7 +316,10 @@ export class BlogosphereSearchComponent implements OnInit, AfterViewInit {
 
                                         },
                                         error => {
-                                            reject('List named "' + result + '" already exists')
+                                            if(error.status===406){
+                                                Swal.fire('List Already Exist')
+                                            }
+                                            // reject('List named "' + result + '" already exists')
 
                                         });
                                 }
@@ -333,7 +336,8 @@ export class BlogosphereSearchComponent implements OnInit, AfterViewInit {
                     headers.append('Content-Type', 'application/json');
 
                     mysvc.post(Config.api + '/create_add_ilist_dd/', JSON.stringify({
-                            name: result.value,
+                            name: result,
+                            // name: result.value,
                             list: list,
                             username: currentUser.username
                         }),
