@@ -85,6 +85,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         );
 
     }
+    
+    // find1(e) {
+
+    //     this.router.navigate(['/search/results/', e])
+    //     localStorage.setItem('searchQuery1', e);
+    // }
     loadCurrentUser(img){
         this.currentUser.profile_image=img;
 

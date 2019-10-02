@@ -38,10 +38,13 @@
               <div class="col-md-6">
                   <div class="text-left">
                       <mat-slide-toggle id="slid"  type="checkbox" checked data-toggle="toggle">  Stay Signed In</mat-slide-toggle>
-                    <!-- <mat-slide-toggle name="stay"
+                      <!-- <mat-slide-toggle [(checked)]="model" style="font-size: 14px; color: #aaaaaa;"> -->
+                      <!-- <mat-slide-toggle name="stay"
                     [(ngModel)]="model">Stay signed in</mat-slide-toggle><br> -->
-    <a class="forgot-pass" [routerLink]="['/reset-password']">Forgot Password? </a>
+    
+                    <!-- <a class="forgot-pass" [routerLink]="['/reset-password']">Forgot Password? </a> -->
                     </div>
+                    <a class="forgot-pass" [routerLink]="['/reset-password']">Forgot Password? </a>
               </div>
               <div class="col-md-6 text-right">
                   <div [ngClass]="{ 'has-error':!recaptcha}">
