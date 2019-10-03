@@ -255,7 +255,7 @@ export class PinterestSearchComponent implements OnInit , AfterViewInit, OnDestr
                     },
                     // input: "text",
                     showCloseButton: true,
-                    showCancelButton: true,
+                    // showCancelButton: true,
                     confirmButtonText: 'Add to list"'+current_list.name+'"',
 
                 }

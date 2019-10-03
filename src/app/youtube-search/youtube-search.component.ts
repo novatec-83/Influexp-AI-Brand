@@ -251,7 +251,7 @@ export class YoutubeSearchComponent implements OnInit {
                         // alert('error')
                         Swal.fire(
                             'Try again after some time!',
-                            error.toString(),
+                            // error.toString(),
                             'error'
                         )
                     });
@@ -352,8 +352,8 @@ export class YoutubeSearchComponent implements OnInit {
                     headers.append('Content-Type', 'application/json');
 
                     mysvc.post(Config.api + '/create_add_ilist_yt/', JSON.stringify({
-                            // name: result.value,
-                            name: result,
+                            name: result.value,
+                            // name: result,
                             // list: list,
                             username: currentUser.username
                         }),
@@ -375,7 +375,7 @@ export class YoutubeSearchComponent implements OnInit {
                         error => {
                             Swal.fire(
                                 'Try again after some time!',
-                                error.toString(),
+                                // error.toString(),
                                 'error'
                             )
                         });
@@ -432,7 +432,7 @@ export class YoutubeSearchComponent implements OnInit {
                                         // alert('error')
                                         Swal.fire(
                                             'Try again after some time!',
-                                            error.toString(),
+                                            // error.toString(),
                                             'error'
                                         )
                                     });

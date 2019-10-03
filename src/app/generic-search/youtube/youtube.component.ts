@@ -66,7 +66,7 @@ export class YoutubeComponent implements OnInit , AfterViewInit{
             // html: true,
             confirmButtonColor: '#2ecc71',
             showCancelButton: true,
-
+ 
         }).then(() => {
 
             window.open(url);
@@ -166,7 +166,7 @@ export class YoutubeComponent implements OnInit , AfterViewInit{
                         // alert('error')
                         swal.fire(
                             'Try again after some time!',
-                            error.toString(),
+                            // error.toString(),
                             'error'
                         )
                     });
@@ -284,7 +284,7 @@ export class YoutubeComponent implements OnInit , AfterViewInit{
                         error => {
                             swal.fire(
                                 'Try again after some time!',
-                                error.toString(),
+                                // error.toString(),
                                 'error'
                             )
                         });
@@ -341,7 +341,7 @@ export class YoutubeComponent implements OnInit , AfterViewInit{
                                         // alert('error')
                                         swal.fire(
                                             'Try again after some time!',
-                                            error.toString(),
+                                            // error.toString(),
                                             'error'
                                         )
                                     });

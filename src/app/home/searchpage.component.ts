@@ -1360,7 +1360,7 @@ export class SearchpageComponent implements OnInit {
                         // alert('error')
                       Swal.fire(
                         'Try again after some time!',
-                            error.toString(),
+                            // error.toString(),
                             'error'
                         )
                     });
@@ -1442,7 +1442,10 @@ export class SearchpageComponent implements OnInit {
 
                                         },
                                         error => {
-                                            reject('List named "' + result + '" already exists')
+                                            if(error.status===406){
+                                                Swal.fire("List Already Exist")
+                                            }
+                                            // reject('List named "' + result + '" already exists')
 
                                         });
                                 }
@@ -1480,7 +1483,7 @@ export class SearchpageComponent implements OnInit {
                         error => {
                           Swal.fire(
                                 'Try again after some time!',
-                                error.toString(),
+                                // error.toString(),
                                 'error'
                             )
                         });
@@ -1534,7 +1537,7 @@ export class SearchpageComponent implements OnInit {
                                     // alert('error')
                                   Swal.fire(
                                         'Try again after some time!',
-                                        error.toString(),
+                                        // error.toString(),
                                         'error'
                                     )
                                 });
