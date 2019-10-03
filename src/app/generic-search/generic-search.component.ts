@@ -192,7 +192,7 @@ export class GenericSearchComponent implements OnInit, OnDestroy {
                         // alert('error')
                         swal.fire(
                             'Try again after some time!',
-                            error.toString(),
+                            // error.toString(),
                             'error'
                         )
                     });
@@ -272,7 +272,10 @@ export class GenericSearchComponent implements OnInit, OnDestroy {
 
                                         },
                                         error => {
-                                            reject('List named "' + result + '" already exists')
+                                            if(error.status===406){
+                                                swal.fire("List Already Exist")
+                                            }
+                                            // reject('List named "' + result + '" already exists')
 
                                         });
                                 }
@@ -363,7 +366,7 @@ export class GenericSearchComponent implements OnInit, OnDestroy {
                                     // alert('error')
                                     swal.fire(
                                         'Try again after some time!',
-                                        error.toString(),
+                                        // error.toString(),
                                         'error'
                                     )
                                 });
