@@ -1356,7 +1356,9 @@ var SearchpageComponent = /** @class */ (function () {
                     sweetalert2__WEBPACK_IMPORTED_MODULE_5___default.a.fire('List updated!', current_list.name, 'success');
                 }, function (error) {
                     // alert('error')
-                    sweetalert2__WEBPACK_IMPORTED_MODULE_5___default.a.fire('Try again after some time!', error.toString(), 'error');
+                    sweetalert2__WEBPACK_IMPORTED_MODULE_5___default.a.fire('Try again after some time!', 
+                    // error.toString(),
+                    'error');
                 });
             }, function (dismiss) {
                 // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -1419,7 +1421,10 @@ var SearchpageComponent = /** @class */ (function () {
                                     }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                         resolve();
                                     }, function (error) {
-                                        reject('List named "' + result + '" already exists');
+                                        if (error.status === 406) {
+                                            sweetalert2__WEBPACK_IMPORTED_MODULE_5___default.a.fire("List Already Exist");
+                                        }
+                                        // reject('List named "' + result + '" already exists')
                                     });
                                 }
                             }, 2);
@@ -1443,7 +1448,9 @@ var SearchpageComponent = /** @class */ (function () {
                         _this.main_checkbox = false;
                         sweetalert2__WEBPACK_IMPORTED_MODULE_5___default.a.fire('List created and influencers added!', result.value(), 'success');
                     }, function (error) {
-                        sweetalert2__WEBPACK_IMPORTED_MODULE_5___default.a.fire('Try again after some time!', error.toString(), 'error');
+                        sweetalert2__WEBPACK_IMPORTED_MODULE_5___default.a.fire('Try again after some time!', 
+                        // error.toString(),
+                        'error');
                     });
                 }, function (dismiss) {
                     // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
@@ -1475,7 +1482,9 @@ var SearchpageComponent = /** @class */ (function () {
                                 sweetalert2__WEBPACK_IMPORTED_MODULE_5___default.a.fire('List updated!', '', 'success');
                             }, function (error) {
                                 // alert('error')
-                                sweetalert2__WEBPACK_IMPORTED_MODULE_5___default.a.fire('Try again after some time!', error.toString(), 'error');
+                                sweetalert2__WEBPACK_IMPORTED_MODULE_5___default.a.fire('Try again after some time!', 
+                                // error.toString(),
+                                'error');
                             });
                         }, function (dismiss) {
                             // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'

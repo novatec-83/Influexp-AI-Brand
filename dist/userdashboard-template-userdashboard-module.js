@@ -18,7 +18,7 @@ module.exports = "\r\n<!--<div *ngIf=\"loaded\">-->\r\n<div class=\"page-content
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);\nbody, html {\n  margin: 0;\n  width: 100vw;\n  height: 100vh;\n  font-family: \"Source Sans Pro\" sans-serif; }\n.button__holder {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: center; }\n.button__holder:after {\n    content: \"\";\n    position: absolute;\n    z-index: 0;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0; }\n.button__holder h2 {\n    margin-right: 1em;\n    text-align: center;\n    color: #79CDCD; }\n.plus {\n  position: relative;\n  z-index: 1;\n  width: 80px;\n  height: 80px;\n  background: #262626;\n  border-radius: 50%;\n  border: none;\n  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);\n  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);\n  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1); }\n.plus:after {\n    content: \"+\";\n    font-size: 5em;\n    line-height: 1.1em;\n    color: white; }\n.plus:hover {\n    box-shadow: 0 0 1px 10px rgba(13, 13, 13, 0.16), 0 0 1px 20px rgba(56, 50, 50, 0.1), 0 0 1px 30px rgba(0, 0, 0, 0.1); }\n#list_name {\n  font-size: 16px;\n  font-weight: 700;\n  color: #c00;\n  text-transform: capitalize; }\n.mat-tab-labels {\n  background-color: #FFFFFF; }\n.sh-n-table table thead tr th {\n  background: #000;\n  color: #fff;\n  text-align: center;\n  border-right: 1px solid;\n  font-size: 16px;\n  padding: 5px 0;\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }\n.sh-n-table table tbody tr td {\n  width: 300px;\n  padding: 5px 10px;\n  cursor: pointer;\n  vertical-align: middle;\n  text-align: center;\n  font-size: .9em;\n  font-weight: 400;\n  color: #000;\n  border: none !important;\n  border-bottom: 1px solid #ccc !important; }\n.sh-n-table table tbody tr td a {\n  cursor: pointer; }\n.crete-list-button {\n  background: #000;\n  margin: 17px !important; }\n.crete-list-button:hover {\n  color: #fff; }\n.tasks-grid .header .tasks-grid-col-title {\n  display: block;\n  padding: 27px 0 0; }\n.task-card-title-label h5 {\n  padding-top: 13px;\n  color: #6991c5;\n  text-transform: capitalize;\n  font-weight: 600; }\n.task-card-footer {\n  display: flex;\n  justify-content: center; }\n.task-card-meta-item {\n  cursor: pointer;\n  padding: 5px;\n  color: #6991c5; }\n.avatar-preview-32 {\n  color: #d66464;\n  padding: 5px;\n  cursor: pointer; }\n.avatar-preview-32:hover {\n  color: #c00; }\n.sh-n-table table tbody tr td:first-child {\n  color: #c00;\n  cursor: pointer; }\ni {\n  font-size: 18px; }\n.btn-rounded {\n  background: #000;\n  color: #fff;\n  text-align: center;\n  margin-top: 3%;\n  font-size: 17px;\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }\n.list-name {\n  color: black;\n  font-size: 18px; }\nlabel {\n  color: black;\n  font-size: 17px;\n  font-weight: 600; }\na {\n  cursor: pointer; }\nmat-tab-header {\n  background: #FFFFFF !important; }\n.nav-link-in-dash {\n  font-size: 18px;\n  font-weight: bold;\n  color: #000; }\n"
+module.exports = "@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);\nbody, html {\n  margin: 0;\n  width: 100vw;\n  height: 100vh;\n  font-family: \"Source Sans Pro\" sans-serif; }\n.button__holder {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: center; }\n.button__holder:after {\n    content: \"\";\n    position: absolute;\n    z-index: 0;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0; }\n.button__holder h2 {\n    margin-right: 1em;\n    text-align: center;\n    color: #79CDCD; }\n.plus {\n  position: relative;\n  z-index: 1;\n  width: 80px;\n  height: 80px;\n  background: #262626;\n  border-radius: 50%;\n  border: none;\n  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1);\n  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);\n  transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1), -webkit-transform 200ms cubic-bezier(0.2, 0, 0.7, 1); }\n.plus:after {\n    content: \"+\";\n    font-size: 5em;\n    line-height: 1.1em;\n    color: white; }\n.plus:hover {\n    box-shadow: 0 0 1px 10px rgba(13, 13, 13, 0.16), 0 0 1px 20px rgba(56, 50, 50, 0.1), 0 0 1px 30px rgba(0, 0, 0, 0.1); }\n#list_name {\n  font-size: 16px;\n  font-weight: 700;\n  color: #c00;\n  text-transform: capitalize; }\n.mat-tab-labels {\n  background-color: #FFFFFF; }\n.sh-n-table table thead tr th {\n  background: #000;\n  color: #fff;\n  text-align: center;\n  border-right: 1px solid;\n  font-size: 16px;\n  padding: 5px 0;\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }\n.sh-n-table table tbody tr td {\n  width: 300px;\n  padding: 5px 10px;\n  cursor: pointer;\n  vertical-align: middle;\n  text-align: center;\n  font-size: .9em;\n  font-weight: 400;\n  color: #000;\n  border: none !important;\n  border-bottom: 1px solid #ccc !important; }\n.sh-n-table table tbody tr td a {\n  cursor: pointer; }\n.crete-list-button {\n  background: #82d0dc;\n  margin: 17px !important; }\n.crete-list-button:hover {\n  color: #fff; }\n.tasks-grid .header .tasks-grid-col-title {\n  display: block;\n  padding: 27px 0 0; }\n.task-card-title-label h5 {\n  padding-top: 13px;\n  color: #6991c5;\n  text-transform: capitalize;\n  font-weight: 600; }\n.task-card-footer {\n  display: flex;\n  justify-content: center; }\n.task-card-meta-item {\n  cursor: pointer;\n  padding: 5px;\n  color: #6991c5; }\n.avatar-preview-32 {\n  color: #d66464;\n  padding: 5px;\n  cursor: pointer; }\n.avatar-preview-32:hover {\n  color: #c00; }\n.sh-n-table table tbody tr td:first-child {\n  color: #c00;\n  cursor: pointer; }\ni {\n  font-size: 18px; }\n.btn-rounded {\n  background: #000;\n  color: #fff;\n  text-align: center;\n  margin-top: 3%;\n  font-size: 17px;\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }\n.list-name {\n  color: black;\n  font-size: 18px; }\nlabel {\n  color: black;\n  font-size: 17px;\n  font-weight: 600; }\na {\n  cursor: pointer; }\nmat-tab-header {\n  background: #FFFFFF !important; }\n.nav-link-in-dash {\n  font-size: 18px;\n  font-weight: bold;\n  color: #000; }\n"
 
 /***/ }),
 
@@ -233,7 +233,10 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
                             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                 resolve();
                             }, function (error) {
-                                reject('List named "' + result + '" already exists');
+                                if (error.status === 406) {
+                                    sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire("List Already Exist");
+                                }
+                                // reject('List named "' + result + '" already exists')
                             });
                         }
                     });
@@ -460,9 +463,9 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
             var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_3__["Headers"]({ 'Authorization': 'JWT ' + _this.currentUser['token'] });
             headers.append('Content-Type', 'application/json');
             _this.http.post(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/create_add_ilist_yt/', JSON.stringify({
-                name: result,
-                // name: result.value,
-                list: {},
+                // name: result,
+                name: result.value,
+                // list: {},
                 username: _this.currentUser.username
             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                 _this.get_lists_yt(_this.selected_choice.replace('blog_influencer', 'youtube_influencer'));
@@ -844,7 +847,10 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
                             }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                 resolve();
                             }, function (error) {
-                                reject('List named "' + result + '" already exists');
+                                if (error.status === 406) {
+                                    sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire('List Already Exist');
+                                }
+                                // reject('List named "' + result + '" already exists')
                             });
                         }
                     }, 2);
@@ -857,6 +863,7 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
             var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_3__["Headers"]({ 'Authorization': 'JWT ' + _this.currentUser['token'] });
             headers.append('Content-Type', 'application/json');
             _this.http.post(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/create_add_ilist_dd/', JSON.stringify({
+                // name: result.value,
                 name: result.value,
                 list: {},
                 username: _this.currentUser.username
@@ -945,14 +952,12 @@ var UserdashboardTemplateComponent = /** @class */ (function () {
             headers.append('Content-Type', 'application/json');
             _this.http.delete(_config__WEBPACK_IMPORTED_MODULE_4__["Config"].api + '/delete_ilist_pt/' + id, { headers: headers }).map(function (responce) { return responce.json(); }).subscribe(function (data) {
                 _this.get_list_pinterest(_this.selected_choice);
-                // Swal.fire(
-                //     'List Deleted!',
-                //     '',
-                //     'success'
-                // )
+                sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire('List Deleted!', '', 'success');
             }, function (error) {
                 // alert('error')
-                sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire('Try again after some time!', error.toString(), 'error');
+                sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.fire('Try again after some time!', 
+                // error.toString(),
+                'error');
             });
         }, function (dismiss) {
             if (dismiss === 'cancel') {

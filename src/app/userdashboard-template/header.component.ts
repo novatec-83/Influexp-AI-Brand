@@ -270,7 +270,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     }
 
     find1(e) {
-
+alert(e)
         this.router.navigate(['/search/results/', e])
         localStorage.setItem('searchQuery1', e);
     }
