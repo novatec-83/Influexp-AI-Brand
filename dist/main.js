@@ -10,17 +10,17 @@
 var map = {
 	"./blog-search/blog-search.module": [
 		"./src/app/blog-search/blog-search.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"common",
 		"blog-search-blog-search-module"
 	],
 	"./blog-search/blogosphere-list-inf.module": [
 		"./src/app/blog-search/blogosphere-list-inf.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"blog-search-blogosphere-list-inf-module"
@@ -31,76 +31,84 @@ var map = {
 	],
 	"./facebook-search/facebook-list-inf.module": [
 		"./src/app/facebook-search/facebook-list-inf.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"facebook-search-facebook-list-inf-module"
 	],
 	"./facebook-search/facebook-search.module": [
 		"./src/app/facebook-search/facebook-search.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"facebook-search-facebook-search-module~instagram-search-instagram-search-module~pinterest-search-pin~9ac1497c",
 		"common",
 		"facebook-search-facebook-search-module"
 	],
 	"./flickr-search/flickr-list-inf.module": [
 		"./src/app/flickr-search/flickr-list-inf.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"flickr-search-flickr-list-inf-module"
 	],
 	"./flickr-search/flickr-search.module": [
 		"./src/app/flickr-search/flickr-search.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"common",
 		"flickr-search-flickr-search-module"
 	],
+	"./generic-search/generic-search.module": [
+		"./src/app/generic-search/generic-search.module.ts",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
+		"common",
+		"generic-search-generic-search-module"
+	],
 	"./home/searchpage.module": [
 		"./src/app/home/searchpage.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
 		"common",
 		"home-searchpage-module"
 	],
 	"./instagram-search/instagram-list-inf.module": [
 		"./src/app/instagram-search/instagram-list-inf.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"instagram-search-instagram-list-inf-module"
 	],
 	"./instagram-search/instagram-search.module": [
 		"./src/app/instagram-search/instagram-search.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"facebook-search-facebook-search-module~instagram-search-instagram-search-module~pinterest-search-pin~9ac1497c",
 		"common",
 		"instagram-search-instagram-search-module"
 	],
 	"./linkedin-search/linkedin-list-inf.module": [
 		"./src/app/linkedin-search/linkedin-list-inf.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"linkedin-search-linkedin-list-inf-module"
 	],
 	"./linkedin-search/linkedin-search.module": [
 		"./src/app/linkedin-search/linkedin-search.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"common",
 		"linkedin-search-linkedin-search-module"
 	],
@@ -110,67 +118,67 @@ var map = {
 	],
 	"./medium-search/medium-list-inf.module": [
 		"./src/app/medium-search/medium-list-inf.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"medium-search-medium-list-inf-module"
 	],
 	"./medium-search/medium-search.module": [
 		"./src/app/medium-search/medium-search.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"common",
 		"medium-search-medium-search-module"
 	],
 	"./opt-in-influencers/opt-in-influencers.module": [
 		"./src/app/opt-in-influencers/opt-in-influencers.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
 		"common",
 		"opt-in-influencers-opt-in-influencers-module"
 	],
 	"./periscope-search/periscope-list-inf.module": [
 		"./src/app/periscope-search/periscope-list-inf.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"periscope-search-periscope-list-inf-module"
 	],
 	"./periscope-search/periscope-search.module": [
 		"./src/app/periscope-search/periscope-search.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"periscope-search-periscope-search-module"
 	],
 	"./pinterest-search/pinterest-list-inf.module": [
 		"./src/app/pinterest-search/pinterest-list-inf.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"pinterest-search-pinterest-list-inf-module"
 	],
 	"./pinterest-search/pinterest-search.module": [
 		"./src/app/pinterest-search/pinterest-search.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"facebook-search-facebook-search-module~instagram-search-instagram-search-module~pinterest-search-pin~9ac1497c",
 		"common",
 		"pinterest-search-pinterest-search-module"
 	],
 	"./profile/profile.module": [
 		"./src/app/profile/profile.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
 		"common",
 		"profile-profile-module"
 	],
@@ -185,34 +193,34 @@ var map = {
 	],
 	"./subscription-history/subscription-history.module": [
 		"./src/app/subscription-history/subscription-history.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"subscription-history-subscription-history-module"
 	],
 	"./twitter-list/twitter-list.module": [
 		"./src/app/twitter-list/twitter-list.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"twitter-list-twitter-list-module"
 	],
 	"./twitter-search/twitter-search.module": [
 		"./src/app/twitter-search/twitter-search.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"facebook-search-facebook-search-module~instagram-search-instagram-search-module~pinterest-search-pin~9ac1497c",
 		"common",
 		"twitter-search-twitter-search-module"
 	],
 	"./update-pass/update-pass.module": [
 		"./src/app/update-pass/update-pass.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
 		"common",
 		"update-pass-update-pass-module"
 	],
@@ -223,18 +231,18 @@ var map = {
 	],
 	"./youtube-search/youtube-list-inf.module": [
 		"./src/app/youtube-search/youtube-list-inf.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"blog-search-blogosphere-list-inf-module~facebook-search-facebook-list-inf-module~flickr-search-flick~f735d4d7",
 		"common",
 		"youtube-search-youtube-list-inf-module"
 	],
 	"./youtube-search/youtube-search.module": [
 		"./src/app/youtube-search/youtube-search.module.ts",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~a333af2f",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~47496028",
-		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~15f9e7a5",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~fef431ab",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-list~9acd9a48",
+		"blog-search-blog-search-module~blog-search-blogosphere-list-inf-module~facebook-search-facebook-sear~b5aeab9e",
 		"facebook-search-facebook-search-module~instagram-search-instagram-search-module~pinterest-search-pin~9ac1497c",
 		"common",
 		"youtube-search-youtube-search-module"
@@ -1035,6 +1043,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+// import { GenericSearchComponent } from './generic-search/generic-search.component';
 function provideConfig() {
     var config = new angular5_social_login__WEBPACK_IMPORTED_MODULE_26__["AuthServiceConfig"]([
         {
@@ -1075,7 +1084,7 @@ var AppModule = /** @class */ (function () {
                 _contact_contact_component__WEBPACK_IMPORTED_MODULE_29__["PrivacyComponent"],
                 _contact_contact_component__WEBPACK_IMPORTED_MODULE_29__["TermsAndConditionsComponent"],
                 _contact_contact_component__WEBPACK_IMPORTED_MODULE_29__["TermsComponent"],
-                _contact_contact_component__WEBPACK_IMPORTED_MODULE_29__["WhatIsInfluexpaiComponent"]
+                _contact_contact_component__WEBPACK_IMPORTED_MODULE_29__["WhatIsInfluexpaiComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -1207,7 +1216,7 @@ var AppRoutes = [
             { path: 'medium/search', loadChildren: './medium-search/medium-search.module#MediumSearchModule' },
             { path: 'twitter/search', loadChildren: './twitter-search/twitter-search.module#TwitterSearchModule' },
             { path: 'flickr/search', loadChildren: './flickr-search/flickr-search.module#FlickrSearchModule' },
-            //     { path: 'search/results/:query', loadChildren: './generic-search/generic-search.module#GenericSearchModule' },
+            { path: 'search/results/:query', loadChildren: './generic-search/generic-search.module#GenericSearchModule' },
             { path: 'blogosphere/list/:query', loadChildren: './blog-search/blogosphere-list-inf.module#BlogosphereListInfModule' },
             { path: 'blogosphere/search', loadChildren: './blog-search/blog-search.module#BlogosphereSearchModule' },
             //     { path: 'blogs/search/v2/:query', loadChildren: './blogsearch/blogsearch.module#BlogsearchModule'},
@@ -1535,7 +1544,7 @@ module.exports = "<!-- \r\n\r\n<div class=\"\">\r\n    <div class=\"\">\r\n     
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "md-tab-group {\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }\n\nsection {\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }\n\n.body {\n  background-color: #f9f9f9 !important; }\n\nmat-form-field {\n  width: 75%;\n  line-height: 0.95; }\n\n.col-md-6 {\n  margin-top: 0 !important; }\n\n.btn-rounded {\n  background: #000;\n  color: #fff;\n  text-align: center;\n  margin-top: 3%;\n  border-color: black;\n  font-size: 17px;\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }\n"
+module.exports = "mat-tab-group {\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }\n\nsection {\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }\n\n.body {\n  background-color: #f9f9f9 !important; }\n\nmat-form-field {\n  width: 75%;\n  line-height: 0.95; }\n\n.col-md-6 {\n  margin-top: 0 !important; }\n\n.btn-rounded {\n  background: #000;\n  color: #fff;\n  text-align: center;\n  margin-top: 3%;\n  border-color: black;\n  font-size: 17px;\n  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }\n"
 
 /***/ }),
 
@@ -3823,7 +3832,7 @@ var PreloaderService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<!-- \r\n<header class=\"site-header\">\r\n  <preloader-full></preloader-full>\r\n  <div class=\"container-fluid\">\r\n   <div class=\"row \">\r\n          <div class=\"col-md-2 col-sm-4 col-xs-6  h-logo\">\r\n\r\n      <a class=\"site-logo logo-row\">\r\n      <img class=\"hidden-md-down\" [routerLink]=\"['/dashboard']\" src=\"../../assets/headers-images/Option1.png\" alt=\"\">\r\n      <img class=\"hidden-lg-up\" [routerLink]=\"['/dashboard']\" src=\"../../assets/headers-images/Option1.png\" alt=\"\">\r\n           </a>\r\n                </div>\r\n\r\n        <div class=\"col-md-5 showul1 col-sm-4\" style=\"display: none\">\r\n\r\n            <div class=\"dropdown\" style=\"float:inherit;\">\r\n              <button class=\"dropbtn\"> <i class=\"fa fa-user-circle\"></i> Platforms <span class=\"fa fa-angle-down\"></span></button>\r\n\r\n                <div class=\"dropdown-content\">\r\n                  <a  [routerLink]=\"['/facebook/search']\"  class=\"active\">\r\n                    <img  alt=\"\" src=\"../../assets/header-images/Fb@1x-.png\">\r\n                    <span >   Facebook</span>\r\n                     </a>\r\n                       <a [routerLink]=\"['/youtube/search']\"  >\r\n                        <img  src=\"../../assets/header-images/YouTube@1x-.png\">\r\n                          <span >   Youtube</span>\r\n                              </a>\r\n                              <a [routerLink]=\"['/instagram/search']\" >\r\n                                <img  alt=\"\" src=\"../../assets/header-images/Insta@1x-.png\">\r\n                                <span>   Instagram</span>\r\n                              </a>\r\n                              <a  [routerLink]=\"['/twitter/search']\"  >\r\n                                <img  alt=\"\" src=\"../../assets/header-images/Twitter@1x-.png\">\r\n                                <span >   Twitter</span>\r\n                              </a>\r\n                              <a  [routerLink]=\"['/blogosphere/search']\"  >\r\n                                <img alt=\"\" src=\"../../assets/header-images/Blog@1x-.png\">\r\n                                <span >  Blogosphere</span>\r\n                              </a>\r\n                                 \r\n                                  <a  [routerLink]=\"['/pinterest/search']\"  >\r\n                                    <img alt=\"\" src=\"../../assets/header-images/Pin@1x-.png\">\r\n                                    <span >  Pinterest</span>\r\n                                  </a>\r\n                              </div>\r\n                            </div>\r\n\r\n        </div>\r\n\r\n           <div class=\" col-md-6 col-sm-12 showul2\" style=\"margin: 0 auto\" >\r\n                  <div  class=\"nav-Bar\">\r\n                      <a  [routerLink]=\"['/facebook/search']\" routerlinkactive=\"active\"  class=\"active\">\r\n                          <img  alt=\"\" src=\"../../assets/header-images/Fb@1x-.png\">\r\n                          <span >Facebook</span>\r\n                      </a>\r\n                      <a [routerLink]=\"['/youtube/search']\" routerlinkactive=\"active\" >\r\n                          <img  src=\"../../assets/header-images/YouTube@1x-.png\">\r\n                          <span >Youtube</span>\r\n                      </a>\r\n                      <a [routerLink]=\"['/instagram/search']\"routerlinkactive=\"active\" >\r\n                          <img  alt=\"\" src=\"../../assets/header-images/Insta@1x-.png\">\r\n                          <span>Instagram</span>\r\n                      </a>\r\n                      <a  [routerLink]=\"['/twitter/search']\" routerlinkactive=\"active\" >\r\n                          <img  alt=\"\" src=\"../../assets/header-images/Twitter@1x-.png\">\r\n                          <span >Twitter</span>\r\n                      </a>\r\n                      <a  [routerLink]=\"['/blogosphere/search']\" routerlinkactive=\"active\" >\r\n                          <img alt=\"\" src=\"../../assets/header-images/Blog@1x-.png\">\r\n                          <span >Blogosphere</span>\r\n                      </a>\r\n                     \r\n                      <a  [routerLink]=\"['/pinterest/search']\" routerlinkactive=\"active\" >\r\n                          <img alt=\"\" src=\"../../assets/header-images/Pin@1x-.png\">\r\n                          <span >Pinterest</span>\r\n                      </a>\r\n                  </div>\r\n          </div>\r\n           <div class=\"col-md-2 col-sm-4 col-xs-6\" style=\"text-align: right\">\r\n        <a  class=\"font-additional color-main text-uppercase hover-focus-color\" data-target=\".example-modal-lg\" data-toggle=\"modal\" href=\"#search\" id=\"icon-type-to-search\">\r\n        \r\n       </a>\r\n     </div>\r\n           <div class=\"col-md-2  right-drpdwn\" *ngIf=\"showlink\">\r\n\r\n                <div class=\"row\">\r\n\r\n\r\n                        <div class=\"dropdown\" style=\"float:right;\">\r\n                            <button class=\"dropbtn\"> <i class=\"fa fa-user-circle\"></i> My InfluExpAI <span class=\"fa fa-angle-down\"></span></button>\r\n\r\n                            <div class=\"dropdown-content\">\r\n                                <a [routerLink]=\"['/my-profile']\"> <i class=\"fa fa-pencil\"></i> My Profile</a>\r\n                                <a [routerLink]=\"['/subscription-history']\"> <i class=\"fa fa-history\"></i> Subscription</a>\r\n                                <a [routerLink]=\"['/update-password']\"> <i class=\"fa fa-key\"></i> Change Password</a>\r\n                                <a [routerLink]=\"['/login']\" (click)=\"logout()\"> <i class=\"fa fa-sign-out\"></i>Logout</a>\r\n                              \r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n                </div>\r\n\r\n      </div>\r\n\r\n          <div id=\"search\">\r\n              <button type=\"button\" class=\"close\">×</button>\r\n              <form #myform>\r\n                  <input #searchvalue1 type=\"search\" value=\"\" placeholder=\"Search to influence with Roar!\" >\r\n                  <button type=\"submit\" class=\"close\" style=\"  position: absolute;\" (click)=\"find1(searchvalue1.value)\">Search</button>\r\n              </form>\r\n          </div>\r\n  </div>\r\n\r\n</header> -->\r\n\r\n\r\n\r\n<!-- Navigation -->\r\n<header class=\"site-header\">\r\n<nav class=\"navbar navbar-expand-lg navbar-dark\">\r\n    <div class=\"container-fluid\">\r\n      <a class=\"navbar-brand\" href=\"#\">\r\n            <img src=\"https://www.influexpai.com/assets/Artboard%2014.svg\" alt=\"\">\r\n          </a>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n        <ul class=\"navbar-nav ml-auto\">\r\n          <li class=\"nav-item active\">\r\n              <a  [routerLink]=\"['/facebook/search']\" routerlinkactive=\"active\"  class=\"active\">\r\n                <img  alt=\"\" src=\"../../assets/header-images/Fb@1x-.png\">\r\n                <span >  Facebook</span>\r\n            </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <a [routerLink]=\"['/youtube/search']\" routerlinkactive=\"active\" >\r\n                <img  src=\"../../assets/header-images/YouTube@1x-.png\">\r\n                <span >  Youtube</span>\r\n            </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <a [routerLink]=\"['/instagram/search']\" >\r\n                <img  alt=\"\" src=\"../../assets/header-images/Insta@1x-.png\">\r\n                <span>  Instagram</span>\r\n              </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <a  [routerLink]=\"['/twitter/search']\"  >\r\n                <img  alt=\"\" src=\"../../assets/header-images/Twitter@1x-.png\">\r\n                <span >  Twitter</span>\r\n              </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <a  [routerLink]=\"['/blogosphere/search']\"  >\r\n                <img alt=\"\" src=\"../../assets/header-images/Blog@1x-.png\">\r\n                <span >  Blogosphere</span>\r\n              </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <a  [routerLink]=\"['/pinterest/search']\"  >\r\n                <img alt=\"\" src=\"../../assets/header-images/Pin@1x-.png\">\r\n                <span >  Pinterest</span>\r\n              </a>\r\n          </li>\r\n\r\n          <!-- <div class=\"col-md-2 col-sm-4 col-xs-6\" style=\"text-align: right\">\r\n            <a  class=\"font-additional color-main text-uppercase hover-focus-color\" data-target=\".example-modal-lg\" data-toggle=\"modal\" href=\"#search\" id=\"icon-type-to-search\">\r\n            \r\n           </a>\r\n         </div> -->\r\n\r\n          <ul *ngIf=\"showlink\">\r\n            <li>\r\n                <div *ngIf=\"logi\" class=\"dropdown\">\r\n                    <button class=\"\"> <i class=\"fa fa-user-circle\"></i> My InfluExpAI <span class=\"fa fa-angle-down\"></span></button>\r\n\r\n                    <div class=\"dropdown-content\">\r\n                        <a [routerLink]=\"['/my-profile']\"> <i class=\"fa fa-user-circle\"></i> My Profile</a>\r\n                        <a [routerLink]=\"['/subscription-history']\"> <i class=\"fa fa-history\"></i> Subscription</a>\r\n                        <a [routerLink]=\"['/update-password']\"> <i class=\"fa fa-key\"></i> Change Password</a>\r\n                        <a [routerLink]=\"['/login']\" (click)=\"logout()\"> <i class=\"fas fa-sign-out-alt\"></i> Logout</a>\r\n                      \r\n                    </div>\r\n                </div>\r\n            </li>\r\n          </ul>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n</nav>\r\n</header>\r\n"
+module.exports = "\r\n<!-- \r\n<header class=\"site-header\">\r\n  <preloader-full></preloader-full>\r\n  <div class=\"container-fluid\">\r\n   <div class=\"row \">\r\n          <div class=\"col-md-2 col-sm-4 col-xs-6  h-logo\">\r\n\r\n      <a class=\"site-logo logo-row\">\r\n      <img class=\"hidden-md-down\" [routerLink]=\"['/dashboard']\" src=\"../../assets/headers-images/Option1.png\" alt=\"\">\r\n      <img class=\"hidden-lg-up\" [routerLink]=\"['/dashboard']\" src=\"../../assets/headers-images/Option1.png\" alt=\"\">\r\n           </a>\r\n                </div>\r\n\r\n        <div class=\"col-md-5 showul1 col-sm-4\" style=\"display: none\">\r\n\r\n            <div class=\"dropdown\" style=\"float:inherit;\">\r\n              <button class=\"dropbtn\"> <i class=\"fa fa-user-circle\"></i> Platforms <span class=\"fa fa-angle-down\"></span></button>\r\n\r\n                <div class=\"dropdown-content\">\r\n                  <a  [routerLink]=\"['/facebook/search']\"  class=\"active\">\r\n                    <img  alt=\"\" src=\"../../assets/header-images/Fb@1x-.png\">\r\n                    <span >   Facebook</span>\r\n                     </a>\r\n                       <a [routerLink]=\"['/youtube/search']\"  >\r\n                        <img  src=\"../../assets/header-images/YouTube@1x-.png\">\r\n                          <span >   Youtube</span>\r\n                              </a>\r\n                              <a [routerLink]=\"['/instagram/search']\" >\r\n                                <img  alt=\"\" src=\"../../assets/header-images/Insta@1x-.png\">\r\n                                <span>   Instagram</span>\r\n                              </a>\r\n                              <a  [routerLink]=\"['/twitter/search']\"  >\r\n                                <img  alt=\"\" src=\"../../assets/header-images/Twitter@1x-.png\">\r\n                                <span >   Twitter</span>\r\n                              </a>\r\n                              <a  [routerLink]=\"['/blogosphere/search']\"  >\r\n                                <img alt=\"\" src=\"../../assets/header-images/Blog@1x-.png\">\r\n                                <span >  Blogosphere</span>\r\n                              </a>\r\n                                 \r\n                                  <a  [routerLink]=\"['/pinterest/search']\"  >\r\n                                    <img alt=\"\" src=\"../../assets/header-images/Pin@1x-.png\">\r\n                                    <span >  Pinterest</span>\r\n                                  </a>\r\n                              </div>\r\n                            </div>\r\n\r\n        </div>\r\n\r\n           <div class=\" col-md-6 col-sm-12 showul2\" style=\"margin: 0 auto\" >\r\n                  <div  class=\"nav-Bar\">\r\n                      <a  [routerLink]=\"['/facebook/search']\" routerlinkactive=\"active\"  class=\"active\">\r\n                          <img  alt=\"\" src=\"../../assets/header-images/Fb@1x-.png\">\r\n                          <span >Facebook</span>\r\n                      </a>\r\n                      <a [routerLink]=\"['/youtube/search']\" routerlinkactive=\"active\" >\r\n                          <img  src=\"../../assets/header-images/YouTube@1x-.png\">\r\n                          <span >Youtube</span>\r\n                      </a>\r\n                      <a [routerLink]=\"['/instagram/search']\"routerlinkactive=\"active\" >\r\n                          <img  alt=\"\" src=\"../../assets/header-images/Insta@1x-.png\">\r\n                          <span>Instagram</span>\r\n                      </a>\r\n                      <a  [routerLink]=\"['/twitter/search']\" routerlinkactive=\"active\" >\r\n                          <img  alt=\"\" src=\"../../assets/header-images/Twitter@1x-.png\">\r\n                          <span >Twitter</span>\r\n                      </a>\r\n                      <a  [routerLink]=\"['/blogosphere/search']\" routerlinkactive=\"active\" >\r\n                          <img alt=\"\" src=\"../../assets/header-images/Blog@1x-.png\">\r\n                          <span >Blogosphere</span>\r\n                      </a>\r\n                     \r\n                      <a  [routerLink]=\"['/pinterest/search']\" routerlinkactive=\"active\" >\r\n                          <img alt=\"\" src=\"../../assets/header-images/Pin@1x-.png\">\r\n                          <span >Pinterest</span>\r\n                      </a>\r\n                  </div>\r\n          </div>\r\n           <div class=\"col-md-2 col-sm-4 col-xs-6\" style=\"text-align: right\">\r\n        <a  class=\"font-additional color-main text-uppercase hover-focus-color\" data-target=\".example-modal-lg\" data-toggle=\"modal\" href=\"#search\" id=\"icon-type-to-search\">\r\n        \r\n       </a>\r\n     </div>\r\n           <div class=\"col-md-2  right-drpdwn\" *ngIf=\"showlink\">\r\n\r\n                <div class=\"row\">\r\n\r\n\r\n                        <div class=\"dropdown\" style=\"float:right;\">\r\n                            <button class=\"dropbtn\"> <i class=\"fa fa-user-circle\"></i> My InfluExpAI <span class=\"fa fa-angle-down\"></span></button>\r\n\r\n                            <div class=\"dropdown-content\">\r\n                                <a [routerLink]=\"['/my-profile']\"> <i class=\"fa fa-pencil\"></i> My Profile</a>\r\n                                <a [routerLink]=\"['/subscription-history']\"> <i class=\"fa fa-history\"></i> Subscription</a>\r\n                                <a [routerLink]=\"['/update-password']\"> <i class=\"fa fa-key\"></i> Change Password</a>\r\n                                <a [routerLink]=\"['/login']\" (click)=\"logout()\"> <i class=\"fa fa-sign-out\"></i>Logout</a>\r\n                              \r\n                            </div>\r\n                        </div>\r\n\r\n                    </div>\r\n                </div>\r\n\r\n      </div>\r\n\r\n          <div id=\"search\">\r\n              <button type=\"button\" class=\"close\">×</button>\r\n              <form #myform>\r\n                  <input #searchvalue1 type=\"search\" value=\"\" placeholder=\"Search to influence with Roar!\" >\r\n                  <button type=\"submit\" class=\"close\" style=\"  position: absolute;\" (click)=\"find1(searchvalue1.value)\">Search</button>\r\n              </form>\r\n          </div>\r\n  </div>\r\n\r\n</header> -->\r\n\r\n\r\n\r\n<!-- Navigation -->\r\n<header class=\"site-header\">\r\n  <div id=\"overlay\">\r\n    <input class=\"form-control\" type=\"text\" name=\"\" class=\"search-input\" placeholder=\"Seacrh Influcencer\">\r\n    <div class=\"cross-button\">\r\n        <a (click)=\"closenav()\" class=\"closebtn\">×</a>\r\n    </div>\r\n  </div>\r\n<nav class=\"navbar navbar-expand-lg navbar-dark\">\r\n    <div class=\"container-fluid\">\r\n      <a class=\"navbar-brand\" href=\"#\">\r\n            <img src=\"https://www.influexpai.com/assets/Artboard%2014.svg\" alt=\"\">\r\n          </a>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n        <ul class=\"navbar-nav ml-auto\">\r\n          <li class=\"nav-item active\">\r\n              <a  [routerLink]=\"['/facebook/search']\" routerlinkactive=\"active\"  class=\"active\">\r\n                <img  alt=\"\" src=\"../../assets/header-images/Fb@1x-.png\">\r\n                <span >  Facebook</span>\r\n            </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <a [routerLink]=\"['/youtube/search']\" routerlinkactive=\"active\" >\r\n                <img  src=\"../../assets/header-images/YouTube@1x-.png\">\r\n                <span >  Youtube</span>\r\n            </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <a [routerLink]=\"['/instagram/search']\" >\r\n                <img  alt=\"\" src=\"../../assets/header-images/Insta@1x-.png\">\r\n                <span>  Instagram</span>\r\n              </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <a  [routerLink]=\"['/twitter/search']\"  >\r\n                <img  alt=\"\" src=\"../../assets/header-images/Twitter@1x-.png\">\r\n                <span >  Twitter</span>\r\n              </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <a  [routerLink]=\"['/blogosphere/search']\"  >\r\n                <img alt=\"\" src=\"../../assets/header-images/Blog@1x-.png\">\r\n                <span >  Blogosphere</span>\r\n              </a>\r\n          </li>\r\n          <li class=\"nav-item\">\r\n              <a  [routerLink]=\"['/pinterest/search']\"  >\r\n                <img alt=\"\" src=\"../../assets/header-images/Pin@1x-.png\">\r\n                <span >  Pinterest</span>\r\n              </a>\r\n          </li>\r\n\r\n\r\n            <!-- <li class=\"nav-item\">\r\n          <a class=\"font-additional color-main text-uppercase hover-focus-color\" data-target=\".example-modal-lg\" data-toggle=\"modal\" href=\"#search\" id=\"icon-type-to-search\">\r\n                    <button class=\"top-search-btn\" id=\"serbtn\"> <i class=\" fa fa-search\"></i> </button> </a>\r\n            </li> -->\r\n            <li>\r\n            <!-- <div id=\"search\">\r\n              <div class=\"searsh-box\">\r\n                  <button type=\"button\" class=\"close\">×</button>\r\n                  <form #myform> <input #searchvalue1 type=\"search\" value=\"\" placeholder=\"Search to influence with Roar!\">\r\n                      <button type=\"submit\" class=\"close\"  style=\" position: absolute; display:  none\"\r\n                      (click)=\"find1(searchvalue1.value)\">Search</button>\r\n                  </form>\r\n              </div>\r\n          </div> -->\r\n      \r\n          <div class=\"\">\r\n            <!-- <a\r\n                class=\"font-additional color-main text-uppercase hover-focus-color\"\r\n                data-target=\".example-modal-lg\" data-toggle=\"modal\" href=\"#search\" id=\"icon-type-to-search\">\r\n            <button class=\"top-search-btn\" id=\"serbtn\" (click)=\"opennav()\"> <i\r\n                    class=\" fa fa-search\"></i> </button> </a> -->\r\n                    <a\r\n                    class=\"font-additional color-main text-uppercase hover-focus-color\"\r\n                    data-target=\".example-modal-lg\" data-toggle=\"modal\"  href=\"#search\" id=\"icon-type-to-search\">\r\n                <button class=\"top-search-btn\" id=\"serbtn\" (click)=\"opennav()\"> <i\r\n                        class=\" fa fa-search\"></i> </button> </a>\r\n            </div>\r\n\r\n       \r\n          \r\n        </li>\r\n\r\n          <!-- <div class=\"col-md-2 col-sm-4 col-xs-6\" style=\"text-align: right\">\r\n            <a  class=\"font-additional color-main text-uppercase hover-focus-color\"\r\n             data-target=\".example-modal-lg\" data-toggle=\"modal\" href=\"#search\" id=\"icon-type-to-search\">\r\n            \r\n           </a>\r\n         </div> -->\r\n\r\n          <ul *ngIf=\"showlink\">\r\n            <li>\r\n                <div *ngIf=\"logi\" class=\"dropdown\">\r\n                    <button class=\"\"> <i class=\"fa fa-user-circle\"></i> My InfluExpAI <span class=\"fa fa-angle-down\"></span></button>\r\n\r\n                    <div class=\"dropdown-content\">\r\n                        <a [routerLink]=\"['/my-profile']\"> <i class=\"fa fa-user-circle\"></i> My Profile</a>\r\n                        <a [routerLink]=\"['/subscription-history']\"> <i class=\"fa fa-history\"></i> Subscription</a>\r\n                        <a [routerLink]=\"['/update-password']\"> <i class=\"fa fa-key\"></i> Change Password</a>\r\n                        <a [routerLink]=\"['/login']\" (click)=\"logout()\"> <i class=\"fas fa-sign-out-alt\"></i> Logout</a>\r\n                      \r\n                    </div>\r\n                </div>\r\n            </li>\r\n          </ul>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n</nav>\r\n\r\n\r\n</header>\r\n<div id=\"search\">\r\n    <div class=\"searsh-box\">\r\n        <button type=\"button\" class=\"close\">×</button>\r\n        <form #myform> <input #searchvalue1 type=\"search\" value=\"\" placeholder=\"Search to influence with Roar!\">\r\n            <button type=\"submit\" class=\"close\"  style=\" position: absolute; display:  none\"  (click)=\"find1(searchvalue1.value)\" >Search</button>\r\n        </form>\r\n    </div>\r\n  </div>\r\n   \r\n\r\n    <!-- <div id=\"search\">\r\n            <div class=\"searsh-box\">\r\n                <button type=\"button\" class=\"close\">×</button>\r\n                <form #myform> <input #searchvalue1 type=\"search\" value=\"\" placeholder=\"Search to influence with Roar!\">\r\n                    <button type=\"submit\" class=\"close\"  style=\" position: absolute; display:  none\" >Search</button>\r\n                </form>\r\n            </div>\r\n          </div>\r\n          <div class=\"navbar2\" style=\"display: none; position: inherit; text-align: end\">\r\n            <div class=\"col-md-5 showul1 col-sm-5\">\r\n\r\n                <div class=\"dropdown\" style=\"float:inherit;\">\r\n                    <button class=\"dropbtn\"> <i class=\"fa fa-list-alt\"></i> Platforms <span class=\"fa fa-angle-down\"></span></button>\r\n\r\n                    <div class=\"dropdown-content\">\r\n                        <a  [routerLink]=\"['/facebook/search']\"  class=\"active\">\r\n                            <img  alt=\"\" src=\"../../assets/header-images/Fb@1x-.png\">\r\n                            <span >   Facebook</span>\r\n                        </a>\r\n                        <a [routerLink]=\"['/youtube/search']\"  >\r\n                            <img  src=\"../../assets/header-images/YouTube@1x-.png\">\r\n                            <span >   Youtube</span>\r\n                        </a>\r\n                        <a [routerLink]=\"['/instagram/search']\" >\r\n                            <img  alt=\"\" src=\"../../assets/header-images/Insta@1x-.png\">\r\n                            <span>   Instagram</span>\r\n                        </a>\r\n                        <a  [routerLink]=\"['/twitter/search']\"  >\r\n                            <img  alt=\"\" src=\"../../assets/header-images/Twitter@1x-.png\">\r\n                            <span >   Twitter</span>\r\n                        </a>\r\n                        <a  [routerLink]=\"['/blogosphere/search']\"  >\r\n                            <img alt=\"\" src=\"../../assets/header-images/Blog@1x-.png\">\r\n                            <span >  Blogosphere</span>\r\n                        </a>\r\n                        <a  [routerLink]=\"['/linkedin/search']\"  >\r\n                            <img alt=\"\" src=\"../../assets/header-images/LinkedIn@1x-.png\">\r\n                            <span >  LinkedIn</span>\r\n                        </a>\r\n                        <a  [routerLink]=\"['/pinterest/search']\"  >\r\n                            <img alt=\"\" src=\"../../assets/header-images/Pin@1x-.png\">\r\n                            <span >  Pinterest</span>\r\n                        </a>\r\n                        <a [routerLink]=\"['/periscope/search']\">\r\n                            <img src=\"../../assets/img/periscope_24.png\">\r\n\r\n                            <span class=\"lbl\">Periscope</span>\r\n                        </a>\r\n                        <a [routerLink]=\"['/medium/search']\">\r\n                            <img src=\"../../assets/header-images/medium.png\">\r\n\r\n                            <span class=\"lbl\">Medium</span>\r\n                        </a>\r\n                        <a [routerLink]=\"['/flickr/search']\">\r\n                            <img src=\"../../assets/header-images/flickr_32.png\">\r\n\r\n                            <span class=\"lbl\">Flickr</span>\r\n                        </a>\r\n                    </div>\r\n                </div>\r\n\r\n            </div>\r\n\r\n            <div class=\"col-md-1 col-sm-1\" style=\"margin: 19px\">\r\n                <a class=\"font-additional color-main text-uppercase hover-focus-color\"\r\n                        data-target=\".example-modal-lg\" data-toggle=\"modal\" href=\"#search\" id=\"icon-type-to-search\">\r\n                    <button class=\"top-search-btn\" id=\"serbtn\"> <i\r\n                            class=\" fa fa-search\"></i> </button> </a>\r\n            </div>\r\n            <div class=\"col-md-6 col-sm-6 showul2\">\r\n\r\n\r\n            <div class=\"dropdown\">\r\n                <button class=\"dropbtn\"> <i\r\n                    class=\"fa fa-user-circle\"></i> My InfluExpAI <span\r\n                    class=\"fa fa-angle-down\"></span></button>\r\n                <div class=\"dropdown-content\"> <a [routerLink]=\"['/my-profile']\"> <i\r\n                        class=\"fa fa-pencil\"></i>My Profile</a> <a\r\n                        [routerLink]=\"['/subscription-history']\"> <i\r\n                        class=\"fa fa-history\"></i>Subscription</a> <a\r\n                        [routerLink]=\"['/update-password']\"> <i class=\"fa fa-key\"></i>Change Password</a> <a\r\n                        [routerLink]=\"['/login']\"> <i class=\"fa fa-sign-out\"></i>Logout</a> </div>\r\n            </div>\r\n            </div>\r\n        </div> -->\r\n"
 
 /***/ }),
 
@@ -3929,11 +3938,18 @@ var HeaderComponent = /** @class */ (function () {
             _this._pushNotifications.requestPermission();
         });
     };
+    // find1(e) {
+    //     this.router.navigate(['/search/results/', e])
+    //     localStorage.setItem('searchQuery1', e);
+    // }
     HeaderComponent.prototype.loadCurrentUser = function (img) {
         this.currentUser.profile_image = img;
     };
-    HeaderComponent.prototype.openNav = function () {
-        $("#menubar").toggleClass("d-block");
+    HeaderComponent.prototype.opennav = function () {
+        document.getElementById("overlay").style.height = "100%";
+    };
+    HeaderComponent.prototype.closenav = function () {
+        document.getElementById("overlay").style.height = "0";
     };
     HeaderComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -4074,6 +4090,7 @@ var HeaderComponent = /** @class */ (function () {
         this.notification_class = 'header-alarm dropdown-toggle';
     };
     HeaderComponent.prototype.find1 = function (e) {
+        alert(e);
         this.router.navigate(['/search/results/', e]);
         localStorage.setItem('searchQuery1', e);
     };
@@ -4105,7 +4122,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".site-header .navbar {\n  width: 100%;\n  padding: 0; }\n  .site-header .navbar .navbar-brand {\n    width: 200px; }\n  .site-header .navbar .navbar-brand img {\n      width: 100%; }\n  .site-header .navbar .navbar-nav {\n    align-items: center; }\n  .site-header .navbar .nav-item a {\n    color: #616161;\n    padding: 0 10px;\n    font-size: 14px;\n    font-weight: 600; }\n  .site-header .navbar .nav-item a img {\n      width: 17px;\n      vertical-align: text-top; }\n  .site-header .navbar .nav-item a:hover {\n    color: #c00; }\n  .site-header .navbar .dropdown button {\n    background: none;\n    border: none;\n    font-size: 15px;\n    font-weight: 600;\n    color: #616161;\n    padding: 21px 0; }\n  .site-header .navbar .dropdown button .fa-user-circle {\n      font-size: 18px;\n      vertical-align: text-top;\n      color: #c00; }\n  .site-header .navbar .dropdown button:hover {\n    color: #c00; }\n  .site-header .navbar .dropdown-content {\n    display: none;\n    position: absolute;\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n    right: -9px;\n    top: 61px;\n    text-align: center;\n    background-color: #fff;\n    min-width: 190px;\n    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n    z-index: 1;\n    padding: 0 10px; }\n  .site-header .navbar .dropdown-content a {\n      padding: 4px 0px;\n      color: #616161;\n      font-weight: 600;\n      display: block;\n      font-size: 14px;\n      text-align: left; }\n  .site-header .navbar .dropdown-content i {\n      color: #616161; }\n  .site-header .navbar .dropdown-content a:hover i {\n      color: #c00; }\n  .site-header .navbar .dropdown-content a:hover {\n    background-color: #fff;\n    color: #c00; }\n  .site-header .navbar .dropdown:hover .dropdown-content {\n    display: block; }\n"
+module.exports = ".site-header .navbar {\n  width: 100%;\n  padding: 0; }\n  .site-header .navbar .navbar-brand {\n    width: 200px; }\n  .site-header .navbar .navbar-brand img {\n      width: 100%; }\n  .site-header .navbar .navbar-nav {\n    align-items: center; }\n  .site-header .navbar .nav-item a {\n    color: #616161;\n    padding: 0 10px;\n    font-size: 14px;\n    font-weight: 600; }\n  .site-header .navbar .nav-item a img {\n      width: 17px;\n      vertical-align: text-top; }\n  .site-header .navbar .nav-item a:hover {\n    color: #c00; }\n  .site-header .navbar .dropdown button {\n    background: none;\n    border: none;\n    font-size: 15px;\n    font-weight: 600;\n    color: #616161;\n    padding: 21px 0; }\n  .site-header .navbar .dropdown button .fa-user-circle {\n      font-size: 18px;\n      vertical-align: text-top;\n      color: #c00; }\n  .site-header .navbar .dropdown button:hover {\n    color: #c00; }\n  .site-header .navbar .dropdown-content {\n    display: none;\n    position: absolute;\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n    right: -9px;\n    top: 61px;\n    text-align: center;\n    background-color: #fff;\n    min-width: 190px;\n    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n    z-index: 1;\n    padding: 0 10px; }\n  .site-header .navbar .dropdown-content a {\n      padding: 4px 0px;\n      color: #616161;\n      font-weight: 600;\n      display: block;\n      font-size: 14px;\n      text-align: left; }\n  .site-header .navbar .dropdown-content i {\n      color: #616161; }\n  .site-header .navbar .dropdown-content a:hover i {\n      color: #c00; }\n  .site-header .navbar .dropdown-content a:hover {\n    background-color: #fff;\n    color: #c00; }\n  .site-header .navbar .dropdown:hover .dropdown-content {\n    display: block; }\n  .top-search-btn {\n  background: none;\n  border: 0;\n  font-size: 17px;\n  padding: 10px; }\n  #overlay {\n  height: 0;\n  width: 100%;\n  position: fixed;\n  z-index: 9999 !important;\n  top: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.9);\n  overflow: hidden;\n  transition: .75s;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n  .cross-button {\n  font-size: 74px;\n  color: #fff;\n  position: absolute;\n  right: 81px;\n  top: 47px; }\n  .search-input {\n  background: transparent;\n  line-height: 3;\n  width: 80%;\n  margin: 0 auto;\n  border: none;\n  border-bottom: 1 px solid;\n  border-bottom: 1px solid #fff;\n  color: #fff !important;\n  font-size: 25px;\n  padding: 0; }\n"
 
 /***/ }),
 

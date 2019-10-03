@@ -241,7 +241,7 @@ var PinterestSearchComponent = /** @class */ (function () {
                 },
                 // input: "text",
                 showCloseButton: true,
-                showCancelButton: true,
+                // showCancelButton: true,
                 confirmButtonText: 'Add to list"' + current_list.name + '"',
             }).then(function () {
                 var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_2__["Headers"]({ 'Authorization': 'JWT ' + currentUser.token });

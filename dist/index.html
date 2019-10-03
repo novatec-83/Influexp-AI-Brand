@@ -43,7 +43,16 @@
   <a href="https://www.livechatinc.com/chat-with/10212937/">Chat with us</a>,
   powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener" target="_blank">LiveChat</a>
 </noscript>
-<!-- End of LiveChat code -->
+<a onclick="topFunction()" style="display:none" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i>Top</a>
+<script>
+   window.onscroll = function () { scrollFunction() }; function scrollFunction() { if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { document.getElementById("myBtn").style.display = "block"; } 
+ else { document.getElementById("myBtn").style.display = "none"; } } 
+ function topFunction() { $('html, body').animate({ scrollTop: 0 }, 800); }
+  var clicks = 0; 
+  function changeColorFav(id) { ++clicks; if (clicks % 2) { id.style.color = 'red'; } else { id.style.color = 'gray'; } }
+jQuery(document).ready(function () {
+ });
+    </script>
 <app-component>
  
 </app-component>
