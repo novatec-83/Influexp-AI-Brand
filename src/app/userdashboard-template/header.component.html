@@ -119,6 +119,12 @@
 
 <!-- Navigation -->
 <header class="site-header">
+  <div id="overlay">
+    <input class="form-control" type="text" name=""   (click)="find1(searchvalue1.value)" class="search-input" placeholder="Seacrh Influcencer">
+    <div class="cross-button">
+        <a (click)="closenav()" class="closebtn">×</a>
+    </div>
+  </div>
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -168,8 +174,8 @@
           <a class="font-additional color-main text-uppercase hover-focus-color" data-target=".example-modal-lg" data-toggle="modal" href="#search" id="icon-type-to-search">
                     <button class="top-search-btn" id="serbtn"> <i class=" fa fa-search"></i> </button> </a>
             </li> -->
-            
-            <div id="search">
+            <li>
+            <!-- <div id="search">
               <div class="searsh-box">
                   <button type="button" class="close">×</button>
                   <form #myform> <input #searchvalue1 type="search" value="" placeholder="Search to influence with Roar!">
@@ -177,8 +183,16 @@
                       (click)="find1(searchvalue1.value)">Search</button>
                   </form>
               </div>
-          </div>
-
+          </div> -->
+      
+          <div class="">
+            <a
+                class="font-additional color-main text-uppercase hover-focus-color"
+                data-target=".example-modal-lg" data-toggle="modal" href="#search" id="icon-type-to-search">
+            <button class="top-search-btn" id="serbtn" (click)="opennav()"> <i
+                    class=" fa fa-search"></i> </button> </a>
+            </div>
+        </li>
 
           <!-- <div class="col-md-2 col-sm-4 col-xs-6" style="text-align: right">
             <a  class="font-additional color-main text-uppercase hover-focus-color" data-target=".example-modal-lg" data-toggle="modal" href="#search" id="icon-type-to-search">
@@ -206,3 +220,12 @@
     </div>
 </nav>
 </header>
+
+    <div id="search">
+            <div class="searsh-box">
+                <button type="button" class="close">×</button>
+                <form #myform> <input #searchvalue1 type="search" value="" placeholder="Search to influence with Roar!">
+                    <button type="submit" class="close"  style=" position: absolute; display:  none">Search</button>
+                </form>
+            </div>
+          </div>

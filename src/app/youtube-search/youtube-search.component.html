@@ -180,7 +180,7 @@
         <div class="row" id="myHeader">
             <div class="col-md-12 list-row">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <!--<button  class="btn btn-success">Select All</button>-->
                         <div id="ck-button">
                             <label>
@@ -189,12 +189,15 @@
                             </label>
                         </div>
 
-                        <button  class="btn btn-success" (click)="add_create_list()"> Add to list</button>
+                        <button  class="btn btn-priamry add-to-list" (click)="add_create_list()"> Add to list</button>
 
                     </div>
                 </div>
             </div>
         </div>
+        <div class="cross-button">
+                <a (click)=cl class="closebtn">×</a>
+            </div>
 
         <div class="profile-container" *ngFor="let item of influencers_by_default.results" >
             <div class="row">

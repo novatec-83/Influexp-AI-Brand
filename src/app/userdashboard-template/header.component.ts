@@ -96,8 +96,11 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
 
     }
-    openNav() {
-        $("#menubar").toggleClass("d-block");
+    opennav() {
+        document.getElementById("overlay").style.height="100%";
+    }
+    closenav() {
+        document.getElementById("overlay").style.height="0";
     }
     ngOnInit() {
         if(localStorage.getItem('currentUser') != null){
@@ -144,6 +147,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         }
 
     }
+  
 
     ngAfterViewInit() {
 
@@ -259,6 +263,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
 
     }
+
 
     checkNot() {
         this.notification_class = 'header-alarm dropdown-toggle';
