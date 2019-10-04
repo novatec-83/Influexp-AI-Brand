@@ -250,7 +250,10 @@ var OptInInfluencersComponent = /** @class */ (function () {
                                     }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
                                         resolve();
                                     }, function (error) {
-                                        reject('List named "' + result + '" already exists');
+                                        if (error.status === 406) {
+                                            sweetalert2__WEBPACK_IMPORTED_MODULE_7___default.a.fire('List Already Exist');
+                                        }
+                                        // reject('List named "' + result + '" already exists')
                                     });
                                 }
                             }, 2);
@@ -263,7 +266,8 @@ var OptInInfluencersComponent = /** @class */ (function () {
                     var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_2__["Headers"]({ 'Authorization': 'JWT ' + currentUser.token });
                     headers.append('Content-Type', 'application/json');
                     mysvc.post(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/create_add_ilist_dd/', JSON.stringify({
-                        name: result.value,
+                        // name: result.value,
+                        name: result,
                         list: list,
                         username: currentUser.username
                     }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {

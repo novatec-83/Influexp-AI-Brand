@@ -230,7 +230,10 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                                 },
                                 error => {
-                                    reject('List named "' + result + '" already exists')
+                                    if(error.status===406){
+                                        Swal.fire("List Already Exist")
+                                    }
+                                    // reject('List named "' + result + '" already exists')
 
                                 });
                         }
@@ -592,9 +595,9 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist_yt/', JSON.stringify({
-                    name: result,
-                    // name: result.value,
-                    list: {},
+                    // name: result,
+                    name: result.value,
+                    // list: {},
                     username: this.currentUser.username
                 }),
                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -1167,7 +1170,10 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                                 },
                                 error => {
-                                    reject('List named "' + result + '" already exists')
+                                    if(error.status===406){
+                                        Swal.fire('List Already Exist')
+                                    }
+                                    // reject('List named "' + result + '" already exists')
 
                                 });
                         }
@@ -1184,6 +1190,7 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist_dd/', JSON.stringify({
+                    // name: result.value,
                     name: result.value,
                     list: {},
                     username: this.currentUser.username
@@ -1327,17 +1334,17 @@ export class UserdashboardTemplateComponent implements OnInit {
                 {headers: headers}).map((responce: Response) => responce.json()).subscribe(
                 data => {
                     this.get_list_pinterest(this.selected_choice);
-                    // Swal.fire(
-                    //     'List Deleted!',
-                    //     '',
-                    //     'success'
-                    // )
+                    Swal.fire(
+                        'List Deleted!',
+                        '',
+                        'success'
+                    )
                 },
                 error => {
                     // alert('error')
                     Swal.fire(
                         'Try again after some time!',
-                        error.toString(),
+                        // error.toString(),
                         'error'
                     )
                 }

@@ -78,3 +78,44 @@
     display: block;
   }
 }
+
+
+.top-search-btn{
+  background: none;
+    border: 0;
+    font-size: 17px;
+    padding: 10px;
+}
+#overlay{
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 9999!important;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.9);
+  overflow: hidden;
+  transition: .75s;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cross-button{
+  font-size: 74px;
+  color: #fff;
+  position: absolute;
+  right: 81px;
+  top: 47px;
+}
+.search-input{
+  background: transparent;
+  line-height: 3;
+  width: 80%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1 px solid;
+  border-bottom: 1px solid #fff;
+  color: #fff!important;
+  font-size: 25px;
+  padding: 0;
+}

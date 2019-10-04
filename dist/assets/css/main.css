@@ -7414,7 +7414,8 @@ var.result-container {
 
 .page-content {
     padding: 33px 0px 10px 0px;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
+    background:#F7FBFD
 }
 
 .dark-theme .page-content {
@@ -17011,7 +17012,7 @@ mat-option:hover {
     color:#fff;
 } */
 
-md-tab-body{
+mat-tab-body{
     background-color: #FFFFFF;
 }
 .checkbox-loaded{

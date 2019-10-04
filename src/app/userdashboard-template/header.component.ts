@@ -85,13 +85,22 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         );
 
     }
+    
+    // find1(e) {
+
+    //     this.router.navigate(['/search/results/', e])
+    //     localStorage.setItem('searchQuery1', e);
+    // }
     loadCurrentUser(img){
         this.currentUser.profile_image=img;
 
 
     }
-    openNav() {
-        $("#menubar").toggleClass("d-block");
+    opennav() {
+        document.getElementById("overlay").style.height="100%";
+    }
+    closenav() {
+        document.getElementById("overlay").style.height="0";
     }
     ngOnInit() {
         if(localStorage.getItem('currentUser') != null){
@@ -138,6 +147,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         }
 
     }
+  
 
     ngAfterViewInit() {
 
@@ -254,12 +264,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
     }
 
+
     checkNot() {
         this.notification_class = 'header-alarm dropdown-toggle';
     }
 
     find1(e) {
-
+alert(e)
         this.router.navigate(['/search/results/', e])
         localStorage.setItem('searchQuery1', e);
     }
