@@ -1539,7 +1539,7 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist_pt/', JSON.stringify({
-                    name: result.value,
+                    name: result,
                     list: {},
                     username: this.currentUser.username
                 }),

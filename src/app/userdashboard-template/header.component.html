@@ -197,6 +197,13 @@
                 <button class="top-search-btn" id="serbtn" (click)="opennav()"> <i
                         class=" fa fa-search"></i> </button> </a>
             </div>
+            
+            <!-- <div class="col-md-1 col-sm-1" style="margin: 19px">
+                <a class="font-additional color-main text-uppercase hover-focus-color"
+                        data-target=".example-modal-lg" data-toggle="modal" href="#search" id="icon-type-to-search">
+                    <button class="top-search-btn" id="serbtn"> <i
+                            class=" fa fa-search"></i> </button> </a>
+            </div> -->
 
        
           
@@ -231,15 +238,35 @@
 
 
 </header>
-<div id="search">
+<!-- <div id="search">
     <div class="searsh-box">
         <button type="button" class="close">×</button>
-        <form #myform> <input #searchvalue1 type="search" value="" placeholder="Search to influence with Roar!">
+        <form #myform>
+           <input #searchvalue1 type="search" value="" placeholder="Search to influence with Roar!">
             <button type="submit" class="close"  style=" position: absolute; display:  none"  (click)="find1(searchvalue1.value)" >Search</button>
         </form>
     </div>
+  </div> -->
+
+  
+  <div id="search">
+      <div class="searsh-box">
+          <button type="button" class="close">×</button>
+          <form #myform> <input #searchvalue1 type="search" value="" placeholder="Search to influence with Roar!">
+              <button type="submit" class="close"  style=" position: absolute; display:  none"
+              (click)="find1(searchvalue1.value)">Search</button>
+          </form>
+      </div>
   </div>
-   
+      <!-- <div id="search">
+              <div class="searsh-box">
+                  <button type="button" class="close">×</button>
+                  <form #myform> <input #searchvalue1 type="search" value="" placeholder="Search to influence with Roar!">
+                      <button type="submit" class="close"  style=" position: absolute; display:  none"
+                      (click)="find1(searchvalue1.value)">Search</button>
+                  </form>
+              </div>
+          </div> -->
 
     <!-- <div id="search">
             <div class="searsh-box">

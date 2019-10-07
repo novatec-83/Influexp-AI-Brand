@@ -269,13 +269,17 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         this.notification_class = 'header-alarm dropdown-toggle';
     }
 
+//     find1(e) {
+// alert(e)
+//         this.router.navigate(['/search/results/', e])
+//         localStorage.setItem('searchQuery1', e);
+//     }
+
     find1(e) {
-alert(e)
+
         this.router.navigate(['/search/results/', e])
         localStorage.setItem('searchQuery1', e);
     }
-
-
 
 
     loadprofilepic(){
