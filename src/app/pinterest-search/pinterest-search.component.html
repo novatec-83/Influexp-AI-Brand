@@ -2,7 +2,7 @@
 
     <div class="row">
         <div class="container-fluid ">
-            <mat-tab-group >
+            <mat-tab-group   style="background: #000;  ">
 
 
                 <mat-tab class="font-icon font-icon-page" label="Web" style="margin: 0 auto">
@@ -405,7 +405,7 @@
                         <div id="ck-button">
                             <label>
 
-                                <input type="checkbox" class="checkbox"  (change)="cheakall($event.target.checked)" ><span>Select All</span>
+                                <input type="checkbox"  (change)="cheakall($event.target.checked)" ><span>Select All</span>
                             </label>
                         </div>
 
@@ -521,23 +521,23 @@
         <div class="row" id="myHeader">
             <div class="col-md-12 list-row">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <!--<button  class="btn btn-success">Select All</button>-->
                         <div id="ck-button">
                             <label>
 
-                                <input type="checkbox" class="checkbox"   (change)="cheakalldef($event.target.checked)" ><span>Select All</span>
+                                <input type="checkbox"  (change)="cheakalldef($event.target.checked)" ><span>Select All</span>
                             </label>
                         </div>
 
-                        <button  class="btn  btn-lg add-to-list" (click)="add_create_list()"> Add to list</button>
+                        <button  class="btn btn-success" (click)="add_create_list()"> Add to list</button>
 
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- <div class="profile-container" *ngFor="let item of influencers_by_default.results" >
+        <div class="profile-container" *ngFor="let item of influencers_by_default.results" >
             <div class="row">
 
 
@@ -555,11 +555,11 @@
                         <label class="tbl-cell tbl-cell-name">{{item['profile_name']}}</label>
                     </div>
                     <div class="row" style="padding-top: 8px">
-                        <label class="item-content" style="overflow: hidden;
-                        text-overflow: ellipsis;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                        -webkit-line-clamp: 2;" title="{{item['description']}}">{{item['description']}}</label>
+                        <!--<label class="item-content" style="overflow: hidden;-->
+                        <!--text-overflow: ellipsis;-->
+                        <!--display: -webkit-box;-->
+                        <!-- -webkit-box-orient: vertical;-->
+                        <!-- -webkit-line-clamp: 2;" title="{{item['description']}}">{{item['description']}}</label>-->
                     </div>
                     <div class="row" style="padding-top: 8px">
                         <div class="col-md-3 text-left">
@@ -590,9 +590,9 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
-  c
+
     <!--<section class="box-typical" *ngIf="!loaded&& influencers_by_default.totalItems!=0">-->
 
 
