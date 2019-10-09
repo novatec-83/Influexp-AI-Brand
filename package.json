@@ -41,6 +41,7 @@
     "ngx-pipes": "^2.4.6",
     "primeng": "^7.1.0",
     "queueing-subject": "^0.3.0",
+    "recaptcha-blackgeeks": "^1.2.2",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.4.0",
     "sweetalert2": "^8.8.5",
