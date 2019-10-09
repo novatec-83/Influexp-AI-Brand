@@ -11,7 +11,7 @@ import {PreloaderModule} from "../components/preloader.module";
 import {CdkTableModule} from '@angular/cdk/table';
 
 
-// import {} from '@angular/material';
+import {} from '@angular/material';
 
 
 @NgModule({

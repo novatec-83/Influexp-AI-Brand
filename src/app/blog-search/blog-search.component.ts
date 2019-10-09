@@ -343,7 +343,7 @@ export class BlogosphereSearchComponent implements OnInit, AfterViewInit {
                         }),
                         {headers: headers}).map((response: Response) => response.json()).subscribe(
                         data => {
-                            console.log({name: result, list: list, username: currentUser.username});
+                            console.log({name: result.value, list: list, username: currentUser.username});
                             for (let i in this.inflist) {
                                 // this.inflist[i['id']] = e;
                                 this.inflist[i] = false;
@@ -352,7 +352,7 @@ export class BlogosphereSearchComponent implements OnInit, AfterViewInit {
                             this.main_checkbox = false;
                             Swal.fire(
                                 'List created and influencers added!',
-                                //   result.value(),
+                                  result.value(),
                                 'success'
                             )
                         },

@@ -354,7 +354,7 @@ export class YoutubeSearchComponent implements OnInit {
                     mysvc.post(Config.api + '/create_add_ilist_yt/', JSON.stringify({
                             name: result.value,
                             // name: result,
-                            list: list,
+                            // list: list,
                             username: currentUser.username
                         }),
                         {headers: headers}).map((response: Response) => response.json()).subscribe(

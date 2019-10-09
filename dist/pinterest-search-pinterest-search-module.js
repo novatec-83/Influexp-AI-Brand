@@ -334,7 +334,7 @@ var PinterestSearchComponent = /** @class */ (function () {
                     var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_2__["Headers"]({ 'Authorization': 'JWT ' + currentUser.token });
                     headers.append('Content-Type', 'application/json');
                     mysvc.post(_config__WEBPACK_IMPORTED_MODULE_5__["Config"].api + '/create_add_ilist_pt/', JSON.stringify({
-                        name: result,
+                        name: result.value,
                         list: list,
                         username: currentUser.username
                     }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {

@@ -300,15 +300,13 @@ var BlogosphereSearchComponent = /** @class */ (function () {
                         list: list,
                         username: currentUser.username
                     }), { headers: headers }).map(function (response) { return response.json(); }).subscribe(function (data) {
-                        console.log({ name: result, list: list, username: currentUser.username });
+                        console.log({ name: result.value, list: list, username: currentUser.username });
                         for (var i in _this.inflist) {
                             // this.inflist[i['id']] = e;
                             _this.inflist[i] = false;
                         }
                         _this.main_checkbox = false;
-                        sweetalert2__WEBPACK_IMPORTED_MODULE_7___default.a.fire('List created and influencers added!', 
-                        //   result.value(),
-                        'success');
+                        sweetalert2__WEBPACK_IMPORTED_MODULE_7___default.a.fire('List created and influencers added!', result.value(), 'success');
                     }, function (error) {
                         sweetalert2__WEBPACK_IMPORTED_MODULE_7___default.a.fire('Try again after some time!', error.toString(), 'error');
                     });
