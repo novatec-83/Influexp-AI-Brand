@@ -372,7 +372,7 @@ export class BlogosphereSearchComponent implements OnInit, AfterViewInit {
                             'No list created :)',
                             'success'
                         )
-                    }
+                        }
                 })
 
             }, (dismiss) => {
