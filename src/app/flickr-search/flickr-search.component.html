@@ -2,7 +2,7 @@
 
   <div class="row">
     <div class="container-fluid ">
-      <mat-tab-group   style="background: #000;  ">
+      <mat-tab-group>
 
 
         <mat-tab class="font-icon font-icon-page" label="Web" style="margin: 0 auto">
@@ -17,7 +17,7 @@
 
             <div class="row">
               <div class="col-md-3">
-                <h6 style="padding: 20px 20px 2px 20px; font-weight: bolder"> Flickr Influencers</h6>
+                <h6 class="influencer-hading"> Flickr Influencers</h6>
               </div>
 
               <div class="col-md-6 text-center p-auto">
@@ -415,23 +415,23 @@
     <div class="row" id="myHeader">
       <div class="col-md-12 list-row">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
             <!--<button  class="btn btn-success">Select All</button>-->
             <div id="ck-button">
               <label>
 
-                <input type="checkbox"  (change)="checkedAllDef($event.target.checked)" ><span>Select All</span>
+                <input type="checkbox" class="checkbox" (change)="checkedAllDef($event.target.checked)" ><span>Select All</span>
               </label>
             </div>
 
-            <button  class="btn btn-success" (click)="add_create_list()"> Add to list</button>
+            <button  class="btn btn-lg add-to-list" (click)="add_create_list()"> Add to list</button>
 
           </div>
         </div>
       </div>
     </div>
 
-    <div class="profile-container" *ngFor="let item of influencers_by_default_FB.results" >
+    <!-- <div class="profile-container" *ngFor="let item of influencers_by_default_FB.results" >
       <div class="row">
 
 
@@ -471,24 +471,91 @@
               <li><span class="right-item"><i class="fa fa-users" style="font-size:16px;color:#0a4069"></i> Followers:</span> <span class="list-item1">{{item['followers']}} |  </span> </li>
               <li><span class="right-item"> <i class="fa fa-bar-chart" style="font-size:16px;color:#0a4069"></i> Rank:</span> <span class="list-item1">{{item['profile_rank']}} |   </span></li>
               <li><span class="right-item"><i class="fa fa-calendar" style="font-size:16px;color:#0a4069"></i> Joined Date:</span> <span class="list-item1">{{item['joined_date']}}</span></li>
-              <!--<li><span class="right-item"><i class="fa fa-upload" style="font-size:16px;color:#0a4069; padding-left: 5px"></i> Broadcast :</span> <span class="list-item1">{{item['braodcasts']}} |  </span> </li>-->
+              <li><span class="right-item"><i class="fa fa-upload" style="font-size:16px;color:#0a4069; padding-left: 5px"></i> Broadcast :</span> <span class="list-item1">{{item['braodcasts']}} |  </span> </li>
 
             </ul>
           </div>
           <hr style="color: #555555">
           <div class="row" >
             <ul style="display: flex; padding-top: 5px">
-              <!--<li style="font-weight: bolder"> Videos Uploads | </li>-->
-              <!--<li><span class="right-item"> <i class="fa fa-sticky-note-o" style="font-size:16px;color:#0a4069"></i> Posts :</span> <span class="list-item1">{{item['posts']}} |   </span></li>-->
-              <!--<li *ngIf="item['twitter_profile']"><span class="right-item"><i class="fa fa-twitter" style="font-size:16px;color:#0a4069"></i> Twitter: </span> <span class="list-item1">{{item['twitter_profile']}}</span></li>-->
-              <!--<li *ngIf="!item['twitter_profile']"><span class="right-item"><i class="fa fa-twitter" style="font-size:16px;color:#0a4069"></i> Twitter: </span> <span class="list-item1">N/A</span></li>-->
+              <li style="font-weight: bolder"> Videos Uploads | </li>
+              <li><span class="right-item"> <i class="fa fa-sticky-note-o" style="font-size:16px;color:#0a4069"></i> Posts :</span> <span class="list-item1">{{item['posts']}} |   </span></li>
+              <li *ngIf="item['twitter_profile']"><span class="right-item"><i class="fa fa-twitter" style="font-size:16px;color:#0a4069"></i> Twitter: </span> <span class="list-item1">{{item['twitter_profile']}}</span></li>
+              <li *ngIf="!item['twitter_profile']"><span class="right-item"><i class="fa fa-twitter" style="font-size:16px;color:#0a4069"></i> Twitter: </span> <span class="list-item1">N/A</span></li>
 
 
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+    <div class="row influcener-div" *ngFor="let item of influencers_by_default_FB.results">
+      <div class="col-md-6">
+      <div class="row">
+              <div class="col-md-1 profile-checkbox" type="checkbox">
+                      <input type="checkbox" style="display: flex"  name="{{item['id']}}" [(ngModel)]="inflist[item['id']]" (change)="chec()" id="table-check-{{item['id']}}">
+                      <label for="table-check-{{item['id']}}"></label>
+                  </div>
+          <div class="col-md-5  ">
+            <img [src]="item['image_link']" class="twitter-image">
+          </div>
+          <div class="col-md-6 description-divison">
+              <label class="tbl-cell tbl-cell-name">{{item['profile_name']}}</label>
+              <label class="item-loc"> <i class="fa fa-map-marker marker-icon" style="font-size:16px;color:#c00"></i>  <span class="list-item1" >{{item['profile_linked']}}</span></label>
+                  <label class="item-content"
+               title="{{item['description']}}">{{item['description']}}</label>
+               <div class="row" >
+                  <ul class="profile-url p-1 ">
+                    <li><span class="right-item"><i class="fa fa-users" style="font-size:16px;color:#0a4069"></i> Followers:</span> <span class="list-item1">{{item['followers']}} |  </span> </li>
+                    <li><span class="right-item"> <i class="fa fa-bar-chart" style="font-size:16px;color:#0a4069"></i> Rank:</span> <span class="list-item1">{{item['profile_rank']}} |   </span></li>
+                  </ul>
+                  <ul class="profile-url p-1 ">
+                    <li><span class="right-item"> <i class="fa fa-sticky-note-o" style="font-size:16px;color:#0a4069"></i> Posts :</span> <span class="list-item1">{{item['posts']}} |   </span></li>
+              <li *ngIf="item['twitter_profile']"><span class="right-item"><i class="fa fa-twitter" style="font-size:16px;color:#0a4069"></i> Twitter: </span> <span class="list-item1">{{item['twitter_profile']}}</span></li>
+
+                  </ul>
+              </div>
+       
+          </div>
+          
+      </div>
+  </div>
+      <div class="col-md-1 followers-profile">
+          <h4 class="real-heading">43</h4>
+          <h5>Real</h5>
+      </div>
+      <div class="col-md-4">
+          <ul class="progress-url">
+                  <li>
+                      <span class="followers-percen">25-30</span>
+                      <div class="progress">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 56%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>  <span class="followers-percen1">56%</span></li>
+                    <li>   <span  class="followers-percen">30-35</span><div class="progress">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 29%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><span  class="followers-percen1">29%</span></li>
+                    <li><span class="followers-percen" >35-40</span><div class="progress">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 45%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><span class="followers-percen1">45%</span></li>
+                    <li><span class="followers-percen">40-45</span><div class="progress">
+                      <div class="progress-bar bg-info" role="progressbar" style="width:35%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><span class="followers-percen1">35%</span></li>
+                    <li>        <h5 class="text-center">Age</h5></li>
+              </ul>
+
+  </div>
+  <div class="col-md-1 male-follwers">
+      <div>
+          <i class="fas fa-venus"></i><span>83%</span>
+          <h5>Female</h5>
+      </div>
+      <div>
+              <i class="fas fa-venus"></i><span>33%</span>
+              <h5>Male</h5>
+          </div>
+  </div>
+  </div>
+ 
   </div>
 
   <div class="container-fluid" *ngIf="loaded && fbinfluencers.totalItems!=0">
@@ -497,7 +564,7 @@
       <div class="col-md-12 list-row">
         <div class="row">
           <div class="col-md-6">
-            <!--<button  class="btn btn-success">Select All</button>-->
+            <button  class="btn btn-success">Select All</button>
             <div id="ck-button">
               <label>
 
@@ -512,7 +579,7 @@
       </div>
     </div>
 
-    <div class="profile-container" *ngFor="let item of fbinfluencers.results" >
+    <!-- <div class="profile-container" *ngFor="let item of fbinfluencers.results" >
       <div class="row">
 
 
@@ -552,26 +619,94 @@
               <li><span class="right-item"><i class="fa fa-users" style="font-size:16px;color:#0a4069"></i> Followers:</span> <span class="list-item1">{{item['followers']}} |  </span> </li>
               <li><span class="right-item"> <i class="fa fa-bar-chart" style="font-size:16px;color:#0a4069"></i> Rank:</span> <span class="list-item1">{{item['profile_rank']}} |   </span></li>
               <li><span class="right-item"><i class="fa fa-calendar" style="font-size:16px;color:#0a4069"></i> Joined Date:</span> <span class="list-item1">{{item['joined_date']}}</span></li>
-              <!--<li><span class="right-item"><i class="fa fa-upload" style="font-size:16px;color:#0a4069; padding-left: 5px"></i> Broadcast :</span> <span class="list-item1">{{item['braodcasts']}} |  </span> </li>-->
+              <li><span class="right-item"><i class="fa fa-upload" style="font-size:16px;color:#0a4069; padding-left: 5px"></i> Broadcast :</span> <span class="list-item1">{{item['braodcasts']}} |  </span> </li>
 
             </ul>
           </div>
           <hr style="color: #555555">
           <div class="row" >
             <ul style="display: flex; padding-top: 5px">
-              <!--<li style="font-weight: bolder"> Videos Uploads | </li>-->
-              <!--<li><span class="right-item"> <i class="fa fa-sticky-note-o" style="font-size:16px;color:#0a4069"></i> Posts :</span> <span class="list-item1">{{item['posts']}} |   </span></li>-->
-              <!--<li *ngIf="item['twitter_profile']"><span class="right-item"><i class="fa fa-twitter" style="font-size:16px;color:#0a4069"></i> Twitter: </span> <span class="list-item1">{{item['twitter_profile']}}</span></li>-->
-              <!--<li *ngIf="!item['twitter_profile']"><span class="right-item"><i class="fa fa-twitter" style="font-size:16px;color:#0a4069"></i> Twitter: </span> <span class="list-item1">N/A</span></li>-->
+              <li style="font-weight: bolder"> Videos Uploads | </li>
+              <li><span class="right-item"> <i class="fa fa-sticky-note-o" style="font-size:16px;color:#0a4069"></i> Posts :</span> <span class="list-item1">{{item['posts']}} |   </span></li>
+              <li *ngIf="item['twitter_profile']"><span class="right-item"><i class="fa fa-twitter" style="font-size:16px;color:#0a4069"></i> Twitter: </span> <span class="list-item1">{{item['twitter_profile']}}</span></li>
+              <li *ngIf="!item['twitter_profile']"><span class="right-item"><i class="fa fa-twitter" style="font-size:16px;color:#0a4069"></i> Twitter: </span> <span class="list-item1">N/A</span></li>
 
 
             </ul>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </div> -->
+  <div>
+    <div class="row influcener-div" *ngFor="let item of fbinfluencers.results">
+      <div class="col-md-6">
+      <div class="row">
+              <div class="col-md-1 profile-checkbox" type="checkbox">
+                      <input type="checkbox" style="display: flex"  name="{{item['id']}}" [(ngModel)]="inflist[item['id']]" (change)="chec()" id="table-check-{{item['id']}}">
+                      <label for="table-check-{{item['id']}}"></label>
+                  </div>
+          <div class="col-md-5  ">
+            <img [src]="item['image_link']" class="twitter-image">
+          </div>
+          <div class="col-md-6 description-divison">
+              <label class="tbl-cell tbl-cell-name">{{item['profile_name']}}</label>
+              <label class="item-loc"> <i class="fa fa-map-marker marker-icon" style="font-size:16px;color:#c00"></i>  <span class="list-item1" >{{item['profile_linked']}}</span></label>
+                  <label class="item-content"
+               title="{{item['description']}}">{{item['description']}}</label>
+               <div class="row" >
+                  <ul class="profile-url p-1 ">
+                    <li><span class="right-item"><i class="fa fa-users" style="font-size:16px;color:#0a4069"></i> Followers:</span> <span class="list-item1">{{item['followers']}} |  </span> </li>
+                    <li><span class="right-item"> <i class="fa fa-bar-chart" style="font-size:16px;color:#0a4069"></i> Rank:</span> <span class="list-item1">{{item['profile_rank']}} |   </span></li>
+                  </ul>
+                  <ul class="profile-url p-1 ">
+                    <li><span class="right-item"> <i class="fa fa-sticky-note-o" style="font-size:16px;color:#0a4069"></i> Posts :</span> <span class="list-item1">{{item['posts']}} |   </span></li>
+              <li *ngIf="item['twitter_profile']"><span class="right-item"><i class="fa fa-twitter" style="font-size:16px;color:#0a4069"></i> Twitter: </span> <span class="list-item1">{{item['twitter_profile']}}</span></li>
 
+                  </ul>
+              </div>
+       
+          </div>
+          
+      </div>
+  </div>
+      <div class="col-md-1 followers-profile">
+          <h4 class="real-heading">43</h4>
+          <h5>Real</h5>
+      </div>
+      <div class="col-md-4">
+          <ul class="progress-url">
+                  <li>
+                      <span class="followers-percen">25-30</span>
+                      <div class="progress">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 56%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>  <span class="followers-percen1">56%</span></li>
+                    <li>   <span  class="followers-percen">30-35</span><div class="progress">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 29%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><span  class="followers-percen1">29%</span></li>
+                    <li><span class="followers-percen" >35-40</span><div class="progress">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 45%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><span class="followers-percen1">45%</span></li>
+                    <li><span class="followers-percen">40-45</span><div class="progress">
+                      <div class="progress-bar bg-info" role="progressbar" style="width:35%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div><span class="followers-percen1">35%</span></li>
+                    <li>        <h5 class="text-center">Age</h5></li>
+              </ul>
+
+  </div>
+  <div class="col-md-1 male-follwers">
+      <div>
+          <i class="fas fa-venus"></i><span>83%</span>
+          <h5>Female</h5>
+      </div>
+      <div>
+              <i class="fas fa-venus"></i><span>33%</span>
+              <h5>Male</h5>
+          </div>
+  </div>
+  </div>
+ </div>
+
+ 
   <!--<section class="box-typical" *ngIf="loaded && fbinfluencers.totalItems!=0">-->
     <!--<div class="box-typical-body">-->
       <!--<div class="table-responsive">-->

@@ -74,10 +74,10 @@ input[type=checkbox]{
 }
 .tbl-cell{
     font-weight: 600;
-    font-size: 19px;
+    font-size: 15px;
 }
 i{
-    color: white;
+    color: #000
 }
 .item-content{
 
@@ -93,15 +93,14 @@ hr{
     margin: 0!important;
 }
 .list-item1{
-    margin-right: 20px;
     color: #000;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 10px;
 }
 .right-item{
     color: #919fa9;
     font-size: 14px;
-}
+}S
 .btn-success{
     background: black;
     border-radius: 50px;

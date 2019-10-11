@@ -71,14 +71,14 @@
 
             <p-header class="box-typical-header">
               <div class="fixed-table-toolbar">
-                <div class="bars pull-left">
+                <div class="bars pull-left p-3">
                   <div id="toolbar">
-                    <div class="bootstrap-table-header">Search results</div>
-                    <button class="btn btn-primary1" (click)="add_create_list()">
+                    <!-- <div class="bootstrap-table-header">Search results</div> -->
+                    <button class="btn btn-primary" (click)="add_create_list()">
                       <!--<i class="font-icon font-icon-close-2"></i> -->
                       Add to list
                     </button>
-                    <button class="btn btn-primary1" (click)="clear_list()">
+                    <button class="btn btn-primary pull-right" (click)="clear_list()">
                       <!--<i class="font-icon font-icon-close-2"></i> -->
                       Clear selected
                     </button>
@@ -179,7 +179,7 @@
                 <div class="fht-cell"></div>
               </ng-template>
               <ng-template let-col let-car="rowData" pTemplate="body">
-                <div class="col-item col-contact tooltips">
+                <div class="col-item col-contact p-3 tooltips">
                   <ul>
                     <li *ngIf="car['email']">
                       <div>
