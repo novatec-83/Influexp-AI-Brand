@@ -253,7 +253,7 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist/', JSON.stringify({
-                    name: result.value,
+                    name: result,
                     list: {},
                     username: this.currentUser.username
                 }),
@@ -318,7 +318,7 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/ml/check_ilist_twitter/', JSON.stringify({
-                                    // name: result.value,
+                                    // name: result,
                                     name: result,
                                     username: this.currentUser.username
                                 }),
@@ -348,7 +348,7 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/ml/create_add_ilist_twitter/', JSON.stringify({
-                    name: result.value,
+                    name: result,
                     list: {},
                     username: this.currentUser.username
                 }),
@@ -565,7 +565,7 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_yt/', JSON.stringify({
-                                    // name: result.value,
+                                    // name: result,
                                     name: result,
                                     username: this.currentUser.username
                                 }),
@@ -596,7 +596,7 @@ export class UserdashboardTemplateComponent implements OnInit {
 
             this.http.post(Config.api + '/create_add_ilist_yt/', JSON.stringify({
                     // name: result,
-                    name: result.value,
+                    name: result,
                     // list: {},
                     username: this.currentUser.username
                 }),
@@ -677,7 +677,7 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_in/', JSON.stringify({
-                                    // name: result.value,
+                                    // name: result,
                                     name: result,
                                     username: this.currentUser.username
                                 }),
@@ -707,7 +707,7 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist_in/', JSON.stringify({
-                    name: result.value,
+                    name: result,
                     list: {},
                     username: this.currentUser.username
                 }),
@@ -853,7 +853,7 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                             this.http.post(Config.api + '/check_ilist_fb/', JSON.stringify({
                                     name: result,
-                                    // name: result.value,
+                                    // name: result,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -882,7 +882,7 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist_fb/', JSON.stringify({
-                    name: result.value,
+                    name: result,
                     list: {},
                     username: this.currentUser.username
                 }),
@@ -987,156 +987,160 @@ export class UserdashboardTemplateComponent implements OnInit {
 
 
     // Start Linkedin  all API's Implements by Amjad
-    go_to_list_lnkd(e:number, name: string){
-        this.router.navigate(['linkedin/list/', e])
-    }
-    get_list_lnkd(v){
-        this.loaded=false;
-        this.http.get(Config.api+ '/get_iList_names_ld/'+ this.currentUser.username + '/'+ v + '/', null, 'small')
-            .subscribe(res=> {
-                this.user_lists= res.json();
-                this.loaded=true;
-            })
-    }
-    create_empty_list_lnkd() {
 
-        Swal.fire({
-            title: 'Enter the name of list',
-            text: 'New list will be created',
-            type: 'question',
-            input: 'text',
-            preConfirm: (result) => {
-                return new Promise((resolve, reject) => {
-                    setTimeout(() => {
-                        if (result === '') {
-                            reject('List name cannot be empty')
-                        } else if (result.length > 30) {
-                            reject('Length of list name cannot be greater than 30')
-                        }
-                        else {
-                            let headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
-                            headers.append('Content-Type', 'application/json');
+    // go_to_list_lnkd(e:number, name: string){
+    //     this.router.navigate(['linkedin/list/', e])
+    // }
+    // get_list_lnkd(v){
+    //     this.loaded=false;
+    //     this.http.get(Config.api+ '/get_iList_names_ld/'+ this.currentUser.username + '/'+ v + '/', null, 'small')
+    //         .subscribe(res=> {
+    //             this.user_lists= res.json();
+    //             this.loaded=true;
+    //         })
+    // }
+    // create_empty_list_lnkd() {
 
-                            this.http.post(Config.api + '/check_ilist_ld/', JSON.stringify({
-                                    name: result.value,
-                                    username: this.currentUser.username
-                                }),
-                                {headers: headers}).map((response: Response) => response.json()).subscribe(
-                                data => {
-                                    resolve()
+    //     Swal.fire({
+    //         title: 'Enter the name of list',
+    //         text: 'New list will be created',
+    //         type: 'question',
+    //         input: 'text',
+    //         preConfirm: (result) => {
+    //             return new Promise((resolve, reject) => {
+    //                 setTimeout(() => {
+    //                     if (result === '') {
+    //                         reject('List name cannot be empty')
+    //                     } else if (result.length > 30) {
+    //                         reject('Length of list name cannot be greater than 30')
+    //                     }
+    //                     else {
+    //                         let headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
+    //                         headers.append('Content-Type', 'application/json');
 
-                                },
-                                error => {
-                                    reject('List named "' + result + '" already exists')
+    //                         this.http.post(Config.api + '/check_ilist_ld/', JSON.stringify({
+    //                                 name: result,
+    //                                 username: this.currentUser.username
+    //                             }),
+    //                             {headers: headers}).map((response: Response) => response.json()).subscribe(
+    //                             data => {
+    //                                 resolve()
 
-                                });
-                        }
-                    }, 2)
-                })
-            },
-            showCancelButton: true,
-            confirmButtonText: 'Create',
-            cancelButtonText: 'Cancel'
-        }).then((result) => {
+    //                             },
+    //                             error => {
+    //                                 reject('List named "' + result + '" already exists')
 
-
-            let headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
-            headers.append('Content-Type', 'application/json');
-
-            this.http.post(Config.api + '/create_add_ilist_ld/', JSON.stringify({
-                    name: result.value,
-                    list: {},
-                    username: this.currentUser.username
-                }),
-                {headers: headers}).map((response: Response) => response.json()).subscribe(
-                data => {
-                    this.get_list_lnkd(this.selected_choice);
-                    Swal.fire(
-                        'List created!',
-                        result.value(),
-                        'success'
-                    )
-                },
-                // error => {
-                //     Swal.fire(
-                //         'Try again after some time!',
-                //         error.toString(),
-                //         'error'
-                //     )
-                // }
-                );
-
-        }, function (dismiss) {
-            // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
-            if (dismiss === 'cancel') {
-                Swal.fire(
-                    'Cancelled',
-                    'No list created :)',
-                    'success'
-                )
-            }
-        })
-    }
-    sort_list_lnkd(){
-        this.get_list_lnkd(this.selected_choice)
-    }
-    select_add_influencers_lnkd(id: number, name:string){
-        localStorage.setItem('select_list_linkin', JSON.stringify({id: id, name: name}));
-        this.router.navigate(['linkedin/search'], {queryParams:{name: 'linkedIn'}})
-    }
-    delete_ilist_lnkd(id: number) {
-        let headers = new Headers({'Authorization': 'JWT' + this.currentUser['token']}) ;
-        headers.append('Content-Type', 'application/json');
-        Swal.fire({
-            title: 'Deleted',
-            text: 'List has been deleted successfully',
-            // title: 'Are you Sure?',
-            // text: 'You will not be able to recover this list!',
-            // showCancelButton: true,
-            // confirmButtonText: 'Yes, delete it!',
-            // cancelButtonText: 'No, keep it'
-
-        }).then(() => {
-            headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
-            headers.append('Content-Type', 'application/json');
-            this.http.delete(Config.api + '/delete_ilist_ld/' + id,
-                {headers: headers}).map((responce: Response) => responce.json()).subscribe(
-                data => {
-                    this.get_list_lnkd(this.selected_choice);
-                    // Swal.fire(
-                    //     'List Deleted!',
-                    //     '',
-                    //     'success'
-                    // )
-                },
-                error => {
-                    // alert('error')
-                    Swal.fire(
-                        'Try again after some time!',
-                        error.toString(),
-                        'error'
-                    )
-                }
+    //                             });
+    //                     }
+    //                 }, 2)
+    //             })
+    //         },
+    //         showCancelButton: true,
+    //         confirmButtonText: 'Create',
+    //         cancelButtonText: 'Cancel'
+    //     }).then((result) => {
 
 
+    //         let headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
+    //         headers.append('Content-Type', 'application/json');
 
-            )
-        }, function (dismiss) {
-            if (dismiss === 'cancel') {
-                Swal.fire(
-                    'Cancelled',
-                    'Your list is not deleted :)',
-                    'error'
-                )
-            }
-        })
+    //         this.http.post(Config.api + '/create_add_ilist_ld/', JSON.stringify({
+    //                 name: result,
+    //                 list: {},
+    //                 username: this.currentUser.username
+    //             }),
+    //             {headers: headers}).map((response: Response) => response.json()).subscribe(
+    //             data => {
+    //                 this.get_list_lnkd(this.selected_choice);
+    //                 Swal.fire(
+    //                     'List created!',
+    //                     result.value(),
+    //                     'success'
+    //                 )
+    //             },
+    //             // error => {
+    //             //     Swal.fire(
+    //             //         'Try again after some time!',
+    //             //         error.toString(),
+    //             //         'error'
+    //             //     )
+    //             // }
+    //             );
+
+    //     }, function (dismiss) {
+    //         // dismiss can be 'overlay', 'cancel', 'close', 'esc', 'timer'
+    //         if (dismiss === 'cancel') {
+    //             Swal.fire(
+    //                 'Cancelled',
+    //                 'No list created :)',
+    //                 'success'
+    //             )
+    //         }
+    //     })
+    // }
+    // sort_list_lnkd(){
+    //     this.get_list_lnkd(this.selected_choice)
+    // }
+    // select_add_influencers_lnkd(id: number, name:string){
+    //     localStorage.setItem('select_list_linkin', JSON.stringify({id: id, name: name}));
+    //     this.router.navigate(['linkedin/search'], {queryParams:{name: 'linkedIn'}})
+    // }
+    // delete_ilist_lnkd(id: number) {
+    //     let headers = new Headers({'Authorization': 'JWT' + this.currentUser['token']}) ;
+    //     headers.append('Content-Type', 'application/json');
+    //     Swal.fire({
+    //         title: 'Deleted',
+    //         text: 'List has been deleted successfully',
+    //         // title: 'Are you Sure?',
+    //         // text: 'You will not be able to recover this list!',
+    //         // showCancelButton: true,
+    //         // confirmButtonText: 'Yes, delete it!',
+    //         // cancelButtonText: 'No, keep it'
+
+    //     }).then(() => {
+    //         headers = new Headers({'Authorization': 'JWT ' + this.currentUser['token']});
+    //         headers.append('Content-Type', 'application/json');
+    //         this.http.delete(Config.api + '/delete_ilist_ld/' + id,
+    //             {headers: headers}).map((responce: Response) => responce.json()).subscribe(
+    //             data => {
+    //                 this.get_list_lnkd(this.selected_choice);
+    //                 // Swal.fire(
+    //                 //     'List Deleted!',
+    //                 //     '',
+    //                 //     'success'
+    //                 // )
+    //             },
+    //             error => {
+    //                 // alert('error')
+    //                 Swal.fire(
+    //                     'Try again after some time!',
+    //                     error.toString(),
+    //                     'error'
+    //                 )
+    //             }
 
 
-    }
+
+    //         )
+    //     }, function (dismiss) {
+    //         if (dismiss === 'cancel') {
+    //             Swal.fire(
+    //                 'Cancelled',
+    //                 'Your list is not deleted :)',
+    //                 'error'
+    //             )
+    //         }
+    //     })
+
+
+    // }
 
 
 
     // Start BlogoSphere  all API's Implements by Amjad
+    
+    
+    
     sort_lists_dd() {
         this.get_lists_dd(this.selected_choice);
     }
@@ -1161,7 +1165,7 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                             this.http.post(Config.api + '/check_ilist_dd/', JSON.stringify({
                                     name: result,
-                                    // name: result.value,
+                                    // name: result,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -1190,8 +1194,8 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist_dd/', JSON.stringify({
-                    // name: result.value,
-                    name: result.value,
+                    // name: result,
+                    name: result,
                     list: {},
                     username: this.currentUser.username
                 }),
@@ -1512,7 +1516,7 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_pt/', JSON.stringify({
-                                    // name: result.value,
+                                    // name: result,
                                     name: result,
                                     username: this.currentUser.username
                                 }),
@@ -1581,7 +1585,7 @@ export class UserdashboardTemplateComponent implements OnInit {
     //         })
     // }
 
-    get_list_pinterest(v) {
+    get_list_pinterest(v: string) {
 
         this.loaded = false;
         this.http.get(Config.api + '/get_iList_names_pt/' + this.currentUser.username + '/' + v + '/', null, 'small')
@@ -1712,20 +1716,20 @@ export class UserdashboardTemplateComponent implements OnInit {
         } else if (e === 5 ) {
             this.get_list_fb('-id');
         }
+        // else if(e===6){
+        //     this.get_list_lnkd('-id');
+        // }
         else if(e===6){
-            this.get_list_lnkd('-id');
-        }
-        else if(e===7){
             this.get_list_pinterest('-id');
         }
-        else if(e===8){
+        else if(e===7){
             this.get_list_peri('-id');
         }
 
-        else if(e===9){
+        else if(e===8){
             this.get_list_med('-id');
         }
-        else if(e===10){
+        else if(e===9){
             this.get_list_flkr('-id');
         }
     }
@@ -1754,7 +1758,7 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                             this.http.post(Config.api + '/check_ilist_periscope/', JSON.stringify({
                                     name: result,
-                                    // name: result.value,
+                                    // name: result,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -1763,6 +1767,7 @@ export class UserdashboardTemplateComponent implements OnInit {
 
                                 },
                                 error => {
+
                                     reject('List named "' + result + '" already exists')
 
                                 });
@@ -1780,7 +1785,7 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist_periscope/', JSON.stringify({
-                    name: result.value,
+                    name: result,
                     list: {},
                     username: this.currentUser.username
                 }),
@@ -1834,7 +1839,7 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_md/', JSON.stringify({
-                                    // name: result.value,
+                                    // name: result,
                                     name: result,
                                     username: this.currentUser.username
                                 }),
@@ -1861,7 +1866,7 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist_md/', JSON.stringify({
-                    name: result.value,
+                    name: result,
                     list: {},
                     username: this.currentUser.username
                 }),
@@ -1870,7 +1875,7 @@ export class UserdashboardTemplateComponent implements OnInit {
                     this.get_list_med(this.selected_choice);
                     Swal.fire(
                         'List created!',
-                        result.value(),
+                        // result.value(),
                         'success'
                     )
                 },
@@ -1914,7 +1919,7 @@ export class UserdashboardTemplateComponent implements OnInit {
                             headers.append('Content-Type', 'application/json');
 
                             this.http.post(Config.api + '/check_ilist_fl/', JSON.stringify({
-                                    name: result.value,
+                                    name: result,
                                     username: this.currentUser.username
                                 }),
                                 {headers: headers}).map((response: Response) => response.json()).subscribe(
@@ -1940,7 +1945,7 @@ export class UserdashboardTemplateComponent implements OnInit {
             headers.append('Content-Type', 'application/json');
 
             this.http.post(Config.api + '/create_add_ilist_fl/', JSON.stringify({
-                    name: result.value,
+                    name: result,
                     list: {},
                     username: this.currentUser.username
                 }),
