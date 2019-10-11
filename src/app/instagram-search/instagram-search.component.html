@@ -411,11 +411,11 @@
                       <label for="table-check-{{item['id']}}"></label>
                   </div>
           <div class="col-md-5  ">
-               <img [src]="item['image_url']" class="twitter-image">
+            <img [src]="item['image_url']" class="twitter-image">
           </div>
           <div class="col-md-6 description-divison">
               <label class="tbl-cell tbl-cell-name">{{item['name']}}</label>
-              <label class="item-loc"> <i class="fa fa-map-marker marker-icon" style="font-size:16px;color:#c00"></i>  <span class="list-item1" *ngIf="item['category']['location']"> {{item['posts']}}</span></label>
+              <label class="item-loc"> <i class="fa fa-map-marker marker-icon" style="font-size:16px;color:#c00"></i>  <span class="list-item1"> {{item['account_link']}}</span></label>
                   <label class="item-content"
                title="{{item['description']}}">{{item['description']}}</label>
                <div class="row" >

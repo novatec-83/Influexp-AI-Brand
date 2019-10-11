@@ -72,6 +72,11 @@
   align-items: center;
   justify-content: center;
 }
+.recaptcha-error{
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
 .flexy ul li a img{
   transition: all .4s ease-in-out;
 }
@@ -79,11 +84,16 @@
   transform: scale(1.2);
 }
 .form-content{
-  width: 400px;
+  width: 500px;
   background: url(../../assets/img/backkk.png);
   padding: 10px 20px 20px;
   opacity: 1.0;
   border-radius: 20px;
+}
+.forgot-pass{
+  font-size: 12px;
+  font-weight: 600;
+  color: #304ffe;
 }
 .fa-eye,
 .fa-eye-slash,
@@ -111,6 +121,7 @@
   font-size: 16px;
   display: block;
   font-weight: 600;
+  margin-top: 7px
 }
 // .mat-form-field input{
 //   font-size: 24px;
